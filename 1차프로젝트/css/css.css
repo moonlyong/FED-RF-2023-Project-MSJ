@@ -21,6 +21,11 @@ section {
     width: 1360px;
     height: 964px;
     margin: 0 auto;
+    font-size: 90px;
+    font-style: bold;
+    text-align: center;
+    line-height: 600px;
+    color: azure;
 }
 
 /* clb설정 */
@@ -49,13 +54,18 @@ section {
     background-color: #60558857;
 }
 /* main-2 구분박스 */
-.main-2 {
-    display: flex;
-    flex-direction: column-reverse;
-}
+.middle-564w{
+    height: 564px;
+    background: #5aa15386;
 
+}
 .txt-box_2{
-    width: 50%;
-    height: 364px;
+    height: 300px;
     background-color: #60558857;
+}
+/* main-3 구분박스 */
+
+.display-box{
+    height: 864px;
+    background: #5aa15386;
 }
