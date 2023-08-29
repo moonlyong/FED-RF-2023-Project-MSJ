@@ -11,11 +11,50 @@ body * {
 a{
     font-size: 20px;
 }
+/* 12 그리드 클래스 :*/
+
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
+
 /* 섹션박스 */
 section {
     /* 임시로 높이값 주기 */
-    width: 1360px;
-    height: 962px;
+    width: 80vw;
+    height: 100vh;
     margin: 0 auto;
     font-size: 90px;
     font-style: bold;
@@ -29,13 +68,13 @@ section {
 }
 
 .header {
-    height: 100px;
+    height: 10vh;
     background: #ff929231;
 }
 /* JTBC로고 */
 h1 {
-    width: 166px;
-    height: 100px;
+    width: 8vw;
+    height: 10vh;
     position: fixed;
     background: url(../이미지/로고이미지/JTBC로고.png) no-repeat center/180%;
   }
