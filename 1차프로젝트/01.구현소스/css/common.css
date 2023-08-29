@@ -15,12 +15,10 @@ a{
 section {
     /* 임시로 높이값 주기 */
     width: 1360px;
-    height: 964px;
+    height: 962px;
     margin: 0 auto;
     font-size: 90px;
     font-style: bold;
-    text-align: center;
-    line-height: 600px;
     color: azure;
 }
 /* clb설정 */
@@ -29,8 +27,15 @@ section {
     display: block;
     clear: both;
 }
-/* JTBC로고 */
+
 .header {
     height: 100px;
     background: #ff929231;
 }
+/* JTBC로고 */
+h1 {
+    width: 166px;
+    height: 100px;
+    position: fixed;
+    background: url(../이미지/로고이미지/JTBC로고.png) no-repeat center/180%;
+  }

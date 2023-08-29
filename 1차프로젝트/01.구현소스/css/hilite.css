@@ -12,7 +12,7 @@
     background-color: #88557b57;
 }
 .bottom-area {
-    height: 534px;
+    height: 532px;
     background-color: #887c5557;
 }
 .vod-info{
@@ -20,7 +20,7 @@
     background: #5aa15386;
 }
 .vod-box{
-        height: 664px;
+        height: 662px;
     background-color: #887c5557;
 }
 .vod-box ul{
@@ -32,4 +32,5 @@
 .vod-box li{
  height: 250px;
  width: 250px;
+ text-align: center;
 }

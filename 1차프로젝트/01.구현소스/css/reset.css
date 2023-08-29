@@ -2,11 +2,14 @@
 
 /* 초기화 */
 html,
-body,ul,ol {
+body,h1,ul,ol {
     margin: 0;
     padding: 0;
 }
 
 li{
     list-style: none;
+}
+html{
+    font-size: 10px;
 }
