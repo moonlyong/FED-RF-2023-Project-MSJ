@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* 폰트자리 */
+
+/* 공사중마크 */
+body * {
+    outline: 1px dotted #ff7171;
+}
+
+/* a링크 글자크기(임시) */
+a{
+    font-size: 20px;
+}
+/* 섹션박스 */
+section {
+    /* 임시로 높이값 주기 */
+    width: 1360px;
+    height: 964px;
+    margin: 0 auto;
+    font-size: 90px;
+    font-style: bold;
+    text-align: center;
+    line-height: 600px;
+    color: azure;
+}
+/* clb설정 */
+.clb::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* JTBC로고 */
+.header {
+    height: 100px;
+    background: #ff929231;
+}
