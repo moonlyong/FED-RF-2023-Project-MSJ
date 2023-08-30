@@ -4,7 +4,7 @@
 
 /* 공사중마크 */
 body * {
-    outline: 1px dotted #ff7171;
+    /* outline: 1px dotted #ff7171; */
 }
 
 /* a링크 글자크기(임시) */
@@ -51,7 +51,7 @@ a{
 }
 
 /* 섹션박스 */
-section {
+section{
     /* 임시로 높이값 주기 */
     width: 80vw;
     height: 100vh;
