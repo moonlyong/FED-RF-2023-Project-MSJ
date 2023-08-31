@@ -6,20 +6,5 @@ flex-wrap: wrap;
 gap: 10px;
 
 
- <ul class="menu-icon">
-                        <a href="#"><li><i class="fa-sharp fa-solid fa-bars"></i></a>
-                            <div class="sub-menu">
-                                <ol>
-                                    <a href="#">
-                                        <li>프로그램소개</li>
-                                    </a>
-                                    <a href="#">
-                                        <li>하이라이트</li>
-                                    </a>
-                                    <a href="#">
-                                        <li>선수단소개</li>
-                                    </a>
-                                </ol>
-                            </div>
-                        </li>
-                    </ul>
+addeventlistener:
+wheel
