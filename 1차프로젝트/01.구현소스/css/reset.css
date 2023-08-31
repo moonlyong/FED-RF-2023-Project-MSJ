@@ -2,7 +2,7 @@
 
 /* 초기화 */
 html,
-body,h1,ul,ol,h1,p {
+body,h1,ul,ol,h1,p,section {
     margin: 0;
     padding: 0;
 }

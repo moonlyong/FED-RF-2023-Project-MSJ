@@ -2,11 +2,15 @@
 
 /* css불러오기 */
 /* main-2 구분박스 */
+.main-2{
+    background: url(../이미지/);
+}
 .middle-box {
     height: 70vh;
     background: #5aa15386;
 }
 .bottom-area {
+    display: flex;
     height: 30vh;
     background-color: #60558857;
 }
@@ -18,6 +22,6 @@
 }
 
 .txt-box_2{
-    float: left;
-height: 100%;
+    /* float: left; */
+    height: 100%;
 }
