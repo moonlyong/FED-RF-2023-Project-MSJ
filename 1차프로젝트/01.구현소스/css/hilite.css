@@ -3,34 +3,69 @@
 @import url(./reset.css);
 @import url(./common.css);
 
+/* 하이라이트상단 */
 .top-area {
-    height: 300px;
-    background: #5aa15386;
+    display: flex;
+    height: 35vh;
+    background: url(../이미지/toparea.jpg) no-repeat center/cover;
 }
+/* 상단 왼쪽구역 */
+.left_box{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.back_btn{
+    position: absolute;
+    transform: translate(50%,50%);
+    font-size: 2vw;
+}
+
+
+/* 상단 오른쪽구역 */
+.right_box{
+    width: 50%;
+    height: 100%;
+}
+
+
 .middle-area {
-    height: 130px;
-    background-color: #88557b57;
+    display: flex;
+    height: 15vh;
+    /* background-color: #88557b57; */
 }
 .bottom-area {
-    height: 532px;
+    height: 50vh;
     background-color: #887c5557;
 }
-.vod-info{
-    height: 300px;
+.vod-info {
+    height: 35vh;
     background: #5aa15386;
 }
-.vod-box{
-        height: 662px;
+.vod-box {
+    height: 80vh;
     background-color: #887c5557;
 }
-.vod-box ul{
+.vod-box ul {
+    /* background-color: #887c5557; */
+    height: 65vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 2vw;
 }
-.vod-box li{
- height: 250px;
- width: 250px;
- text-align: center;
+.vod-box li {
+    width: 20vw;
+    text-align: center;
+}
+.shoplink_1 {
+    width: 50%;
+    height: 15vh;
+background: url(../이미지/굿즈/shop1.jpg) no-repeat center/cover;
+}
+.shoplink_2 {
+    width: 50%;
+    height: 15vh;
+background: url(../이미지/굿즈/shop2.jpg) no-repeat center/cover
+;
 }

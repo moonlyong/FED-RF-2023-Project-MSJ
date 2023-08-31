@@ -5,3 +5,9 @@
 @import url(./common.css);
 @import url(./main_1.css);
 @import url(./main_2.css);
+@import url(./main_3.css);
+html,
+body {
+    overflow: hidden;
+    scroll-behavior: smooth;
+}

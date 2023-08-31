@@ -3,25 +3,57 @@
 /* css불러오기 */
 /* main-2 구분박스 */
 .main-2{
-    background: url(../이미지/);
+    /* background: url(../이미지/잠실야구장.jpg); */
 }
 .middle-box {
-    height: 70vh;
-    background: #5aa15386;
+    display: flex;
+    height: 80vh;
+    /* background: #5aa15386; */
 }
 .bottom-area {
     display: flex;
-    height: 30vh;
-    background-color: #60558857;
-}
-/* main-3 구분박스 */
-
-.display-box {
-    height: 90vh;
-    background: #5aa15386;
+    height: 20vh;
+    /* background-color: #60558857; */
 }
 
 .txt-box_2{
+    position: relative;
     /* float: left; */
     height: 100%;
+}
+.txt-box_2 p{
+    top: 1vh;
+    width: 11vw;
+}
+.left-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+.right-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    height: 100%;
+}
+.monster_logo{
+    background: url(../이미지/로고이미지/최강몬스터즈.png)no-repeat center/100%;
+}
+.dusan_logo{
+    background: url(../이미지/로고이미지/두산.png)no-repeat center/70%;
+}
+.ssg_logo{
+    background: url(../이미지/로고이미지/ssg.png)no-repeat center/70%;
+}
+.nc_logo{
+    background: url(../이미지/로고이미지/nc다이노스.png)no-repeat center/70%;
+}
+.kt_logo{
+    background: url(../이미지/로고이미지/kt위즈.png)no-repeat center/70%;
 }

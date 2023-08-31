@@ -8,13 +8,7 @@ body * {
 }
 
 body {
-    background: #000;
-}
-
-html,
-body {
-    overflow: hidden;
-    scroll-behavior: smooth;
+    background: #110f14;
 }
 
 /* a링크 글자크기(임시) */
@@ -96,4 +90,9 @@ h1 {
 .txt-logo{
     background: url(../이미지/로고이미지/txt-logo.png)no-repeat center/80%;
     height: 100%;
+}
+
+.team_logo{
+    height: 40%;
+    width: 40%;
 }
