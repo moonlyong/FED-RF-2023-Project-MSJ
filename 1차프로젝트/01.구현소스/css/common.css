@@ -4,20 +4,21 @@
 
 /* 공사중마크 */
 body * {
-    /* outline: 1px dotted #ff7171; */
+    outline: 1px dotted #ff7171;
 }
 
 body {
     background: #000;
 }
 
-html,body{
+html,
+body {
     overflow: hidden;
     scroll-behavior: smooth;
 }
 
 /* a링크 글자크기(임시) */
-a{
+a {
     font-size: 20px;
 }
 /* 12 그리드 클래스 :*/
@@ -60,7 +61,7 @@ a{
 }
 
 /* 섹션박스 */
-section{
+section {
     width: 90vw;
     /* 임시로 높이값 주기 */
     height: 100vh;
@@ -86,10 +87,13 @@ h1 {
     height: 10vh;
     position: fixed;
     background: url(../이미지/로고이미지/JTBC로고.png) no-repeat center/180%;
-  }
+}
 
-  .part-box{
+.part-box {
     float: left;
     height: 100%;
-  }
- 
+}
+.txt-logo{
+    background: url(../이미지/로고이미지/txt-logo.png)no-repeat center/100%;
+    height: 100%;
+}
