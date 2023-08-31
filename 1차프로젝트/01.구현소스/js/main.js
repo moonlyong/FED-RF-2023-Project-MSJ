@@ -1,12 +1,3 @@
-플렉스
-
-display: flex;
-justify-content:center ;
-flex-wrap: wrap;
-gap: 10px;
-
-
-휠 JS
 // 1-1 페이지 변수
 let pg_num = 0;
 let sts_wheel = 0;
@@ -37,7 +28,7 @@ const qsa = (x) => document.querySelectorAll(x);
 function loadFn() {
     console.log("로딩완료");
 
-    total_page = qsa(".page").length;
+    total_page = qsa(".main-box").length;
     console.log("페이지수", total_page);
 
 }

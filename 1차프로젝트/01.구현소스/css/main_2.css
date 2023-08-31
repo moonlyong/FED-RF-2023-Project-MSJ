@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/* css불러오기 */
+
+/* main-2 구분박스 */
+.middle-box {
+    height: 70vh;
+    background: #5aa15386;
+}
+.txt-box_2 {
+    height: 30vh;
+    background-color: #60558857;
+}
+/* main-3 구분박스 */
+
+.display-box {
+    height: 90vh;
+    background: #5aa15386;
+}

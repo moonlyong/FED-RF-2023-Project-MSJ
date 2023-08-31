@@ -7,6 +7,15 @@ body * {
     /* outline: 1px dotted #ff7171; */
 }
 
+body {
+    background: #000;
+}
+
+html,body{
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
 /* a링크 글자크기(임시) */
 a{
     font-size: 20px;
@@ -52,8 +61,8 @@ a{
 
 /* 섹션박스 */
 section{
+    width: 90vw;
     /* 임시로 높이값 주기 */
-    width: 80vw;
     height: 100vh;
     margin: 0 auto;
     font-size: 90px;
@@ -67,14 +76,20 @@ section{
     clear: both;
 }
 
-.header {
+.header .part-box {
     height: 10vh;
-    background: #ff929231;
+    /* background: #ff929231; */
 }
 /* JTBC로고 */
 h1 {
-    width: 8vw;
+    width: 7vw;
     height: 10vh;
     position: fixed;
     background: url(../이미지/로고이미지/JTBC로고.png) no-repeat center/180%;
   }
+
+  .part-box{
+    float: left;
+    height: 100%;
+  }
+ 

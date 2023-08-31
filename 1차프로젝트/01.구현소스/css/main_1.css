@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/* css불러오기 */
+
+.main-1{
+    background: url(../이미지/메인w.jpg)no-repeat center/100%;
+}
+
+/* main-1 구분박스 */
+
+.txt-area {
+    position: relative;
+    height: 90vh;
+    /* background-color: #60558857; */
+}
+/* 로고박스 */
+.main-logobx {
+    height: 10vh;
+}
+.blogo {
+    width: min(10vw, 100px);
+    height: 100%;
+    opacity: 1;
+}
+.netflix-logo {
+    background: url(../이미지/로고이미지/넷플릭스pc.png) no-repeat center/100%;
+}
+.tving-logo {
+    background: url(../이미지/로고이미지/티빙pc.png) no-repeat center/100%;
+}
+.disney-logo {
+    background: url(../이미지/로고이미지/디즈니플러스.png) no-repeat center/100%;
+}
+.gnb > ul > li:hover .blogo{
+    opacity: 0;
+}
+
+/* 상단 네비박스 */
+.gnb-box{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2vw;
+}
+/* 메뉴라인 */
+.menu-icon {
+    position: relative;
+    display: flex;
+    height: 10vh;
+    gap: 2vw;
+}
+.menu-icon > li > a {
+    position: absolute;
+    top: calc(50% - 40px/2);
+    left: 2vw;
+    font-size: 30px;
+}
+/* 메뉴바 */
+.menu-bar{
+    position: relative;
+}
+/* 서브메뉴 */
+.sub-menu {
+    position: absolute;
+    top: 0;
+    right: 1vw;
+    transform: translateX(1vw);
+    width: 0;
+    height: 10vh;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+.sub-menu > ol {
+    position: absolute;
+    top: calc(50% - 1.4vw/2);
+    display: flex;
+    gap: 3vw;
+}
+.sub-menu a {
+    font-size: max(10px, 1vw);
+    transition: 0.1s;
+}
+.sub-menu a:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 5px #000;
+}
+.gnb > ul > li:hover .sub-menu {
+    width: 35vw;
+    /* /* height: auto; */
+
+    /* 투명도 복구 */
+    opacity: 1;
+}
+
+.txt{
+    position: absolute;
+    background-color: #ffffff33;
+    text-shadow: 0 0 5px black;
+    border-radius: 20px;
+    top: 20vh;
+    left: 5vw;
+    padding: 2vw;
+    font-size: 1vw;
+}
+.txt-2{
+    display: none;
+}
+.txt-box_1:hover .txt-1{
+    display: none;
+}
+.txt-box_1:hover .txt-2{
+    display: inline;
+}
