@@ -1,0 +1,2 @@
+// event.stopPropagation() stop =그만 propagation=퍼트려
+//.onwheel

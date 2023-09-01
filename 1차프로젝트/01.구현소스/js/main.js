@@ -29,7 +29,8 @@ function loadFn() {
     console.log("로딩완료");
 
     total_page = qsa(".main-box").length;
-    console.log("페이지수", total_page);
+    // console.log("페이지수", total_page);
+    // startSS()
 
 }
 
