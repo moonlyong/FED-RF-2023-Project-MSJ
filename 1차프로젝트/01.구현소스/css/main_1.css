@@ -56,7 +56,9 @@
 }
 /* 메뉴바 */
 .menu-bar{
-    position: relative;
+    position: fixed;
+    height: 10vh;
+    right: 5vw;
 }
 /* 서브메뉴 */
 .sub-menu {
