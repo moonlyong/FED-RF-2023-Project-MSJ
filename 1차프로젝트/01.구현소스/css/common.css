@@ -60,8 +60,8 @@ section {
     /* 임시로 높이값 주기 */
     height: 100vh;
     margin: 0 auto;
-    font-size: 90px;
-    font-style: bold;
+    /* font-size: 90px; */
+    /* font-weight: bold; */
     color: azure;
 }
 /* clb설정 */
