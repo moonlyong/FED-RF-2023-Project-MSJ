@@ -32,13 +32,22 @@ const clog = (x) => console.log(x);
 function loadFn() {
     console.log("로딩완료");
 
+
     total_page = dqsa(".main-box").length;
 
     // 오버시 로고 숨기기
     const bar = dqs(".menu-bar");
+    // 숨길대상선택
+    const menuIcon = dqs('.menu-icon');
     clog(bar);
-        bar.onmouseover = () => {
+        bar.onclick = (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+
             clog("오버");
+            menuIcon.classList.toggle('on');
+
+
         };
     // console.log("페이지수", total_page);
     // startSS()
@@ -58,7 +67,7 @@ function linkFn() {
     clog(this.className);
     let acls = this.className;
 
-    // event.preventDefault();
+    event.preventDefault();
     let url;
 
     switch (acls) {
@@ -83,6 +92,7 @@ function linkFn() {
             break;
     }
     clog(url);
+    if(!url) return;
     window.open(url);
 }
 /******************************************** 

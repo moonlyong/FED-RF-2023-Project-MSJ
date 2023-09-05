@@ -48,6 +48,9 @@
     height: 10vh;
     gap: 2vw;
 }
+.menu-icon.on .hide-menu{
+    display: none;
+}
 .menu-icon > li > a {
     position: absolute;
     top: calc(50% - 40px/2);
@@ -64,9 +67,9 @@
 .sub-menu {
     position: absolute;
     top: 0;
-    right: 1vw;
+    left: 500%;
     transform: translateX(1vw);
-    width: 0;
+    width:35vw;
     height: 10vh;
     overflow: hidden;
     opacity: 0;
@@ -86,10 +89,8 @@
     transform: scale(1.2);
     text-shadow: 0 0 5px #000;
 }
-.gnb > ul > li:hover .sub-menu {
-    width: 35vw;
-    /* /* height: auto; */
-
+.gnb > ul.menu-icon.on > li.menu-bar .sub-menu {
+    left: -500%;
     /* 투명도 복구 */
     opacity: 1;
 }
