@@ -79,7 +79,7 @@ section {
 h1 {
     width: 7vw;
     height: 10vh;
-    position: fixed;
+    /* position: fixed; */
     background: url(../이미지/로고이미지/JTBC로고.png) no-repeat center/180%;
 }
 
