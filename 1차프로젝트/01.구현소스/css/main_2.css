@@ -3,7 +3,7 @@
 /* css불러오기 */
 /* main-2 구분박스 */
 .main-2{
-    /* background: url(../이미지/잠실야구장.jpg); */
+    background: url(../이미지/vsbg.jpg) no-repeat top/100%;
 }
 .middle-box {
     display: flex;

@@ -17,8 +17,12 @@ window.addEventListener("DOMContentLoaded", loadFn);
 // 이벤트 연결하기
 
 // DOM선택함수
-const qs = (x) => document.querySelector(x);
-const qsa = (x) => document.querySelectorAll(x);
+const dqs = (x) => document.querySelector(x);
+const qs = (a, b) => a.querySelector(b);
+const dqsa = (x) => document.querySelectorAll(x);
+const qsa = (a, b) => a.querySelectorAll(b);
+const addevt = (ele, evt, fn) => ele.addEventListener(evt, fn);
+const clog = (x) => console.log(x);
 
 /**********************************************
         함수명 loadFn
@@ -28,12 +32,59 @@ const qsa = (x) => document.querySelectorAll(x);
 function loadFn() {
     console.log("로딩완료");
 
-    total_page = qsa(".main-box").length;
+    total_page = dqsa(".main-box").length;
+
+    // 오버시 로고 숨기기
+    const bar = dqs(".menu-bar");
+    clog(bar);
+        bar.onmouseover = () => {
+            clog("오버");
+        };
     // console.log("페이지수", total_page);
     // startSS()
-
 }
+/******************************************** 
+     함수명 linkFn
+     https://www.netflix.com/kr/title/81614459
+     https://www.tving.com/contents/P001609758
+     https://www.disneyplus.com/ko-kr/series/a-clean-sweep/7MipMuyGlPHc
+     ********************************************/
 
+const link = dqsa(".menu-icon a");
+clog(link);
+link.forEach((ele) => addevt(ele, "click", linkFn));
+
+function linkFn() {
+    clog(this.className);
+    let acls = this.className;
+
+    // event.preventDefault();
+    let url;
+
+    switch (acls) {
+        case "netflix":
+            url = "https://www.netflix.com/kr/title/81614459";
+            break;
+        case "tving":
+            url = "https://www.tving.com/contents/P001609758";
+            break;
+        case "disney":
+            url =
+                "https://www.disneyplus.com/ko-kr/series/a-clean-sweep/7MipMuyGlPHc";
+            break;
+        case "프로그램소개":
+            url = "./index.html";
+            break;
+        case "하이라이트":
+            url = "./hilite.html";
+            break;
+        case "선수단소개":
+            url = "";
+            break;
+    }
+    clog(url);
+    window.open(url);
+}
 /******************************************** 
         함수명 wheelFn
         기능: 마우스 휠 작동시 페이지 이동
