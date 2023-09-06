@@ -35,7 +35,7 @@ function loadFn() {
 
     total_page = dqsa(".main-box").length;
 
-    // 오버시 로고 숨기기
+    // 클릭시 로고 숨기기
     const bar = dqs(".menu-bar");
     // 숨길대상선택
     const menuIcon = dqs('.menu-icon');
@@ -44,7 +44,7 @@ function loadFn() {
             e.preventDefault();
             e.stopPropagation();
 
-            clog("오버");
+            // clog("오버");
             menuIcon.classList.toggle('on');
 
 
@@ -95,6 +95,19 @@ function linkFn() {
     if(!url) return;
     window.open(url);
 }
+//////txt 박스 1초후 나오기
+const txtbox = dqs('.txt-box_1')
+clog(txtbox);
+setTimeout(()=>{
+    txtbox.classList.add('on')
+},1000)
+const txt2 = dqs('.txt-2')
+setTimeout(()=>{
+    txt2.classList.add('on')
+},3000)
+setTimeout(()=>{
+    txt2.classList.add('show')
+},1500)
 /******************************************** 
         함수명 wheelFn
         기능: 마우스 휠 작동시 페이지 이동

@@ -30,17 +30,17 @@
     align-items: center;
     justify-content: center;
     width: 50%;
-    height: 100%;
+    height: 125%;
 }
 .right-box{
     display: flex;
     flex-wrap: wrap;
-    gap: 2vw;
-    justify-content: center;
+    gap: 3vw 0;
+    justify-content: flex-end;
     align-items: center;
     align-content: center;
     width: 50%;
-    height: 100%;
+    height: 125%;
 }
 .monster_logo{
     background: url(../이미지/로고이미지/최강몬스터즈.png)no-repeat center/100%;
@@ -52,7 +52,7 @@
     background: url(../이미지/로고이미지/ssg.png)no-repeat center/70%;
 }
 .nc_logo{
-    background: url(../이미지/로고이미지/nc다이노스.png)no-repeat center/70%;
+    background: url(../이미지/로고이미지/nc다이노스.png)no-repeat center/85%;
 }
 .kt_logo{
     background: url(../이미지/로고이미지/kt위즈.png)no-repeat center/70%;

@@ -1,9 +1,9 @@
 @charset "utf-8";
 
-/* css불러오기 */
+/* 배경 */
 
-.main-1{
-    background: url(../이미지/메인w.jpg)no-repeat center/100%;
+.main-1 {
+    background: url(../이미지/메인w.jpg) no-repeat center/100%;
 }
 
 /* main-1 구분박스 */
@@ -17,48 +17,61 @@
 .main-logobx {
     height: 10vh;
 }
+/* JTBC 로고 */
+.JTBC-logo{
+    position: fixed;
+}
 .blogo {
+    
+    position: relative;
     width: min(10vw, 100px);
     height: 100%;
-    opacity: 1;
+    /* opacity: 1; */
 }
-.netflix-logo {
-    background: url(../이미지/로고이미지/넷플릭스pc.png) no-repeat center/100%;
+.blogo img {
+    /* width: 100%; */
+    height: 100%;
+    /* background: url(../이미지/로고이미지/넷플릭스pc.png) no-repeat center/100%; */
 }
-.tving-logo {
-    background: url(../이미지/로고이미지/티빙pc.png) no-repeat center/100%;
-}
-.disney-logo {
-    background: url(../이미지/로고이미지/디즈니플러스.png) no-repeat center/100%;
-}
-.gnb > ul > li:hover .blogo{
+
+.gnb > ul > li:hover .blogo {
     opacity: 0;
 }
 
 /* 상단 네비박스 */
-.gnb-box{
+.gnb{
+    position: absolute;
+    right: 5vw;
+    width: 35vw;
+    overflow: hidden;
+}
+.gnb-box {
+    /* overflow: hidden; */
     display: flex;
     flex-direction: row-reverse;
-    gap: 2vw;
+    /* gap: 2vw; */
 }
 /* 메뉴라인 */
 .menu-icon {
+    right: 0vw;
     position: relative;
     display: flex;
+    justify-content: center;
     height: 10vh;
-    gap: 2vw;
+    gap: 2.7vw;
+    transition: right 0.3s ease-out;
 }
-.menu-icon.on .hide-menu{
-    display: none;
+.menu-icon.on{
+    right: -30vw;
 }
-.menu-icon > li > a {
+.menu-icon > li > .bar {
     position: absolute;
-    top: calc(50% - 40px/2);
+    top: calc(50% - 40px / 2);
     left: 2vw;
     font-size: 30px;
 }
 /* 메뉴바 */
-.menu-bar{
+.menu-bar {
     position: fixed;
     height: 10vh;
     right: 5vw;
@@ -69,7 +82,7 @@
     top: 0;
     left: 500%;
     transform: translateX(1vw);
-    width:35vw;
+    width: 30vw;
     height: 10vh;
     overflow: hidden;
     opacity: 0;
@@ -77,7 +90,7 @@
 }
 .sub-menu > ol {
     position: absolute;
-    top: calc(50% - 1.4vw/2);
+    top: calc(50% - 1.4vw / 2);
     display: flex;
     gap: 3vw;
 }
@@ -90,27 +103,47 @@
     text-shadow: 0 0 5px #000;
 }
 .gnb > ul.menu-icon.on > li.menu-bar .sub-menu {
-    left: -500%;
+    left: -475%;
     /* 투명도 복구 */
     opacity: 1;
 }
-
-.txt{
+/* 텍스트 영역 */
+.txt-area {
+    overflow: hidden;
+}
+.txt-box_1 {
     position: absolute;
-    background-color: #ffffff33;
-    text-shadow: 0 0 5px black;
+    width: 100%;
+    top: 17vh;
+    left: -32vw;
+    transition: left 0.4s ease-out;
+}
+.txt {
+    position: absolute;
+    background-color: #ffffff30;
+    text-shadow: 0 0 7px black;
     border-radius: 20px;
-    top: 20vh;
-    left: 5vw;
     padding: 2vw;
-    font-size: 1vw;
+    font-size: 0.9vw;
+    color: white;
 }
-.txt-2{
+/* 텍스트 등장 */
+.txt-box_1.on {
+    left: 5vw;
+}
+.txt-2 {
+    /* right: 7vw; */
+    right: -32vw;
+    /* top: -2vw; */
     display: none;
+    /* transform: scale(0); */
+    transition: right .4s ease-in;
 }
-.txt-box_1:hover .txt-1{
-    display: none;
+.txt-2.on{
+    /* display: inline; */
+    right: 7vw;
 }
-.txt-box_1:hover .txt-2{
+.txt-2.show{
     display: inline;
+    /* right: 7vw; */
 }
