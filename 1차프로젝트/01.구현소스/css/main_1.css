@@ -53,7 +53,7 @@
 }
 /* 메뉴라인 */
 .menu-icon {
-    right: 0vw;
+    right: 2vw;
     position: relative;
     display: flex;
     justify-content: center;
@@ -75,6 +75,12 @@
     position: fixed;
     height: 10vh;
     right: 5vw;
+}
+.fa-bars{
+    font-size: 3rem;
+    position: absolute;
+    top: 30%;
+    left: 50%;
 }
 /* 서브메뉴 */
 .sub-menu {
@@ -103,7 +109,7 @@
     text-shadow: 0 0 5px #000;
 }
 .gnb > ul.menu-icon.on > li.menu-bar .sub-menu {
-    left: -475%;
+    left: -375%;
     /* 투명도 복구 */
     opacity: 1;
 }

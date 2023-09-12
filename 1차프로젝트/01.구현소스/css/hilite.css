@@ -4,10 +4,13 @@
 @import url(./common.css);
 
 /* 하이라이트상단 */
+body {
+    background: #000;
+}
 .top-area {
     display: flex;
     height: 35vh;
-    background: url(../이미지/toparea.jpg) no-repeat center/cover;
+    background: url(../이미지/배경용/toparea.jpg) no-repeat center/cover;
 }
 /* 상단 왼쪽구역 */
 .left_box {
@@ -15,17 +18,17 @@
     width: 50%;
     height: 100%;
 }
-.back_btn {
+.fa-arrow-left {
     position: absolute;
     transform: translate(50%, 50%);
-    font-size: 2vw;
+    font-size: 4rem;
 }
 .top-goods {
     position: absolute;
     left: 6%;
     height: 75%;
     aspect-ratio: 1;
-    background: url(../이미지/굿즈/keyring.png)no-repeat center/cover;
+    background: url(../이미지/굿즈/keyring.png) no-repeat center/cover;
 }
 
 /* 상단 오른쪽구역 */
@@ -46,9 +49,95 @@
     height: 15vh;
     /* background-color: #88557b57; */
 }
+.shoplink_1 {
+    width: 50%;
+    height: 15vh;
+    background: url(../이미지/굿즈/shop1.jpg) no-repeat center/cover;
+}
+.shoplink_2 {
+    width: 50%;
+    height: 15vh;
+    background: url(../이미지/굿즈/shop2.jpg) no-repeat center/cover;
+}
+
+/* 영상구역 */
+
 .bottom-area {
     height: 50vh;
-    background-color: #887c5557;
+    /* background-color: #887c5557; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+/* 미리보기 */
+.preview {
+    position: relative;
+    width: 60%;
+    height: 65%;
+    border: 1px solid #c0c0c0;
+    padding: 36px 0 30px 25px;
+}
+
+.preview h2 {
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+}
+/* 클립 파트 */
+.preview-clip{
+    display: flex;
+}
+.clip-img img{
+    width:430px;
+    margin-right: 30px
+}
+/* 클립 택스트 */
+.clip-info{
+    display: flex;
+    width:500px;
+    flex-direction: column;
+}
+.clip-tit{
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    padding-top: 3px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.clip-date{
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+.clip-tag{
+    font-size: 1.8rem;
+}
+/* 굿즈 배너 */
+.goods-banner {
+    width: 20%;
+    height: 80%;
+    position: relative;
+}
+.goods-banner a img {
+    position: absolute;
+}
+.goods-banner a img:first-child {
+    height: 100%;
+}
+.goods-banner a img:nth-child(2) {
+    height: 40%;
+    left: 5%;
+    top: 5%;
+}
+.goods-banner a img:nth-child(3) {
+    /* display: none; */
+    height: 30%;
+    right: 2%;
+    top: 6%;
+}
+.goods-banner a img:last-child {
+    height: 40%;
+    bottom: 9%;
+    left: 7%;
 }
 .vod-info {
     height: 35vh;
@@ -69,14 +158,4 @@
 .vod-box li {
     width: 20vw;
     text-align: center;
-}
-.shoplink_1 {
-    width: 50%;
-    height: 15vh;
-    background: url(../이미지/굿즈/shop1.jpg) no-repeat center/cover;
-}
-.shoplink_2 {
-    width: 50%;
-    height: 15vh;
-    background: url(../이미지/굿즈/shop2.jpg) no-repeat center/cover;
 }
