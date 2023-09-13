@@ -2,7 +2,7 @@
 
 // 새로고침시 첫페이지로 리셋하기
 // 브라우저 스크롤바 위치캐싱
-setTimeout(() => window.scrollTo(0, 0), 500);
+// setTimeout(() => window.scrollTo(0, 0), 500);
 
 // 2. 이벤트 등록하기
 // 대상: window

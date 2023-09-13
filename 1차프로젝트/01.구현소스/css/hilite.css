@@ -73,15 +73,15 @@ body {
 /* 미리보기 */
 .preview {
     position: relative;
-    width: 60%;
-    height: 65%;
+    width: 57%;
+    height: 61%;
     border: 1px solid #c0c0c0;
-    padding: 36px 0 30px 25px;
+    padding: 30px 0 30px 25px;
 }
 
 .preview h2 {
-    font-size: 1.8rem;
-    margin-bottom: 50px;
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 /* 클립 파트 */
 .preview-clip{
@@ -96,16 +96,16 @@ body {
     display: flex;
     width:500px;
     flex-direction: column;
+    justify-content: center;
 }
 .clip-tit{
-    font-size: 2.4rem;
-    margin-bottom: 20px;
+    font-size: 2.2rem;
     padding-top: 3px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-weight: 700;
 }
 .clip-date{
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     font-size: 1.6rem;
 }
 .clip-tag{
@@ -139,15 +139,21 @@ body {
     bottom: 9%;
     left: 7%;
 }
-.vod-info {
-    height: 35vh;
+.vod {
+    height: 25vh;
     background: #5aa15386;
 }
+.vod>h2{
+    text-align: center;
+    font-size: 3.4rem;
+    line-height: 3;
+}
 .vod-box {
-    height: 80vh;
+    position: relative;
+    height: 75vh;
     background-color: #887c5557;
 }
-.vod-box ul {
+.vod-ul {
     /* background-color: #887c5557; */
     height: 65vh;
     display: flex;
@@ -155,7 +161,30 @@ body {
     justify-content: center;
     gap: 2vw;
 }
-.vod-box li {
+.vod-ul li {
     width: 20vw;
     text-align: center;
 }
+.bttn li{
+    text-align: center;
+}
+
+.bttn li a{
+    display: block;
+    width: 36px;
+    height: 36px;
+}
+.bttn{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    position: absolute;
+    top: -52px;
+    right: 50%;
+    transform: translateX(50%);
+}
+.left-bttn{
+    margin-left: 0;
+    position: relative;
+}
+
