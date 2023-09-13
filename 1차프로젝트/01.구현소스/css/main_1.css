@@ -62,7 +62,7 @@
     transition: right 0.3s ease-out;
 }
 .menu-icon.on{
-    right: -30vw;
+    right: -35vw;
 }
 .menu-icon > li > .bar {
     position: absolute;
@@ -109,7 +109,7 @@
     text-shadow: 0 0 5px #000;
 }
 .gnb > ul.menu-icon.on > li.menu-bar .sub-menu {
-    left: -375%;
+    left: -505%;
     /* 투명도 복구 */
     opacity: 1;
 }
@@ -126,15 +126,25 @@
 }
 .txt {
     position: absolute;
-    background-color: #ffffff30;
-    text-shadow: 0 0 7px black;
+    background-color: #ffffff46;
+    text-shadow: 0 0 7px rgba(255, 255, 255, 0.445);
     border-radius: 20px;
     padding: 2vw;
     font-size: 0.9vw;
-    color: white;
+    color: rgb(0, 0, 0);
 }
-.main-tit{
-    font-size: 40px;
+.txt:hover{
+    background-color: #0000007a;
+    color: rgba(252, 252, 252, 0.836);
+    text-shadow: 0 0 7px rgb(0, 0, 0);
+}
+.font-3{
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+.font-2{
+    font-size: 1.2vw;
+    font-weight: 600;
 }
 /* 텍스트 등장 */
 .txt-box_1.on {
