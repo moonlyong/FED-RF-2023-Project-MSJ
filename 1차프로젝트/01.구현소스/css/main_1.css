@@ -3,7 +3,7 @@
 /* 배경 */
 
 .main-1 {
-    background: url(../이미지/메인w.jpg) no-repeat center/100%;
+    background: url(../이미지/배경용/메인w.jpg) no-repeat center/100%;
 }
 
 /* main-1 구분박스 */
@@ -132,6 +132,9 @@
     padding: 2vw;
     font-size: 0.9vw;
     color: white;
+}
+.main-tit{
+    font-size: 40px;
 }
 /* 텍스트 등장 */
 .txt-box_1.on {
