@@ -4,13 +4,15 @@
 @import url(./common.css);
 
 /* 하이라이트상단 */
-body {
-    background: #000;
+#hilite-body{
+    width: 100vw;
+    background: #ffffff;
 }
+
 .top-area {
     display: flex;
     height: 35vh;
-    background: url(../이미지/배경용/toparea.jpg) no-repeat center/cover;
+    background: url(../image/bgi/toparea.jpg) no-repeat center/cover;
 }
 /* 상단 왼쪽구역 */
 .left_box {
@@ -28,7 +30,7 @@ body {
     left: 6%;
     height: 75%;
     aspect-ratio: 1;
-    background: url(../이미지/굿즈/keyring.png) no-repeat center/cover;
+    background: url(../image/goods/keyring.png) no-repeat center/cover;
 }
 
 /* 상단 오른쪽구역 */
@@ -45,6 +47,7 @@ body {
 
 /* 중간구역 */
 .middle-area {
+
     display: flex;
     height: 15vh;
     /* background-color: #88557b57; */
@@ -52,12 +55,12 @@ body {
 .shoplink_1 {
     width: 50%;
     height: 15vh;
-    background: url(../이미지/굿즈/shop1.jpg) no-repeat center/cover;
+    background: url(../image/goods/shop1.jpg) no-repeat center/cover;
 }
 .shoplink_2 {
     width: 50%;
     height: 15vh;
-    background: url(../이미지/굿즈/shop2.jpg) no-repeat center/cover;
+    background: url(../image/goods/shop2.jpg) no-repeat center/cover;
 }
 
 /* 영상구역 */
@@ -73,13 +76,14 @@ body {
 /* 미리보기 */
 .preview {
     position: relative;
-    width: 57%;
+    width: 51%;
     height: 61%;
     border: 1px solid #c0c0c0;
     padding: 30px 0 30px 25px;
 }
 
-.preview h2 {
+.preview>h2 {
+    color: black;
     font-size: 2rem;
     margin-bottom: 30px;
 }
@@ -93,6 +97,7 @@ body {
 }
 /* 클립 택스트 */
 .clip-info{
+    color: black;
     display: flex;
     width:500px;
     flex-direction: column;
@@ -167,6 +172,8 @@ body {
 }
 .vod-ul ul{
     display: flex;
+    position: relative;
+    left: 0;
 }
 .vod-ul li {
     width: 321px;

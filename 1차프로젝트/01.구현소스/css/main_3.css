@@ -4,13 +4,14 @@
 
 /* main-3 구분박스 */
 .main-3{
-    background: url(../이미지/배경용/단체.jpg) no-repeat center/100%;
+    background: url(../image/bgi/main3.jpg) no-repeat center/100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .display-box {
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,4 +29,16 @@
 .txt-box_2{
     /* float: left; */
     height: 100%;
+}
+.hilite_link>iframe {
+    aspect-ratio: 16/9;
+    width: 100vw;
+    display: none;
+    
+}
+.linkbox ul{
+    display: flex;
+}
+.linkbox ul li{
+    width: 50%;
 }
