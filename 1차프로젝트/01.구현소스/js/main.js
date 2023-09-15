@@ -4,6 +4,7 @@ let sts_wheel = 0;
 // 전체 페이지수
 let total_page;
 
+
 // 새로고침시 첫페이지로 리셋하기
 // 브라우저 스크롤바 위치캐싱
 setTimeout(() => window.scrollTo(0, 0), 500);
@@ -30,7 +31,7 @@ const clog = (x) => console.log(x);
 **********************************************/
 
 function loadFn() {
-    console.log("로딩완료");
+    // console.log("로딩완료");
 
 
     total_page = dqsa(".main-box").length;
@@ -39,7 +40,7 @@ function loadFn() {
     const bar = dqs(".menu-bar");
     // 숨길대상선택
     const menuIcon = dqs('.menu-icon');
-    clog(bar);
+    // clog(bar);
         bar.onclick = (e) => {
             e.preventDefault();
             e.stopPropagation();
@@ -60,11 +61,11 @@ function loadFn() {
      ********************************************/
 
 const link = dqsa(".menu-icon a");
-clog(link);
+// clog(link);
 link.forEach((ele) => addevt(ele, "click", linkFn));
 
 function linkFn() {
-    clog(this.className);
+    // clog(this.className);
     let acls = this.className;
 
     event.preventDefault();
@@ -91,13 +92,13 @@ function linkFn() {
             url = "";
             break;
     }
-    clog(url);
+    // clog(url);
     if(!url) return;
     window.open(url);
 }
 //////txt 박스 1초후 나오기
 const txtbox = dqs('.txt-box_1')
-clog(txtbox);
+// clog(txtbox);
 setTimeout(()=>{
     txtbox.classList.add('on')
 },1000)
@@ -116,7 +117,7 @@ setTimeout(()=>{
 function wheelFn(e) {
     //이벤트 전달변수(자동)
     // 함수호출
-    console.log("휠이벤스");
+    // console.log("휠이벤스");
 
     // 광클금지
     if (sts_wheel) return;
@@ -127,13 +128,13 @@ function wheelFn(e) {
     // 1. 휠방향에 따른 페이지변수 변경하기
     // 휠방향은 wheelDelta로 알아냄
     let delta = e.wheelDelta;
-    console.log("윌델타", delta);
+    // console.log("윌델타", delta);
 
     // 음수 는 아랫방향 양수는 윗방향
     if (delta < 0) pg_num++;
     else pg_num--;
     // 페이지 번호 확인
-    console.log("페이지번호는?", pg_num);
+    // console.log("페이지번호는?", pg_num);
 
     // 제한주기(양끝페이지 고정)
     if (pg_num < 0) pg_num = 0;
@@ -147,4 +148,29 @@ function wheelFn(e) {
     // window.innerHeight -> window 높이값 구해온다
 
     window.scrollTo(0, window.innerHeight * pg_num);
+}
+
+// 오버시 움직이는 배경
+// 이벤트 대상
+// 대상 메뉴컬러
+const subMenu = dqsa('.sub-menu li');
+const mbc = dqs('.menu-color')
+// clog(subMenu)
+// clog(mbc)
+subMenu.forEach(ele=>{
+    addevt(ele,'mouseover',overFn)
+    addevt(ele,'mouseout',outFn)
+})
+function overFn(){
+    // 오버된 li의 left위치값
+    let posL = this.offsetLeft
+    console.log('위치',posL)
+    mbc.style.opacity = 1
+    mbc.style.left = posL + 'px'
+
+}
+function outFn(){
+    console.log('아웃',this)
+    // 사라지기
+    mbc.style.opacity = 0
 }

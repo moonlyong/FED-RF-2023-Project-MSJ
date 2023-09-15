@@ -18,11 +18,10 @@
     height: 10vh;
 }
 /* JTBC 로고 */
-.JTBC-logo{
+.JTBC-logo {
     position: fixed;
 }
 .blogo {
-    
     position: relative;
     width: min(10vw, 100px);
     height: 100%;
@@ -39,7 +38,7 @@
 }
 
 /* 상단 네비박스 */
-.gnb{
+.gnb {
     position: absolute;
     right: 5vw;
     width: 35vw;
@@ -61,7 +60,7 @@
     gap: 2.7vw;
     transition: right 0.3s ease-out;
 }
-.menu-icon.on{
+.menu-icon.on {
     right: -35vw;
 }
 .menu-icon > li > .bar {
@@ -76,40 +75,55 @@
     height: 10vh;
     right: 5vw;
 }
-.fa-bars{
+.fa-bars {
     font-size: 3rem;
     position: absolute;
-    top: 30%;
-    left: 50%;
+    top: 34%;
+    left: 30%;
 }
 /* 서브메뉴 */
 .sub-menu {
+    display: flex;
+    justify-content: center;
+    font-family: "Black Han Sans", sans-serif;
     position: absolute;
     top: 0;
-    left: 500%;
-    transform: translateX(1vw);
-    width: 30vw;
-    height: 10vh;
+    left: 475%;
+    transform: translateY(50%);
+    width: 23vw;
+    height: 50px;
     overflow: hidden;
     opacity: 0;
     transition: 0.3s ease-out;
 }
 .sub-menu > ol {
     position: absolute;
-    top: calc(50% - 1.4vw / 2);
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
-    gap: 3vw;
+    gap: 2vw;
 }
 .sub-menu a {
     font-size: max(10px, 1vw);
+    padding: 15px ;
     transition: 0.1s;
 }
 .sub-menu a:hover {
     transform: scale(1.2);
     text-shadow: 0 0 5px #000;
 }
+.menu-color {
+    position: absolute;
+    width: 32%;
+    height: 100%;
+    background-color: rgba(68, 68, 68, 0.712);
+    opacity: 0;
+    left: 0;
+    border-radius: 60px;
+    transition: .4s ease-in-out;
+}
 .gnb > ul.menu-icon.on > li.menu-bar .sub-menu {
-    left: -505%;
+    left: -475%;
     /* 투명도 복구 */
     opacity: 1;
 }
@@ -133,16 +147,16 @@
     font-size: 0.9vw;
     color: rgb(0, 0, 0);
 }
-.txt:hover{
+.txt:hover {
     background-color: #0000007a;
     color: rgba(252, 252, 252, 0.836);
     text-shadow: 0 0 7px rgb(0, 0, 0);
 }
-.font-3{
+.font-3 {
     font-size: 1.5vw;
     font-weight: 700;
 }
-.font-2{
+.font-2 {
     font-size: 1.2vw;
     font-weight: 600;
 }
@@ -156,13 +170,13 @@
     /* top: -2vw; */
     display: none;
     /* transform: scale(0); */
-    transition: right .4s ease-in;
+    transition: right 0.4s ease-in;
 }
-.txt-2.on{
+.txt-2.on {
     /* display: inline; */
     right: 7vw;
 }
-.txt-2.show{
+.txt-2.show {
     display: inline;
     /* right: 7vw; */
 }

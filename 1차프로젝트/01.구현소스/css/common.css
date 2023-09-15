@@ -2,9 +2,11 @@
 
 /* 폰트자리 */
 
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
 /* 공사중마크 */
 body * {
-    outline: 1px dotted #ff7171;
+    /* outline: 1px dotted #ff7171; */
 }
 
 body {
