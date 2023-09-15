@@ -38,7 +38,22 @@
 }
 .linkbox ul{
     display: flex;
+    justify-content: center;
+    gap: 0 20px;
 }
-.linkbox ul li{
-    width: 50%;
+.linkbox ul li:last-child{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
 }
+.linkbox>ul>li>img{
+    width: 500px;
+}
+.preview-txt>h4{
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.preview-txt>h5{
+    margin-bottom: 50px;
+}
+.more-vod
