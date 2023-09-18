@@ -22,8 +22,6 @@
     height: 100%;
 }
 .txt-box_2 p{
-    top: 1vh;
-    width: 11vw;
 }
 .left-box{
     display: flex;
@@ -46,14 +44,14 @@
     background: url(../image/logo/monsters.png)no-repeat center/100%;
 }
 .dusan_logo{
-    background: url(../image/logo/dusan.png)no-repeat center/70%;
+    background: url(../image/logo/tlogo1.png)no-repeat center/70%;
 }
 .ssg_logo{
-    background: url(../image/logo/ssg.png)no-repeat center/70%;
+    background: url(../image/logo/tlogo2.png)no-repeat center/70%;
 }
 .nc_logo{
-    background: url(../image/logo/nc.png)no-repeat center/85%;
+    background: url(../image/logo/tlogo3.png)no-repeat center/85%;
 }
 .kt_logo{
-    background: url(../image/logo/kt.png)no-repeat center/70%;
+    background: url(../image/logo/tlogo4.png)no-repeat center/70%;
 }

@@ -168,7 +168,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2vw;
+    gap: 20px;
 }
 .vod-ul ul{
     display: flex;
@@ -177,8 +177,16 @@
 }
 .vod-ul li {
     width: 321px;
+    height: 290px;
     padding: 15px;
     border: 1px solid #c0c0c0;
+}
+.subclip-tit{
+    font-size: 1.8rem;
+}
+.subclip-tag{
+    position: absolute;
+    bottom: 15px;
 }
 
 
@@ -201,9 +209,10 @@
     right: 50%;
     transform: translateX(50%);
 }
-.bttn>li>a{
-    transform: scaleY(2.1)translateY(2px);
+.bttn>li a{
+    text-align: center;
 }
+
 .bttn>li{
     border: 1px solid #c0c0c0;
 

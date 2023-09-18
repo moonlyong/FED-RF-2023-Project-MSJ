@@ -30,26 +30,23 @@ let num = 1
 
 for(let x in clipDate){
     hcode += `
-    
-    <ul>
         <li>
             <a href="${clipDate[x]["링크"]}"
                 ><img
                     src="./image/preview/${x}.jpg"
                     alt=""
                 />
-                <h4 class="clip-tit">
+                <h4 class="subclip-tit">
                     ${clipDate[x]["제목"]}
                 </h4>
-                <h6 class="clip-sub">${clipDate[x]["태그"]}</h6>
+                <h6 class="subclip-tag">${clipDate[x]["태그"]}</h6>
             </a>
         </li>
-    </ul>   
-
     `
     num++
 }
 
+hcode = `<ul>${hcode}</ul><ul>${hcode}</ul>`
 // console.log(hcode)
 
-// vodUl.innerHTML = hcode
+vodUl.innerHTML = hcode

@@ -138,7 +138,7 @@
     left: -32vw;
     transition: left 0.4s ease-out;
 }
-.txt {
+.txt-box_1 .txt {
     position: absolute;
     background-color: #ffffff46;
     text-shadow: 0 0 7px rgba(255, 255, 255, 0.445);
@@ -147,7 +147,7 @@
     font-size: 0.9vw;
     color: rgb(0, 0, 0);
 }
-.txt:hover {
+.txt-box_1 .txt:hover {
     background-color: #0000007a;
     color: rgba(252, 252, 252, 0.836);
     text-shadow: 0 0 7px rgb(0, 0, 0);
