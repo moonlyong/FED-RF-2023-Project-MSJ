@@ -26,8 +26,6 @@ console.log(vodUl)
 
 let hcode = ""
 
-let num = 1
-
 for(let x in clipDate){
     hcode += `
         <li>
