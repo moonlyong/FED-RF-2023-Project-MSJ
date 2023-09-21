@@ -42,7 +42,7 @@
 .JTBC-logo {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 20px;
 }
 
 /* 중간구역 */
@@ -173,7 +173,6 @@
 .vod-ul ul{
     display: flex;
     position: relative;
-    left: 0;
 }
 .vod-ul li {
     width: 321px;
@@ -190,12 +189,7 @@
 }
 
 
-
-.bttn li{
-    text-align: center;
-}
-
-.bttn li a{
+.bttn button{
     display: block;
     width: 36px;
     height: 36px;
@@ -209,7 +203,7 @@
     right: 50%;
     transform: translateX(50%);
 }
-.bttn>li a{
+.bttn button{
     text-align: center;
 }
 

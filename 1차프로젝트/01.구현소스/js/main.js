@@ -85,7 +85,7 @@ function linkFn() {
       url = "./hilite.html";
       break;
     case "선수단소개":
-      url = "";
+      url = "./playerinfo.html";
       break;
   }
   // clog(url);
@@ -150,7 +150,7 @@ function wheelFn(e) {
 
   if (pg_num == 2) {
     // 아래로 내려갈때 - 자동플레이
-    hlink_iframe.innerHTML += `<iframe
+    hlink_iframe.innerHTML = `<iframe
         src="https://www.youtube.com/embed/Z-x4LIovPD4?autoplay=true&hl="
         allow="autoplay"
     ></iframe>`;
@@ -161,8 +161,8 @@ function wheelFn(e) {
     }, 62000);
   } ///// if ////////////
   else {
+    hlink_iframe.innerHTML = ''
     // 위로 올라올때 - 멈춤
-    hlink_iframe.innerHTML.remove
   }
 
   const tlogo = dqs(".logo-flex");
@@ -190,10 +190,10 @@ function wheelFn(e) {
           // C 요소에서 클래스를 제거합니다.
           let before = dqs(".before");
           before.classList.add("dn");
-          if(before.className == dn){
-            let ball = dqs(".ball img");
-            //atag.textContent = ball;
-        }
+          let ball1 = dqs(".ball-1");
+          let ball2 = dqs(".ball-2");
+          ball1.classList.add("dn")
+          ball2.classList.remove("dn")
           
         }, 5000);
       }
