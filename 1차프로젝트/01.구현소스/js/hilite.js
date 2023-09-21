@@ -41,7 +41,6 @@ for(let x in clipDate){
             </a>
         </li>
     `
-    num++
 }
 
 hcode = `<ul>${hcode}</ul><ul>${hcode}</ul>`

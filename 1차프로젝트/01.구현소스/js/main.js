@@ -183,13 +183,27 @@ let hcode = ''
 for(let i=0; i<10;i++){
     hcode +=
     `
-    <li class="tlogo-${i+1}">
+    <li class="tlogo tlogo-${i+1}">
         <img src="./image/logo/tlogo${i+1}-B.png" alt="">
     </li>
     `
 }
-hcode = `<ul class="logo-flex">${hcode}</ul>`
-clog(hcode)
+hcode = `
+<div class="bpbox"></div>
+<ul class="logo-flex">${hcode}</ul> 
 
+`
+before.innerHTML = hcode 
+clog(hcode)
 // console.log(hcode)
-before.innerHTML = hcode
+const bpbox = dqs('.bpbox')
+let pcode = ''
+for(let i=0; i<5; i++){
+    pcode +=`
+    <li class="bplayer-${i+1}">
+    <img src="./image/player/Bplayer-${i+1}.png" alt="">
+    </li>
+    `
+}
+pcode = `<ul>${pcode}</ul>`
+bpbox.innerHTML = pcode
