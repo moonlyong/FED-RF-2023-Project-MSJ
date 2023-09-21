@@ -162,11 +162,7 @@ function wheelFn(e) {
   } ///// if ////////////
   else {
     // 위로 올라올때 - 멈춤
-    hlink_iframe.innerHTML = `
-        <iframe
-        src="https://www.youtube.com/embed/Z-x4LIovPD4"
-        allow="autoplay"
-    ></iframe>`;
+    hlink_iframe.innerHTML.remove
   }
 
   const tlogo = dqs(".logo-flex");
@@ -196,8 +192,6 @@ function wheelFn(e) {
           before.classList.add("dn");
           if(before.className == dn){
             let ball = dqs(".ball img");
-            let atag = document.createElement("a")
-            atag.href = "./hilite.html";
             //atag.textContent = ball;
         }
           
