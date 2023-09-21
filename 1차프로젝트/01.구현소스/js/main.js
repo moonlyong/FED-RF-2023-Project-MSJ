@@ -4,7 +4,6 @@ let sts_wheel = 0;
 // 전체 페이지수
 let total_page;
 
-
 // 새로고침시 첫페이지로 리셋하기
 // 브라우저 스크롤바 위치캐싱
 setTimeout(() => window.scrollTo(0, 0), 500);
@@ -31,27 +30,24 @@ const clog = (x) => console.log(x);
 **********************************************/
 
 function loadFn() {
-    // console.log("로딩완료");
+  // console.log("로딩완료");
 
+  total_page = dqsa(".main-box").length;
 
-    total_page = dqsa(".main-box").length;
+  // 클릭시 로고 숨기기
+  const bar = dqs(".menu-bar");
+  // 숨길대상선택
+  const menuIcon = dqs(".menu-icon");
+  // clog(bar);
+  bar.onclick = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
 
-    // 클릭시 로고 숨기기
-    const bar = dqs(".menu-bar");
-    // 숨길대상선택
-    const menuIcon = dqs('.menu-icon');
-    // clog(bar);
-        bar.onclick = (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-
-            // clog("오버");
-            menuIcon.classList.toggle('on');
-
-
-        };
-    // console.log("페이지수", total_page);
-    // startSS()
+    // clog("오버");
+    menuIcon.classList.toggle("on");
+  };
+  // console.log("페이지수", total_page);
+  // startSS()
 }
 /******************************************** 
      함수명 linkFn
@@ -65,189 +61,217 @@ const link = dqsa(".menu-icon a");
 link.forEach((ele) => addevt(ele, "click", linkFn));
 
 function linkFn() {
-    // clog(this.className);
-    let acls = this.className;
+  // clog(this.className);
+  let acls = this.className;
 
-    event.preventDefault();
-    let url;
+  event.preventDefault();
+  let url;
 
-    switch (acls) {
-        case "netflix":
-            url = "https://www.netflix.com/kr/title/81614459";
-            break;
-        case "tving":
-            url = "https://www.tving.com/contents/P001609758";
-            break;
-        case "disney":
-            url =
-                "https://www.disneyplus.com/ko-kr/series/a-clean-sweep/7MipMuyGlPHc";
-            break;
-        case "프로그램소개":
-            url = "./index.html";
-            break;
-        case "하이라이트":
-            url = "./hilite.html";
-            break;
-        case "선수단소개":
-            url = "";
-            break;
-    }
-    // clog(url);
-    if(!url) return;
-    window.open(url);
+  switch (acls) {
+    case "netflix":
+      url = "https://www.netflix.com/kr/title/81614459";
+      break;
+    case "tving":
+      url = "https://www.tving.com/contents/P001609758";
+      break;
+    case "disney":
+      url =
+        "https://www.disneyplus.com/ko-kr/series/a-clean-sweep/7MipMuyGlPHc";
+      break;
+    case "프로그램소개":
+      url = "./index.html";
+      break;
+    case "하이라이트":
+      url = "./hilite.html";
+      break;
+    case "선수단소개":
+      url = "";
+      break;
+  }
+  // clog(url);
+  if (!url) return;
+  window.open(url);
 }
 //////txt 박스 1초후 나오기
-const txtbox = dqs('.txt-box_1')
+const txtbox = dqs(".txt-box_1");
 // clog(txtbox);
-setTimeout(()=>{
-    txtbox.classList.add('on')
-},1000)
-const txt2 = dqs('.txt-2')
-setTimeout(()=>{
-    txt2.classList.add('on')
-},3000)
-setTimeout(()=>{
-    txt2.classList.add('show')
-},1500)
+setTimeout(() => {
+  txtbox.classList.add("on");
+}, 1000);
+const txt2 = dqs(".txt-2");
+setTimeout(() => {
+  txt2.classList.add("on");
+}, 3000);
+setTimeout(() => {
+  txt2.classList.add("show");
+}, 1500);
 /******************************************** 
         함수명 wheelFn
         기능: 마우스 휠 작동시 페이지 이동
 ********************************************/
 
 function wheelFn(e) {
-    //이벤트 전달변수(자동)
-    // 함수호출
-    // console.log("휠이벤스");
+  //이벤트 전달변수(자동)
+  // 함수호출
+  // console.log("휠이벤스");
 
-    // 광클금지
-    if (sts_wheel) return;
-    sts_wheel = 1; //
-    setTimeout(() => (sts_wheel = 0), 800);
-    // console.log('11')
+  // 광클금지
+  if (sts_wheel) return;
+  sts_wheel = 1; //
+  setTimeout(() => (sts_wheel = 0), 800);
+  // console.log('11')
 
-    // 1. 휠방향에 따른 페이지변수 변경하기
-    // 휠방향은 wheelDelta로 알아냄
-    let delta = e.wheelDelta;
-    // console.log("윌델타", delta);
+  // 1. 휠방향에 따른 페이지변수 변경하기
+  // 휠방향은 wheelDelta로 알아냄
+  let delta = e.wheelDelta;
+  // console.log("윌델타", delta);
 
-    // 음수 는 아랫방향 양수는 윗방향
-    if (delta < 0) pg_num++;
-    else pg_num--;
-    // 페이지 번호 확인
-    console.log("페이지번호는?", pg_num);
+  // 음수 는 아랫방향 양수는 윗방향
+  if (delta < 0) pg_num++;
+  else pg_num--;
+  // 페이지 번호 확인
+  // console.log("페이지번호는?", pg_num);
 
-    // 제한주기(양끝페이지 고정)
-    if (pg_num < 0) pg_num = 0;
-    if (pg_num > total_page) pg_num = total_page - 1;
+  // 제한주기(양끝페이지 고정)
+  if (pg_num < 0) pg_num = 0;
+  if (pg_num > total_page) pg_num = total_page - 1;
 
-    // 2. 페이지 이동하기
-    // scrollTo(x, y)
-    // 세로방향이동은 두번째 값만 주면 된다
-    // 스크롤 애니메이션은 html-behavior:smooth 로 처리
-    // 화면단위로 이동하므로 윈도우 높이값을 기본값으로 처리
-    // window.innerHeight -> window 높이값 구해온다
+  // 2. 페이지 이동하기
+  // scrollTo(x, y)
+  // 세로방향이동은 두번째 값만 주면 된다
+  // 스크롤 애니메이션은 html-behavior:smooth 로 처리
+  // 화면단위로 이동하므로 윈도우 높이값을 기본값으로 처리
+  // window.innerHeight -> window 높이값 구해온다
 
-    window.scrollTo(0, window.innerHeight * pg_num);
+  window.scrollTo(0, window.innerHeight * pg_num);
 
-    const hlink_iframe = dqs('.frame-box')
-    const linkbx = dqs('.linkbox')
+  const hlink_iframe = dqs(".frame-box");
+  const linkbx = dqs(".linkbox");
 
-    if(pg_num==2){ // 아래로 내려갈때 - 자동플레이
-        hlink_iframe.innerHTML +=
-        `<iframe
-        src="https://www.youtube.com/embed/Z-x4LIovPD4?autoplay=1"
+  if (pg_num == 2) {
+    // 아래로 내려갈때 - 자동플레이
+    hlink_iframe.innerHTML += `<iframe
+        src="https://www.youtube.com/embed/Z-x4LIovPD4?autoplay=true&hl="
         allow="autoplay"
-    ></iframe>`
+    ></iframe>`;
 
-        setTimeout(()=>{ 
-            hlink_iframe.classList.add('dn');
-            linkbx.classList.remove('dn');
-            },62000)
-    } ///// if ////////////
-    else{ // 위로 올라올때 - 멈춤
-        hlink_iframe.innerHTML =
-        ``
-    }
+    setTimeout(() => {
+      hlink_iframe.classList.add("dn");
+      linkbx.classList.remove("dn");
+    }, 62000);
+  } ///// if ////////////
+  else {
+    // 위로 올라올때 - 멈춤
+    hlink_iframe.innerHTML = `
+        <iframe
+        src="https://www.youtube.com/embed/Z-x4LIovPD4"
+        allow="autoplay"
+    ></iframe>`;
+  }
 
-    const tlogo = dqs('.logo-flex');
-    console.log(tlogo);
-console.log(pg_num);
-    if(pg_num==3){
+  const tlogo = dqs(".logo-flex");
+  //     console.log(tlogo);
+  // console.log(pg_num);
+  if (pg_num == 3) {
+    setTimeout(() => {
+      tlogo.classList.add("mv");
+    }, 1000);
+    addEventListener("click", function () {
+      // A 요소에 클릭 이벤트 리스너를 추가합니다.
+      const ball = dqs(".ball img");
+      ball.addEventListener("click", handleAClick);
+      ball.clickable;
+
+      function handleAClick() {
+        // B 요소에 클래스를 추가합니다.
+        let tlogo = dqs(".logo-flex");
+        tlogo.classList.remove("mv");
+        let ballbx = dqs(".ball-box");
+        ballbx.classList.add("on");
         setTimeout(() => {
-            
-            tlogo.classList.add('mv');
-        }, 1000);
-    }
-
+          let after = dqs(".after");
+          after.classList.remove("dn");
+          // C 요소에서 클래스를 제거합니다.
+          let before = dqs(".before");
+          before.classList.add("dn");
+          if(before.className == dn){
+            let ball = dqs(".ball img");
+            let atag = document.createElement("a")
+            atag.href = "./hilite.html";
+            //atag.textContent = ball;
+        }
+          
+        }, 5000);
+      }
+      // 클릭 시 실행할 동작을 여기에 작성합니다.
+    });
+  }
 }
 
 // 오버시 움직이는 배경
 // 이벤트 대상
 // 대상 메뉴컬러
-const subMenu = dqsa('.sub-menu li');
-const mbc = dqs('.menu-color')
+const subMenu = dqsa(".sub-menu li");
+const mbc = dqs(".menu-color");
 // clog(subMenu)
 // clog(mbc)
-subMenu.forEach(ele=>{
-    addevt(ele,'mouseover',overFn)
-    addevt(ele,'mouseout',outFn)
-})
-function overFn(){
-    // 오버된 li의 left위치값
-    let posL = this.offsetLeft
-    console.log('위치',posL)
-    mbc.style.opacity = 1
-    mbc.style.left = posL + 'px'
-
+subMenu.forEach((ele) => {
+  addevt(ele, "mouseover", overFn);
+  addevt(ele, "mouseout", outFn);
+});
+function overFn() {
+  // 오버된 li의 left위치값
+  let posL = this.offsetLeft;
+  console.log("위치", posL);
+  mbc.style.opacity = 1;
+  mbc.style.left = posL + "px";
 }
-function outFn(){
-    console.log('아웃',this)
-    // 사라지기
-    mbc.style.opacity = 0
+function outFn() {
+  console.log("아웃", this);
+  // 사라지기
+  mbc.style.opacity = 0;
 }
 // main4 tlogo for문
-const before = dqs('.before')
+const before = dqs(".before");
 
+let hcode = "";
 
-let hcode = ''
-
-for(let i=0; i<10;i++){
-    hcode +=
-    `
-    <li class="tlogo tlogo-${i+1}">
-        <img src="./image/logo/tlogo${i+1}-B.png" alt="">
+for (let i = 0; i < 10; i++) {
+  hcode += `
+    <li class="tlogo tlogo-${i + 1}">
+        <img src="./image/logo/tlogo${i + 1}-B.png" alt="">
     </li>
-    `
+    `;
 }
 hcode = `
 <div class="bpbox"></div>
 <ul class="logo-flex">${hcode}</ul> 
 
-`
-before.innerHTML = hcode 
+`;
+before.innerHTML = hcode;
 // clog(hcode)
 // console.log(hcode)
-const bpbox = dqs('.bpbox')
-let pcode = ''
-for(let i=0; i<5; i++){
-    pcode +=`
-    <li class="bplayer-${i+1}">
-    <img src="./image/player/Bplayer-${i+1}.png" alt="">
+const bpbox = dqs(".bpbox");
+let pcode = "";
+for (let i = 0; i < 5; i++) {
+  pcode += `
+    <li class="bplayer-${i + 1}">
+    <img src="./image/player/Bplayer-${i + 1}.png" alt="">
     </li>
-    `
+    `;
 }
-pcode = `<ul>${pcode}</ul>`
-bpbox.innerHTML = pcode
+pcode = `<ul>${pcode}</ul>`;
+bpbox.innerHTML = pcode;
 
-const apbox = dqs('.apbox')
-let acode = ''
-for(let i=0; i<6; i++){
-    acode +=`
-    <li class="player-${i+1}">
-    <img src="./image/player/player-${i+1}.png" alt="">
+const apbox = dqs(".apbox");
+let acode = "";
+for (let i = 0; i < 6; i++) {
+  acode += `
+    <li class="player-${i + 1}">
+    <img src="./image/player/player-${i + 1}.png" alt="">
     </li>
-    `
+    `;
 }
 
-acode = `<ul>${acode}</ul>`
-apbox.innerHTML = acode
+acode = `<ul>${acode}</ul>`;
+apbox.innerHTML = acode;
