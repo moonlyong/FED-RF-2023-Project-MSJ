@@ -33,7 +33,7 @@
 .logo-flex li{
     position: absolute;
     bottom: 18%;
-    transition: .4s ease-in;
+    transition: left,right,top .4s ease-in;
     
 }
 /* 로고 온 */

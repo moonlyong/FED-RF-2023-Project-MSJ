@@ -149,12 +149,15 @@ function wheelFn(e) {
 
     window.scrollTo(0, window.innerHeight * pg_num);
 
-    const hlink_iframe = dqs('.hilite_link iframe')
+    const hlink_iframe = dqs('.frame-box')
     const linkbx = dqs('.linkbox')
 
     if(pg_num==2){ // 아래로 내려갈때 - 자동플레이
-        hlink_iframe.src=
-        'https://www.youtube.com/embed/Z-x4LIovPD4?autoplay=true&hl=';
+        hlink_iframe.innerHTML +=
+        `<iframe
+        src="https://www.youtube.com/embed/Z-x4LIovPD4?autoplay=1"
+        allow="autoplay"
+    ></iframe>`
 
         setTimeout(()=>{ 
             hlink_iframe.classList.add('dn');
@@ -162,8 +165,8 @@ function wheelFn(e) {
             },62000)
     } ///// if ////////////
     else{ // 위로 올라올때 - 멈춤
-        hlink_iframe.src=
-        'https://www.youtube.com/embed/Z-x4LIovPD4';
+        hlink_iframe.innerHTML =
+        ``
     }
 
     const tlogo = dqs('.logo-flex');
