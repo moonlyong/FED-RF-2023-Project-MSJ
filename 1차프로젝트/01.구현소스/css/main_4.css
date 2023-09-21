@@ -1,23 +1,27 @@
 @charset "utf-8";
 
 /* css불러오기 */
+@import url(./main_4-1.css);
 
 /* main-4 구분박스 */
 .main-4{
     position: relative;
 }
+.main4-logo{
+    position: absolute;
+    width: 35%;
+    height: 20%;
+    z-index: 1;
+    top: 0;
+}
 /* 돌기 이전화면 */
 .before{
     position: absolute;
-
     width: 100%;
     height: 100%;
     background: url(../image/bgi/main4-B.png) no-repeat center/100%;;
 }
-.bcolor{
-    width: 100%;
-    height: 100%;
-}
+
 /* 각팀 로고박스 */
 .logo-flex{
     width: 100%;
@@ -33,46 +37,46 @@
     
 }
 /* 로고 온 */
-.tlogo-1{
+.tlogo-1.mv{
     right: 3%;
 }
-.tlogo-2{
+.tlogo-2.mv{
     left: 28%;
     top: 0;
     transform: scale(0.8);
 }
-.tlogo-3{
+.tlogo-3.mv{
     right: 1%;
     top: 1%;
 }
-.tlogo-4{
+.tlogo-4.mv{
     left: 12%;
     top: 27%;
     transform: scale(0.8);
 }
-.tlogo-5{
+.tlogo-5.mv{
     right: 10%;
     top: 27%;
     transform: scale(0.8);
 }
-.tlogo-6{
+.tlogo-6.mv{
     left: 1%;
     top: 53%;
     transform: scale(0.8);
 }
-.tlogo-7{
+.tlogo-7.mv{
     left: 5%;
     top: 3%;
 }
-.tlogo-8{
+.tlogo-8.mv{
     right: 25%;
     top: 5%;
 }
-.tlogo-9{
+.tlogo-9.mv{
     left: 25%;
     top: 70%;
 }
-.tlogo-10{
+.tlogo-10.mv{
     right: 25%;
     top: 65%;
 }

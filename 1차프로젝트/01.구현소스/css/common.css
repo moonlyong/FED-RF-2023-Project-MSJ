@@ -99,3 +99,9 @@ h1 {
     width: 45%;
 }
 
+.dn{
+    display: none;
+}
+.tac {
+    text-align: center;
+}

@@ -134,7 +134,7 @@ function wheelFn(e) {
     if (delta < 0) pg_num++;
     else pg_num--;
     // 페이지 번호 확인
-    // console.log("페이지번호는?", pg_num);
+    console.log("페이지번호는?", pg_num);
 
     // 제한주기(양끝페이지 고정)
     if (pg_num < 0) pg_num = 0;
@@ -148,6 +148,31 @@ function wheelFn(e) {
     // window.innerHeight -> window 높이값 구해온다
 
     window.scrollTo(0, window.innerHeight * pg_num);
+
+    const hlink_iframe = dqs('.hilite_link iframe')
+    const linkbx = dqs('.linkbox')
+
+    if(delta=2){ // 아래로 내려갈때 - 자동플레이
+        hlink_iframe.src=
+        'https://www.youtube.com/embed/Z-x4LIovPD4?autoplay=true&hl=';
+
+        setTimeout(()=>{ 
+            hlink_iframe.classList.add('dn');
+            linkbx.classList.remove('dn');
+            },62000)
+    } ///// if ////////////
+    else{ // 위로 올라올때 - 멈춤
+        hlink_iframe.src=
+        'https://www.youtube.com/embed/Z-x4LIovPD4';
+    }
+
+    const tlogo = dqsa('.logo-flex li');
+    console.log(tlogo);
+
+    if(delta=3){
+        tlogo.classList.add('mv');
+    }
+
 }
 
 // 오버시 움직이는 배경
@@ -194,7 +219,7 @@ hcode = `
 
 `
 before.innerHTML = hcode 
-clog(hcode)
+// clog(hcode)
 // console.log(hcode)
 const bpbox = dqs('.bpbox')
 let pcode = ''
@@ -207,3 +232,16 @@ for(let i=0; i<5; i++){
 }
 pcode = `<ul>${pcode}</ul>`
 bpbox.innerHTML = pcode
+
+const apbox = dqs('.apbox')
+let acode = ''
+for(let i=0; i<6; i++){
+    acode +=`
+    <li class="player-${i+1}">
+    <img src="./image/player/player-${i+1}.png" alt="">
+    </li>
+    `
+}
+
+acode = `<ul>${acode}</ul>`
+apbox.innerHTML = acode
