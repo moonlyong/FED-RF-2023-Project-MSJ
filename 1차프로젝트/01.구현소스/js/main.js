@@ -7,7 +7,7 @@ let total_page;
 
 // 새로고침시 첫페이지로 리셋하기
 // 브라우저 스크롤바 위치캐싱
-// setTimeout(() => window.scrollTo(0, 0), 500);
+setTimeout(() => window.scrollTo(0, 0), 500);
 
 // 2. 이벤트 등록하기
 // 대상: window
@@ -152,7 +152,7 @@ function wheelFn(e) {
     const hlink_iframe = dqs('.hilite_link iframe')
     const linkbx = dqs('.linkbox')
 
-    if(delta=2){ // 아래로 내려갈때 - 자동플레이
+    if(pg_num==2){ // 아래로 내려갈때 - 자동플레이
         hlink_iframe.src=
         'https://www.youtube.com/embed/Z-x4LIovPD4?autoplay=true&hl=';
 
@@ -166,11 +166,14 @@ function wheelFn(e) {
         'https://www.youtube.com/embed/Z-x4LIovPD4';
     }
 
-    const tlogo = dqsa('.logo-flex li');
+    const tlogo = dqs('.logo-flex');
     console.log(tlogo);
-
-    if(delta=3){
-        tlogo.classList.add('mv');
+console.log(pg_num);
+    if(pg_num==3){
+        setTimeout(() => {
+            
+            tlogo.classList.add('mv');
+        }, 1000);
     }
 
 }

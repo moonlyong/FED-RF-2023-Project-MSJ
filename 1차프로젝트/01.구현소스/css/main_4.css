@@ -37,46 +37,46 @@
     
 }
 /* 로고 온 */
-.tlogo-1.mv{
+.logo-flex.mv .tlogo-1{
     right: 3%;
 }
-.tlogo-2.mv{
+.logo-flex.mv .tlogo-2{
     left: 28%;
     top: 0;
     transform: scale(0.8);
 }
-.tlogo-3.mv{
+.logo-flex.mv .tlogo-3{
     right: 1%;
     top: 1%;
 }
-.tlogo-4.mv{
+.logo-flex.mv .tlogo-4{
     left: 12%;
     top: 27%;
     transform: scale(0.8);
 }
-.tlogo-5.mv{
+.logo-flex.mv .tlogo-5{
     right: 10%;
     top: 27%;
     transform: scale(0.8);
 }
-.tlogo-6.mv{
+.logo-flex.mv .tlogo-6{
     left: 1%;
     top: 53%;
     transform: scale(0.8);
 }
-.tlogo-7.mv{
+.logo-flex.mv .tlogo-7{
     left: 5%;
     top: 3%;
 }
-.tlogo-8.mv{
+.logo-flex.mv .tlogo-8{
     right: 25%;
     top: 5%;
 }
-.tlogo-9.mv{
+.logo-flex.mv .tlogo-9{
     left: 25%;
     top: 70%;
 }
-.tlogo-10.mv{
+.logo-flex.mv .tlogo-10{
     right: 25%;
     top: 65%;
 }
