@@ -89,11 +89,24 @@ const domFn = {
 
   } //////////// rotateMem 함수 ///////////
 
-  const ppic =  domFn.qsa('.cube span img')
+  let ppic =  domFn.qsa('.cube span img')
   console.log(ppic)
-  domFn.addEvt(ppic,'click',clickFn);
-  // domFn.addEvt(ppic,'onmouse',overFn)
+  ppic.forEach(ele => {
+    domFn.addEvt(ele,'click',clickFn);
+  });
 
   function clickFn(){
-    console.log('dd')
+    let mlogo = domFn.qs('.mlogo')
+    console.log(this)
+    mlogo.classList.add('on')
+    cube.classList.add('on')
+    this.classList.add('big')
+    ppic.forEach(ele => {
+      domFn.addEvt(ele,'mouseout',outFn)
+      function outFn(){
+        mlogo.classList.remove('on')
+        cube.classList.remove('on')
+        this.classList.remove('big')
+      }
+    })
   }
