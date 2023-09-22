@@ -48,7 +48,7 @@ const domFn = {
   cube.innerHTML = hcode
 
   // 1. 대상선정 : .cube
-  console.log('대상:',cube);
+  // console.log('대상:',cube);
 
   /// 2. 이벤트 설정하기 
   domFn.addEvt(window,'wheel',wheelFn);
@@ -77,7 +77,7 @@ const domFn = {
     }
     else{
         let cus = domFn.qsa('.cube span')[0]
-        console.log(cus)
+        // console.log(cus)
         cube.appendChild(cus)
        
         // 휠단위수 감소
@@ -85,11 +85,15 @@ const domFn = {
     }
 
     // 호출확인
-    console.log('휠!~~~~',delta,numWheel);
-
-    // 3. 회전대상요소에 각도 적용하기
-    // 적용각도 = 단위각도 * 휠단위수
-    // cube.style.left = 
-    // `${numWheel*150}px`;
+    // console.log('휠!~~~~',delta,numWheel);
 
   } //////////// rotateMem 함수 ///////////
+
+  const ppic =  domFn.qsa('.cube span img')
+  console.log(ppic)
+  domFn.addEvt(ppic,'click',clickFn);
+  // domFn.addEvt(ppic,'onmouse',overFn)
+
+  function clickFn(){
+    console.log('dd')
+  }
