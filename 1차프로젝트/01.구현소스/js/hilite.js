@@ -72,17 +72,19 @@ acode = `<div class="clip-ul2"><ul>${acode}</ul></div>`
 vodUl.innerHTML = hcode + acode
 
 
-const ulBox1 = domFn.dqsa('.clip-ul1 ul')
-const ulBox2 = domFn.dqsa('.clip-ul2 ul')
+const ulBox1 = domFn.dqs('.clip-ul1 ul')
+const ulBox2 = domFn.dqs('.clip-ul2 ul')
 
 const lbt = domFn.dqs('.ab1')
 console.log(lbt)
 domFn.addevt(lbt,'click',movlFn)
 function movlFn() {
     console.log('dd')
-    let li1 = domFn.dqsa('.vod-ul ul li')[0]
+    let li1 = domFn.dqsa('.clip-ul1 ul li')[0]
+    let li2 = domFn.dqsa('.clip-ul2 ul li')[0]
     console.log(li1)
     ulBox1.appendChild(li1)
+    ulBox2.appendChild(li2)
 }
 const rbt = domFn.dqs('.ab2')
 console.log(rbt)
@@ -90,7 +92,8 @@ domFn.addevt(rbt,'click',movrFn)
 
 function movrFn() {
     console.log('dd')
-    let lie = domFn.dqsa('.vod-ul ul li')
-    console.log(lie)
-    ulBox.insertBefore(lie[lie.length-1],lie[0])
+    let li1 = domFn.dqsa('.clip-ul1 ul li')
+    let li2 = domFn.dqsa('.clip-ul2 ul li')
+    ulBox1.insertBefore(li1[li1.length-1],li1[0])
+    ulBox2.insertBefore(li2[li2.length-1],li2[0])
 }
