@@ -25,6 +25,8 @@ const domFn = {
     addEvt: (ele, evt, fn) => ele.addEventListener(evt, fn),
   }; /////// domFn 객체 /////////////
 
+  const cube = domFn.qs('.cube');
+
   // 0. 변수셋팅
   // 단위각도
   const DEG = 40;
@@ -35,15 +37,24 @@ const domFn = {
   // 휠단위수(휠할때 증감하는수)
   let numWheel = 0;
 
+  let hcode = ''
+
+  for(let i = 0; i <11;i++){
+    hcode += `
+    <span><img src="./image/player/rp${i+1}.jpg" alt=""></span>
+    `
+  }
+
+  cube.innerHTML = hcode
+
   // 1. 대상선정 : .cube
-  const cube = domFn.qs('.cube');
   console.log('대상:',cube);
 
   /// 2. 이벤트 설정하기 
-  domFn.addEvt(window,'wheel',rotateMem);
+  domFn.addEvt(window,'wheel',wheelFn);
 
   // 3. 함수만들기 ///////
-  function rotateMem(){
+  function wheelFn(){
 
     // 0. 휠이벤트 발생수 조절하기(광휠금지)
     if(stsWheel) return; // 막기
@@ -57,9 +68,18 @@ const domFn = {
     // 2. 방향에 따른 휠단위수 증감하기
     if(delta<0){
         // 휠단위수 증가
+        
+         let cus = domFn.qsa('.cube span')
+        // 맨뒤 li 맨앞으로 이동
+        // insertBefore(넣을놈,넣을놈전놈)
+        cube.insertBefore(cus[cus.length-1],cus[0])
         numWheel++;
     }
     else{
+        let cus = domFn.qsa('.cube span')[0]
+        console.log(cus)
+        cube.appendChild(cus)
+       
         // 휠단위수 감소
         numWheel--;
     }
@@ -69,7 +89,7 @@ const domFn = {
 
     // 3. 회전대상요소에 각도 적용하기
     // 적용각도 = 단위각도 * 휠단위수
-    cube.style.transform = 
-    `rotateY(${numWheel*DEG}deg)`;
+    // cube.style.left = 
+    // `${numWheel*150}px`;
 
   } //////////// rotateMem 함수 ///////////

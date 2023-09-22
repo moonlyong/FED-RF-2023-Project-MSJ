@@ -1,2 +1,5 @@
 // event.stopPropagation() stop =그만 propagation=퍼트려
 //.onwheel
+
+animation: ball-ani 4s linear(0 0%, 0.06 22.25%, 0.19 42.67%, 0.37 51.66%, 1.01 61.46%, 1 75.35%, 0.09 98.37%) 0.4s;
+  animation-play-state: paused;
