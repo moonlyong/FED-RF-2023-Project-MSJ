@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>원형 배열 예제</title>
+    <link rel="stylesheet" href="./ccc.css">
     <style>
+    
         .container {
             position: relative;
-            width: 400px;
-            height: 400px;
-            margin: 50px auto;
-            border: 1px solid #333;
+            width: 100vw;
+            height: 100vh;
+            margin: auto;
         }
 
         .circle {
@@ -31,17 +32,21 @@
         const numCircles = [
             1,2,3,4,5,6,7,8,9,10,11,12,15
         ];
+        // 객체 길이로 표현
         console.log(numCircles.length);
         const container = document.getElementById('container');
         // 작은 동그라미로 이뤄진 원의 크기
-        const radius = 150; // 원의 반지름
+        const radius = 400; // 원의 반지름
 
         for (let i = 0; i < numCircles.length; i++) {
             const angle = 2 * Math.PI * i / numCircles.length;
             // console.log(angle)
             // 원의 중심 x,y
-            const x = 200 + radius * Math.cos(angle);
-            const y = 200 + radius * Math.sin(angle);
+            // 윈도우 높이값 넓이값의 절반
+            // console.log(window.innerHeight,window.innerWidth)
+            const x = window.innerWidth/2 + radius * Math.cos(angle);
+            // console.log(x)
+            const y = window.innerHeight/2 + radius * Math.sin(angle);
 
             const circle = document.createElement('div');
             circle.className = 'circle';
