@@ -223,8 +223,6 @@ let Card = document.querySelector(".card-box img");
 
 // 드래그 설정하기
 dtg.forEach((ele) => goDrag(ele));
-// goDrag(CardBox);
-// console.log(Card);
 throttle(goDrag(Card),500)
 
 
@@ -269,7 +267,6 @@ function goDrag(ele) {
             // console.log(box)
             dtg.forEach(ele=>ele.style.zIndex=0);
             ele.style.zIndex = 1;
-            // box.forEach(ele=>ele.style.display='none');
             box.forEach(ele=>ele.style.cssText = `
             display:none;
             `);
