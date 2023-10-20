@@ -25,19 +25,19 @@ const getCard = () => {
     Card.style.cssText = `
             position: absolute;
             left: 90%;
-            top: 6vh;
-            width: 394px;
-            height: 626px;
-            transition: 2s;
+            top: 205px;
+            width: 187px;
+            height: 313px;
+            transform: rotate(0deg)scale(1.8);  
         `;
     setTimeout(() => {
         Card.style.cssText = `
             position: absolute;
-            top: 45px;
-            left:calc(50% - (394px/2));
-            width: 394px;
-            height: 626px;
-            transform: rotate(720deg) scale(0.6);
+            top: 205px;
+            left:calc(50% - (187px/2));
+            width: 187px;
+            height: 313px;
+            transform: rotate(720deg) scale(1);
             transition: 2s, right 1s 2s;
         `;
     }, 500);
@@ -48,7 +48,7 @@ const getCard = () => {
         width: 100vw;
         height: 100vh;
         opacity: 1;
-        transition: 1s linear;
+        transition: 1s ease-in;
         `;
         ConBox2.style.cssText = `
         position: absolute;
@@ -56,7 +56,7 @@ const getCard = () => {
         width: 100vw;
         height: 100vh;
         opacity: 1;
-        transition: 1s linear;
+        transition: 2s ease-in;
         `;
     }, 1500);
     setTimeout(() => {
@@ -208,6 +208,16 @@ function IconBox(props) {
 }
 ReactDOM.render(<IconBox />, document.querySelector("#root3"));
 
+
+function throttle(func, delay) {
+  let lastCall = 0;
+  return function() {
+    let now = Date.now();
+    if (now - lastCall < delay) return;
+    lastCall = now;
+    return func.apply(this, arguments);
+  }
+}
 const dtg = document.querySelectorAll("#icon");
 let Card = document.querySelector(".card-box img");
 
@@ -215,7 +225,8 @@ let Card = document.querySelector(".card-box img");
 dtg.forEach((ele) => goDrag(ele));
 // goDrag(CardBox);
 // console.log(Card);
-goDrag(Card);
+throttle(goDrag(Card),500)
+
 
 function goDrag(ele) {
     //ele - 드래그 대상 요소
@@ -254,9 +265,16 @@ function goDrag(ele) {
             // 대상: 전달된 드래그요소 ->ele변수
             ele.style.left = rx + lx + "px";
             ele.style.top = ry + ly + "px";
-
-            // console.log(`mvx: ${mvx}mvy: ${mvy}`);
-            // console.log(`rx: ${rx}ry: ${ry}`);
+            let box = document.querySelectorAll('.card-circle')
+            // console.log(box)
+            dtg.forEach(ele=>ele.style.zIndex=0);
+            ele.style.zIndex = 1;
+            // box.forEach(ele=>ele.style.display='none');
+            box.forEach(ele=>ele.style.cssText = `
+            display:none;
+            `);
+            console.log(`mvx: ${mvx}mvy: ${mvy}`);
+            console.log(`rx: ${rx}ry: ${ry}`);
         }
     }; ////dmove 함수
 
