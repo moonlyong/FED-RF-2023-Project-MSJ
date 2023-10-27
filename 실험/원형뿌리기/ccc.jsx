@@ -23,7 +23,7 @@ const CardDate = Array.from({ length:CardSeq }, (_, index) => `./img/${index + 1
 // let startAngle = 0;
 // let currentAngle = 0;
 
-const container = document.querySelector('.container');
+// const container = document.querySelector('.container');
 
 // 마우스 다운 이벤트
 // container.addEventListener('mousedown', (e) => {
@@ -51,21 +51,21 @@ const container = document.querySelector('.container');
 // });
 
 // 자동회전함수
-let angle = 0;
+// let angle = 0;
 
-function rotateElement() {
-  angle += 0.2;
-  if (angle >= 360) {
-    angle = 0;
-  }
+// function rotateElement() {
+//   angle += 0.2;
+//   if (angle >= 360) {
+//     angle = 0;
+//   }
 
-  const container = document.querySelector('.container');
-  container.style.transform = `rotate(${angle}deg)`;
+//   const container = document.querySelector('.container');
+//   container.style.transform = `rotate(${angle}deg)`;
 
-  requestAnimationFrame(rotateElement);
-}
+//   requestAnimationFrame(rotateElement);
+// }
 
-rotateElement();
+// rotateElement();
 
 
 function CardImg(props) {

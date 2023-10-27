@@ -12,6 +12,7 @@ ul,ol{
 }
 html{
     font-size: 10px;
+    overflow: hidden;
 }
 a{
     text-decoration: none;
@@ -25,7 +26,7 @@ a{
     margin: auto;
 }
 
-.circle img {
+.card-circle img {
     position: absolute;
     width: 120px;
     
