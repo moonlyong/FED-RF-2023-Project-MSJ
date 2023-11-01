@@ -25,9 +25,5 @@ $(()=>{
             
             console.log(imbox);
             if(num < 7){ $(this).append(`<div class="imozbox"><p>${imoz}</p><span>${itit}</span></div>`);}
-           
-
-
-        },
-    })
+        }});
 })
