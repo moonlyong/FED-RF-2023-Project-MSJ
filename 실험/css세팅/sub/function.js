@@ -9,7 +9,10 @@ $(()=>{
             stack: ".icon",
             // 이동중 투명도 설정
             opacity: 0.7,
+            revert: "invalid",
+            revertDuration: 200 
     })
+
     let num = 0
     $('.basket').droppable({
         drop: function(evt,ele){

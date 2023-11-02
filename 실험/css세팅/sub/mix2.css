@@ -20,6 +20,9 @@
 #top-area{
     height: 50%;
 }
+.topnav{
+    display: flex;
+}
 .bottom-area {
     width: 100vw;
     height: 30vh;
@@ -33,6 +36,7 @@
 .top-logo{
     display: flex;
     gap: 15px;
+    width: 70%;
 }
 .top-logo p{
     line-height: 1.7;
@@ -43,6 +47,28 @@
     height: 6vh;
     position: relative;
     top: 6px;
+}
+.search{
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    font-family: "GangwonState";
+}
+.search-icon{
+    width: 70px;
+    height: 70px;
+    background: url(../img/hd_search_icon.png) no-repeat 50%;
+    cursor: pointer;
+    filter:  hue-rotate(28deg) brightness(0.0) contrast(1.85) grayscale(1.0);
+    transition: .2s;
+}
+.search-icon:hover{
+    
+    filter:hue-rotate(28deg) brightness(1.2) contrast(1.85) grayscale(0.0);
 }
 
 #icon-box > ul {

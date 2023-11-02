@@ -3,7 +3,6 @@ import SvIcon from "../data.js";
 
 
 
-console.log(SvIcon)
 const getCard = () => {
     let Card = document.querySelector(".card-box");
     let CardImg = document.querySelector(".card-box img");
@@ -74,7 +73,6 @@ function IconSet(props) {
 }
 function IconList(props) {
     let cardIdx = SvIcon[props.idx]
-    console.log(cardIdx)
     return (
         <React.Fragment>
             {/* <div class="container1 card-circle">
