@@ -1,13 +1,17 @@
-// 남성패션 서브페이지 컨텐츠 컴포넌트
-// import { useEffect } from "react";
+import { useEffect } from "react";
 // import $ from 'jquery';
 // window.jQuery = $;
 // require('jquery-ui-dist/jquery-ui');
 // require('jquery-ui-touch-punch/jquery.ui.touch-punch');
+import { dragIcon } from "../func/darg";
 
 import { pickdata } from "../data/data";
 import { Link } from "react-router-dom";
 export function DragPick() {
+    useEffect(()=>{
+        dragIcon();
+
+    })
     return (
         <>
             <div id="middle-area">
@@ -25,12 +29,12 @@ export function DragPick() {
             </div>
             <div id="bottom-area">
                 <div className="bottom-area inner">
-                <h2>원하는 혜택들을 넣고 카드를 발급받으세요!</h2>
-                <div className="basket">
-                    <button onClick=''>
-                        발급
-                    </button>
-                </div>
+                    <h2>원하는 혜택들을 넣고 카드를 발급받으세요!</h2>
+                    <div className="basket">
+                        <Link to={"/cardpick"}>
+                            <button>발급</button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </>
