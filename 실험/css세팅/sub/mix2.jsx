@@ -75,7 +75,7 @@ function IconList(props) {
     let cardIdx = SvIcon[props.idx]
     return (
         <React.Fragment>
-            {/* <div class="container1 card-circle">
+            <div class="container1 card-circle">
                 {CardDate.map((isrc, index) => (
                     <CardImg1 index={index} isrc={isrc}></CardImg1>
                 ))}
@@ -84,7 +84,7 @@ function IconList(props) {
                 {CardDate.map((isrc, index) => (
                     <CardImg2 index={index} isrc={isrc}></CardImg2>
                 ))}
-            </div> */}
+            </div>
             <div id="icon-box" class="inner">
                 <ul>
                     {SvIcon.map((x) => (
