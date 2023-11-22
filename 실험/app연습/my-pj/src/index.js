@@ -29,6 +29,7 @@ function App(){
           {/* 하위 라우트 셋팅 
           - path대신 index만 쓰면 첫페이지로 로딩함! 
           -> path는 Layout의 Link to="/" 에 해당하는 셋팅*/}
+          
           <Route index element={<DragPick />} />
           <Route path="cardpick" element={<CardPick />} />
           {/* <Route path="comics" element={<Comics />} /> */}

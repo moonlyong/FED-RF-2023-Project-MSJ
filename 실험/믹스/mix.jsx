@@ -75,7 +75,7 @@ const getCard = () => {
 
             requestAnimationFrame(rotateElement);
         }
-        rotateElement();
+        // rotateElement();
     }, 3000);
 };
 
