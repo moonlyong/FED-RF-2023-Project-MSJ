@@ -7,6 +7,8 @@ import { dragIcon } from "../func/darg";
 
 import { pickdata } from "../data/data";
 import { Link } from "react-router-dom";
+   
+
 export function DragPick() {
     useEffect(()=>{
         dragIcon();

@@ -1,21 +1,24 @@
 // DC.com 레이아웃 컴포넌트
 
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { FooterArea } from "./FooterArea";
 import { MainArea } from "./MainArea";
 import { TopArea } from "./TopArea";
+import { useLocation } from "react-router-dom";
+import { getCard } from "../func/sttshow";
 
 export function Layout(){
-  const myCon = createContext();
-  const [pageVal, setPageVal] = useState(0);
-  const chgVal = (val)=>setPageVal(val);
+
+  const location = useLocation();
+  
+  // 'cardpick' 라우트에 있을 때 TopArea를 숨기는 로직
+  const showTopArea = location.pathname !== '/' && location.pathname !== '/cardpick';
+
     return(
-    <myCon.Provider value={{chgVal}}>
-      {pageVal == 0 &&
-      <TopArea />
-      }
-      <MainArea />
-    </myCon.Provider>
+      <>
+     {showTopArea && <TopArea />}
+      {<MainArea />}
+      </>
 
     );
 

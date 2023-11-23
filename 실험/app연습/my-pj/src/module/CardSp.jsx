@@ -24,7 +24,7 @@ function Angle(i, Radius) {
 }
 
 function CardImg1(props) {
-    let Radius = props.index < 10 ? 400 : 800;
+    let Radius = 400;
     let NewIndex = props.index < 10 ? props.index : props.index - 10;
     const num = Radius === 400 ? 1 : 2;
     const style = {
@@ -37,7 +37,7 @@ function CardImg1(props) {
     } return null;
 }
 function CardImg2(props) {
-    let Radius = props.index < 10 ? 400 : 800;
+    let Radius = 800;
     let NewIndex = props.index < 10 ? props.index : props.index - 10;
     const num = Radius === 400 ? 1 : 2;
     const style = {
