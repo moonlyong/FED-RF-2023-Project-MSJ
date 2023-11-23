@@ -12,8 +12,7 @@ import { Link } from "react-router-dom";
 export function DragPick() {
     useEffect(()=>{
         dragIcon();
-
-    })
+    },[])
     return (
         <>
             <div id="middle-area">

@@ -3,38 +3,11 @@ window.jQuery = $;
 require("jquery-ui-dist/jquery-ui");
 
 export function getCard(){
-    let Card = $(".card-box");
     let ConBox1 = $(".container1");
     let ConBox2 = $(".container2");
 
-    Card.css({
-        position: 'absolute',
-                left: '90%',
-                top: '205px',
-                width: '187px',
-                height: '313px',
-                transform: 'rotate(0deg)scale(1.8)',  
-    })
-    // Card.style.cssText = `
-    //         position: absolute;
-    //         left: 90%;
-    //         top: 205px;
-    //         width: 187px;
-    //         height: 313px;
-    //         transform: rotate(0deg)scale(1.8);  
-    //     `;
-    // setTimeout(() => {
-    //     Card.style.cssText = `
-    //         position: absolute;
-    //         top: 205px;
-    //         left:calc(50% - (187px/2));
-    //         width: 187px;
-    //         height: 313px;
-    //         transform: rotate(720deg) scale(1);
-    //         transition: 2s, right 1s 2s;
-    //     `;
-    // }, 500);
-        ConBox1.css({
+    setTimeout(()=>{
+ ConBox1.css({
             position: "absolute",
         width: "100vw",
         height: "100vh",
@@ -48,6 +21,9 @@ export function getCard(){
         opacity: 1,
         transition: "2s ease-in",
         })
+    },1000
+    )
+       
         
     
    

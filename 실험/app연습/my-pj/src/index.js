@@ -1,7 +1,7 @@
 // 메인 페이지 JS - index.js
 import React, { useEffect, useState } from 'react';
 import ReactDOM, { createRoot } from 'react-dom/client';
-import {BrowserRouter, Route, Routes} from "react-router-dom"
+import {BrowserRouter, Route, Routes, useNavigate} from "react-router-dom"
 import { Layout } from "./layout/Layout";
 import { DragPick } from './pages/dragpick';
 import { CardPick } from './pages/cardpick';
@@ -14,7 +14,7 @@ import { Loading } from './pages/Loading';
 
 // 최상위 Root 컴포넌트 ///////
 function App(){
-
+  
 
   return(
     <BrowserRouter>

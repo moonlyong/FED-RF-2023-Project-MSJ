@@ -19,7 +19,7 @@ export function Loading() {
         // 2초 후에 /dragpick 으로 리디렉트
         const timer = setTimeout(() => {
             nav('/dragpick');
-        }, 5000,);
+        }, 5000, "easeOutCubic");
 
         // 컴포넌트 언마운트 시 타이머 클리어
         return () => clearTimeout(timer);

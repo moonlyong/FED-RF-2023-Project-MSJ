@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
 import { getCard } from "../func/sttshow";
 
 export function Layout(){
-
+  
   const location = useLocation();
   
   // 'cardpick' 라우트에 있을 때 TopArea를 숨기는 로직
