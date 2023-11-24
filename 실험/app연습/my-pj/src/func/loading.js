@@ -1,23 +1,21 @@
 import $ from "jquery";
-window.jQuery = $;
 require("jquery-ui-dist/jquery-ui");
 
 export function LoadEft(){
-    let ConBox1 = $(".container1");
-    let ConBox2 = $(".container2");
+    const CardBox = $('.card-box img');
+    const Bar = $('.bar')
+    $.fx.step.rotateY = function (fx) {
+        // 시작과 끝 값을 설정합니다.
+        fx.start = fx.start || 0;
+        fx.end = fx.end || 360*5;
+    
+        // CSS transform 속성을 사용하여 회전을 적용합니다.
+        $(fx.elem).css('transform', 'rotateY(' + fx.now + 'deg)');
+      };
+    
 
-        ConBox1.css({
-            position: "absolute",
-        width: "100vw",
-        height: "100vh",
-        opacity: 1,
-        transition: "1s ease-in",
-        })
-        ConBox2.css({
-            position: "absolute",
-            width: "100vw",
-        height: "100vh",
-        opacity: 1,
-        transition: "2s ease-in",
-        })
-};
+      CardBox.animate({ rotateY: 360*5, },4000,"easeInQuad");
+      Bar.animate({
+        width:"100%"
+      },4000,"easeInCubic")
+    }

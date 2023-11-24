@@ -1,6 +1,5 @@
 @charset 'utf-8';
 
-
 #top-area {
     width: 100vw;
     height: 15vh;
@@ -17,10 +16,10 @@
     height: 25vh;
     /* background: #ff9e9e; */
 }
-.top-area{
+.top-area {
     height: 50%;
 }
-.topnav{
+.topnav {
     display: flex;
 }
 .bottom-area {
@@ -28,18 +27,17 @@
     height: 25vh;
     /* background: #ff9e9e; */
 }
-.bdl-gray{
+.bdl-gray {
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
-    
 }
-.top-logo{
+.top-logo {
     width: 70%;
 }
 .top-logo img {
     height: 89%;
 }
-.search{
+.search {
     width: 200px;
     height: 30px;
     margin-top: 20px;
@@ -49,27 +47,26 @@
     border: 1px solid #ccc;
     font-family: "GangwonState";
 }
-.search-icon{
+.search-icon {
     width: 70px;
     height: 70px;
     background: url(../../public/img/hd_search_icon.png) no-repeat 50%;
     cursor: pointer;
-    filter:  hue-rotate(28deg) brightness(0.0) contrast(1.85) grayscale(1.0);
-    transition: .2s;
+    filter: hue-rotate(28deg) brightness(0) contrast(1.85) grayscale(1);
+    transition: 0.2s;
 }
-.search-icon:hover{
-    
-    filter:hue-rotate(28deg) brightness(1.2) contrast(1.85) grayscale(0.0);
+.search-icon:hover {
+    filter: hue-rotate(28deg) brightness(1.2) contrast(1.85) grayscale(0);
 }
-.nav-menu{
+.nav-menu {
     display: flex;
-    font-size:  1.8rem;
+    font-size: 1.8rem;
     font-family: "NeoDunggeunmoPro-Regular";
     gap: 20px;
     justify-content: center;
     background: #f3f3f3;
 }
-.nav-menu li{
+.nav-menu li {
     padding: 20px;
 }
 
@@ -128,10 +125,36 @@
     left: 90%;
     top: 6vh;
 } */
+.card-box {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
 .card-box > img {
     height: 313px;
-    display: none;
-    position: relative;
+}
+.loading-bar {
+    width: 500px;
+    height: 40px;
+    position: absolute;
+    border: 1px solid #aaa;
+    bottom: 20%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.bar {
+    height: 100%;
+    width: 0;
+    background-color: rgb(147, 249, 163);
+}
+.load-logo {
+    width: 274px;
+    height: 80px;
+    position: absolute;
+    background: url(../../public/img/logo.png) no-repeat;
+    top: 20%;
 }
 .bottom-area > h2 {
     text-align: center;

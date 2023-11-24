@@ -1,39 +1,51 @@
 import $ from "jquery";
-window.jQuery = $;
-require("jquery-ui-dist/jquery-ui");
-require("jquery-ui-touch-punch/jquery.ui.touch-punch");
+import "jquery-ui-dist/jquery-ui";
 
-export function dragIcon(){
+export function dragIcon(setBasketItems) {
+    const box = $(".icon");
+    const Card = $(".card-box img");
 
-    const box = $(".icon")
-    const Card = $(".card-box img")
-    // console.log(Card)
-    Card.draggable()
+    Card.draggable();
     box.draggable({
-            cursor: "grabbing",
-            // 드래그 대상 상위처리(z-index)
-            stack: ".icon",
-            // 이동중 투명도 설정
-            opacity: 0.7,
-            revert: "invalid",
-            revertDuration: 200 
-    })
+        start: function (event, ui) {
+            // 드래그 시작 시 원래 위치를 저장합니다.
+            $(this).data("originalTop", ui.position.top);
+            $(this).data("originalLeft", ui.position.left);
+        },
+        cursor: "grabbing",
+        stack: ".icon",
+        opacity: 0.7,
+        revert: "invalid",
+        revertDuration: 200,
+    });
 
-    let num = 0
-    $('.basket').droppable({
-        drop: function(evt,ele){
-            num++
-            console.log(num)
-            let ta = ele.draggable;
-            ta.hide()
-            let imoz = ta.find("i").text()
-            let itit = ta.find("span").text()
-            
-            let imbox = $(".imozbox p")
-            
-            console.log(imbox);
-            if(num < 6){ $(this).append(`<div class="imozbox"><p>${imoz}</p><span>${itit}</span></div>`);}
+    $(".basket").droppable({
+        drop: function (event, ui) {
+            let ta = ui.draggable;
+            let imoz = ta.find("i").text();
+            let itit = ta.find("span").text();
+            console.log('드랍객체', itit);
 
-            else{ta.revert()}
-        }});
+            setBasketItems((prevItems) => {
+                // 새로운 아이템을 기존 아이템 배열에 추가합니다.
+                const newItems = [...prevItems, { itit, imoz }];
+                // 바구니에 아이템이 5개 이하인지 확인합니다.
+                if (newItems.length <= 5) {
+                    $(this).append(`<div class="imozbox"><p>${imoz}</p><span>${itit}</span></div>`)
+                    ta.hide(); // 아이템을 숨깁니다.
+                    return newItems; // 새로운 아이템 배열을 반환합니다.
+                } else {
+                    // 아이템을 원래 위치로 되돌립니다.
+                    ta.animate(
+                        {
+                            top: ta.data("originalTop"),
+                            left: ta.data("originalLeft"),
+                        },
+                        200,
+                    );
+                    return prevItems; // 아이템 개수가 실패 시 카운터를 감소시킵니다.
+                }
+            });
+        },
+    });
 }

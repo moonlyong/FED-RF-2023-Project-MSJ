@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 // import $ from 'jquery';
 // window.jQuery = $;
 // require('jquery-ui-dist/jquery-ui');
@@ -6,21 +6,13 @@ import { useEffect, useState } from "react";
 import { dragIcon } from "../func/darg";
 
 import { pickdata } from "../data/data";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
    
 
 export function DragPick() {
-    const [basketItems, setBasketItems] = useState([]); // 바구니 아이템을 위한 상태
-    const navigate = useNavigate(); // 프로그래밍 방식으로 네비게이션을 위한 훅
     useEffect(()=>{
-        dragIcon(setBasketItems);
+        dragIcon();
     },[])
-    const handleIssueClick = () => {
-
-        // '/cardpick' 경로로 네비게이션하면서 상태를 전달합니다.
-        navigate('/cardpick', { state: { items: basketItems } });
-        console.log('i객체:', basketItems);
-    }
     return (
         <>
             <div id="middle-area">
@@ -40,7 +32,9 @@ export function DragPick() {
                 <div className="bottom-area inner">
                     <h2>원하는 혜택들을 넣고 카드를 발급받으세요!</h2>
                     <div className="basket">
-                    <button onClick={handleIssueClick}>발급</button>
+                        <Link to={"/cardpick"}>
+                            <button>발급</button>
+                        </Link>
                     </div>
                 </div>
             </div>
