@@ -13,11 +13,12 @@ export function Layout(){
   
   // 'cardpick' 라우트에 있을 때 TopArea를 숨기는 로직
   const showTopArea = location.pathname !== '/' && location.pathname !== '/cardpick';
-
+const showBotArea = location.pathname !== '/' && location.pathname !== '/cardpick' && location.pathname !== '/dragpick'
     return(
       <>
      {showTopArea && <TopArea />}
       {<MainArea />}
+      {showBotArea && <FooterArea/>}
       </>
 
     );

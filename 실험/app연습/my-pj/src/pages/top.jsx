@@ -7,7 +7,10 @@ export function Top() {
                 <div className="bdl-gray top-area">
                     <div className="topnav inner">
                         <h1 className="top-logo">
+                            <Link to={'/'}>
+                            <a href="">
                             <img src="../../img/logo.png" alt="" />
+                            </a></Link>
                         </h1>
                         <nav className="rank">
                             <ul>

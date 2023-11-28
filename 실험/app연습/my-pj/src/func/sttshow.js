@@ -34,8 +34,7 @@ export function getCard() {
         function () {
             load.hide();
             button.css({
-            opacity: 1,
-            transition: "2s ease-in",
+            display: "block",
         });
         },
     );

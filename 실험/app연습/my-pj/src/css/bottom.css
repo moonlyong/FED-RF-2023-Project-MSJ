@@ -1,0 +1,25 @@
+address{
+    font-style: normal;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 23px;
+    font-family: "GangwonState";
+}
+.company{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 260px;
+}
+.company img{
+    width: 300px;
+}
+.address{
+    width: 100%;
+    height: 15vh;
+    position: absolute;
+    bottom: 0;
+    background: #ebebeb;
+}
