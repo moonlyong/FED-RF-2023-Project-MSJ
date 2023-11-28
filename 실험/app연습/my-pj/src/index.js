@@ -11,6 +11,11 @@ import { CardPick } from './pages/cardpick';
 import './css/common.css';
 import { getCard } from './func/sttshow';
 import { Loading } from './pages/Loading';
+import { NewCard } from './pages/newcard';
+import { Rank } from './pages/rank';
+import { Service } from './pages/service';
+import { AllCard } from './pages/allcard';
+import { MyPick } from './pages/mypick';
 
 // 최상위 Root 컴포넌트 ///////
 function App(){
@@ -28,12 +33,12 @@ function App(){
           <Route index element={<Loading />} />
           <Route path='dragpick' element={<DragPick />} />
           <Route path="cardpick" element={<CardPick />} />
-          {/* <Route path="comics" element={<Comics />} /> */}
+          <Route path="mypick" element={<MyPick />} />
           {/* <Route path="movies" element={<Movies />} /> */}
-          {/* <Route path="games" element={<Games />} /> */}
-          {/* <Route path="news" element={<News />} /> */}
-          {/* <Route path="video" element={<Video />} /> */}
-          {/* <Route path="board" element={<SwiperApp />} /> */}
+          <Route path="allcard" element={<AllCard />} />
+          <Route path="service" element={<Service />} />
+          <Route path="rank" element={<Rank />} />
+          <Route path="newcard" element={<NewCard />} />
         </Route>
       </Routes>
     </BrowserRouter>

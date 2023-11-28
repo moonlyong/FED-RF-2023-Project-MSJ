@@ -1,8 +1,9 @@
-export function Top(){
-    return (
+import { Link } from "react-router-dom";
 
+export function Top() {
+    return (
         <>
-        <div id="top-area">
+            <div id="top-area">
                 <div className="bdl-gray top-area">
                     <div className="topnav inner">
                         <h1 className="top-logo">
@@ -23,25 +24,34 @@ export function Top(){
                 </div>
                 <nav>
                     <ul className="nav-menu">
-                        <li><a href="">
-                            TOP 10
-                            </a></li>
-                        <li><a href="">
-                            맞춤카드
-                            </a></li>
-                        <li><a href="">
-                            이달의 카드
-                            </a></li>
-                        <li><a href="">
-                            모든카드
-                            </a></li>
-                        <li><a href="">
-                            고객센터
-                            </a></li>
-                      
+                        <li>
+                            <Link to={"/rank"}>
+                                <a href="">TOP 10</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to={"/dragpick"}>
+                                <a href="">맞춤카드</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to={"/newcard"}>
+                                <a href="">이달의 카드</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to={"/allcard"}>
+                                <a href="">모든카드</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to={"/service"}>
+                                <a href="">고객센터</a>
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </>
-    )
+    );
 }

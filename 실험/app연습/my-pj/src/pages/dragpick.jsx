@@ -15,7 +15,7 @@ export function DragPick() {
     useEffect(()=>{
         dragIcon(setBasketItems);
     },[])
-    const handleIssueClick = () => {
+    const handle = () => {
 
         // '/cardpick' 경로로 네비게이션하면서 상태를 전달합니다.
         navigate('/cardpick', { state: { items: basketItems } });
@@ -40,7 +40,7 @@ export function DragPick() {
                 <div className="bottom-area inner">
                     <h2>원하는 혜택들을 넣고 카드를 발급받으세요!</h2>
                     <div className="basket">
-                    <button onClick={handleIssueClick}>발급</button>
+                    <button onClick={handle}>발급</button>
                     </div>
                 </div>
             </div>
