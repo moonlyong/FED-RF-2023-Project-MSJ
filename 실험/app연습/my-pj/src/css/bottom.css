@@ -2,7 +2,7 @@ address{
     font-style: normal;
     display: flex;
     justify-content: space-around;
-    margin-top: 23px;
+    margin-top: 70px;
     font-family: "GangwonState";
 }
 .company{
@@ -10,7 +10,6 @@ address{
     height: 100px;
     position: absolute;
     overflow: hidden;
-    top: 0;
     left: 260px;
 }
 .company img{
@@ -19,7 +18,8 @@ address{
 .address{
     width: 100%;
     height: 15vh;
-    position: absolute;
-    bottom: 0;
     background: #ebebeb;
+}
+address span{
+    margin-top: 30px;
 }

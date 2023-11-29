@@ -47,6 +47,15 @@
     font-style: normal;
 }
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@font-face {
+    font-family: NG;
+    src: url(../static/fonts/NanumGothic.woff) format("woff");
+  }
+  /* Ubuntu체 */
+  @font-face {
+    font-family: UB;
+    src: url(../static/fonts/UbuntuCondensed-Regular.woff) format("woff");
+  }
 
 /* 공사중마크 */
 body * {
