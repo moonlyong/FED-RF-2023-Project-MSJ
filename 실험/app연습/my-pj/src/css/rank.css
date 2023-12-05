@@ -39,6 +39,7 @@
     transform: rotate(90deg);
     grid-column: 1/51;
     grid-row: 28/60;
+    cursor: pointer;
 
     
 }

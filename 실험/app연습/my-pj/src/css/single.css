@@ -77,8 +77,9 @@
 
 .back{
     font-size: 3rem;
-    grid-column: 8/11;
+    grid-column: 8/12;
     grid-row: 1/6;
     color: #e082fd;
+    cursor: pointer;
 }
 

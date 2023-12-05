@@ -1,19 +1,23 @@
 import "../css/single.css";
 import React from "react";
-import { useLocation,Link } from "react-router-dom";
+import { useLocation,Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink,faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 
 export function Single(){
-    const location = useLocation();
-    const { card } = location.state;
+    const loc = useLocation();
+    const nav = useNavigate()
+    const { card } = loc.state;
     
+    const back = () => {
+        nav(-1)
+    }
     return (
         <>
         <div className="single">
-        <Link to={"/allcard"} className="back">
-        <FontAwesomeIcon icon={faArrowLeft} /></Link>
+        <div onClick={back} className="back">
+        <FontAwesomeIcon icon={faArrowLeft} /></div>
             <h1>{card.name}</h1>
             <img src={card.src} alt="" />
                         <h1>{card.name}</h1>

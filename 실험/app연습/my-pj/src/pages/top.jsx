@@ -29,6 +29,11 @@ export function Top() {
                     <ul className="nav-menu">
                         <li>
                             <Link to={"/rank"}>
+                                <a href="">HOME</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to={"/rank"}>
                                 <a href="">TOP 10</a>
                             </Link>
                         </li>
