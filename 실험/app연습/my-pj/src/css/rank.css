@@ -7,30 +7,16 @@
       filter: hue-rotate(360deg) brightness(1.2) contrast(1.85) grayscale(0);
     }
   }
-.rankhd{
-    font-size: 2rem;
-    text-align: center;
-    line-height: 4;
-    margin-bottom: -100px;
-    font-family: "KBO-Dia-Gothic_bold";
-    color: rgb(0, 111, 82);
-    filter: hue-rotate(28deg) brightness(1.2) contrast(1.85) grayscale(0);
-    animation: color-animation 2.5s infinite linear;
-}
-.rankli{
-    display: flex;
-    flex-direction: column;
 
-}
-.rankli li{
+.rankli{
     display: grid;
     grid-template-columns: repeat(80, 1fr);
     grid-template-rows: repeat(80, 1fr);
     height: 800px;
     font-family: NG;
     width: 1000px;
-    margin: 100px auto 0;
-    border: 1px solid #ededed;
+    margin: 0 auto;
+    border: 1px solid #c6c6c6;
     border-radius: 20px;
     box-sizing: border-box;
 }
@@ -47,6 +33,17 @@
     grid-column: 9/45;
     grid-row: 10/15;
     font-size: 1.6rem;
+    position: relative;
+}
+.rankli h1 span {
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+.sp1{
+    color: rgb(0, 184, 135);
+    filter: hue-rotate(28deg) brightness(1.2) contrast(1.85) grayscale(0);
+    animation: color-animation 2.5s infinite linear;
 }
 .rankli h2 {
     font-size: 1.1rem;

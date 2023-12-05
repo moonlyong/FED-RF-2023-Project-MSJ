@@ -1,6 +1,16 @@
+import "../css/top.css";
+
 import { Link } from "react-router-dom";
+import $ from 'jquery';
+window.jQuery = $;
+require('jquery-ui-dist/jquery-ui');
+
+
+
 
 export function Top() {
+    
+    
     return (
         <>
             <div id="top-area">
@@ -60,6 +70,7 @@ export function Top() {
                     </ul>
                 </nav>
             </div>
+
         </>
     );
 }

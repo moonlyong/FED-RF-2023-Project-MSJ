@@ -13,6 +13,7 @@ export function CardPick() {
     useEffect(() => {
         getCard();
     }, []);
+
     return (
         <>
             <div id="middle-area" style={{ height: "100vh" }}>

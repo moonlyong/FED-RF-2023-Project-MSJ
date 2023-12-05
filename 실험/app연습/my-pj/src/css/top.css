@@ -1,0 +1,26 @@
+#top-area {
+    width: 100vw;
+    height: 15vh;
+    /* background: #ff9e9e; */
+}
+.top-area {
+    height: 50%;
+}
+.topnav {
+    display: flex;
+}
+.nav-menu {
+    display: flex;
+    font-size: 1.8rem;
+    font-family: "GangwonState";
+    gap: 20px;
+    justify-content: center;
+    background: #f3f3f3;
+    font-weight: bold;
+}
+#top-area:hover .nav-menu{
+    height: 100%;
+}
+.nav-menu li {
+    padding: 20px;
+}
