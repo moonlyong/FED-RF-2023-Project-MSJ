@@ -16,6 +16,7 @@ import { Rank } from './pages/rank';
 import { Service } from './pages/service';
 import { AllCard } from './pages/allcard';
 import { MyPick } from './pages/mypick';
+import { Single } from './pages/single';
 
 // 최상위 Root 컴포넌트 ///////
 function App(){
@@ -34,7 +35,7 @@ function App(){
           <Route path='dragpick' element={<DragPick />} />
           <Route path="cardpick" element={<CardPick />} />
           <Route path="mypick" element={<MyPick />} />
-          {/* <Route path="movies" element={<Movies />} /> */}
+          <Route path="single" element={<Single />} />
           <Route path="allcard" element={<AllCard />} />
           <Route path="service" element={<Service />} />
           <Route path="rank" element={<Rank />} />

@@ -2,15 +2,17 @@ address{
     font-style: normal;
     display: flex;
     justify-content: space-around;
-    margin-top: 70px;
+    margin-top: 3vh;
     font-family: "GangwonState";
 }
 .company{
     width: 100px;
     height: 100px;
-    position: absolute;
     overflow: hidden;
-    left: 260px;
+    margin-top: -25px;
+}
+.span1{
+    display: flex;
 }
 .company img{
     width: 300px;

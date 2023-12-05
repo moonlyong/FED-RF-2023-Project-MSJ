@@ -1,3 +1,5 @@
+import "../css/drag.css";
+
 import { useEffect, useState } from "react";
 // import $ from 'jquery';
 // window.jQuery = $;
@@ -23,7 +25,7 @@ export function DragPick() {
     }
     return (
         <>
-            <div id="middle-area">
+            <div className="middle-ex">
                 <div id="icon-box" className="inner">
                     <ul>
                         {pickdata.map((v, i) => (
