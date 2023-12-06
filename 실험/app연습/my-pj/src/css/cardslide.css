@@ -11,13 +11,13 @@ body {
   align-items: center;
 }
 
-.swiper {
+.rank-swiper {
   width: 1000px;
   height: 800px;
   margin-top: 20px;
 }
 
-.swiper-slide {
+.ranksw {
   display: flex;
   align-items: center;
   justify-content: center;

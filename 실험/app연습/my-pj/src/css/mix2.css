@@ -8,6 +8,7 @@
     /* background: #ff9e9e; */
 }
 
+
 .bottom-area {
     width: 100vw;
     height: 25vh;
@@ -16,12 +17,8 @@
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
 }
-.top-logo {
-    width: 70%;
-}
-.top-logo img {
-    height: 89%;
-}
+
+
 .search {
     width: 200px;
     height: 30px;

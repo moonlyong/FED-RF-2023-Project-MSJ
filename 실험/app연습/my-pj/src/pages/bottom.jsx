@@ -3,7 +3,7 @@ import "../css/bottom.css";
 export function Bottom() {
     return (
         <>
-            <div id="bottom-area">
+            <div id="footer-area">
                 <div class="address">
                     <address>
                         

@@ -9,6 +9,7 @@ import { dragIcon } from "../func/darg";
 
 import { pickdata } from "../data/data";
 import { useNavigate } from "react-router-dom";
+import { Banner } from "../module/Banner";
    
 
 export function DragPick() {
@@ -25,7 +26,9 @@ export function DragPick() {
     }
     return (
         <>
+        
             <div className="middle-ex">
+            <Banner></Banner>
                 <div id="icon-box" className="inner">
                     <ul>
                         {pickdata.map((v, i) => (
