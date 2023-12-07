@@ -17,12 +17,11 @@ export function DragPick() {
     const navigate = useNavigate(); // 프로그래밍 방식으로 네비게이션을 위한 훅
     useEffect(()=>{
         dragIcon(setBasketItems);
-    },[])
+    },[basketItems])
     const handle = () => {
         const tits = basketItems.map(item => item.itit);
         console.log('basketItems:', basketItems); // 배열 내용 확인
-        // '/cardpick' 경로로 네비게이션하면서 상태를 전달합니다.
-        navigate('/cardpick', { state: { items: tits } });
+        navigate('/mypick', { state: { items: tits } });
         console.log('i객체:', tits);
     }
     return (

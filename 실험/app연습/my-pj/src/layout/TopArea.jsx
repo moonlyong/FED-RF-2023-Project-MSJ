@@ -4,6 +4,7 @@ import { Top } from "../pages/top";
 
 // GNB 데이터 가져오기
 export function TopArea(props) {
+    
     return (
         <>
             <Top />

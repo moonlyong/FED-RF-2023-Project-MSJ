@@ -1,11 +1,11 @@
 import React from 'react';
-import { CardData } from "../data/card_data";
+import { CardUrl } from "../data/card_url";
 import $ from 'jquery';
 window.jQuery = $;
 require('jquery-ui-dist/jquery-ui');
 require('jquery-ui-touch-punch/jquery.ui.touch-punch');
 
-const CardSeq = CardData.length; // 원하는 배열의 길이
+const CardSeq = CardUrl.length; // 원하는 배열의 길이
 
 function getX(i, Radius) {
     let Dv = Radius === 400 ? 10 : CardSeq - 10;

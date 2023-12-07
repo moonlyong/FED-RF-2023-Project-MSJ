@@ -4,7 +4,6 @@ import ReactDOM, { createRoot } from 'react-dom/client';
 import {BrowserRouter, Route, Routes, useNavigate} from "react-router-dom"
 import { Layout } from "./layout/Layout";
 import { DragPick } from './pages/dragpick';
-import { CardPick } from './pages/cardpick';
 
 
 // 페이지 공통 CSS
@@ -33,7 +32,6 @@ function App(){
           
           <Route index element={<Loading />} />
           <Route path='dragpick' element={<DragPick />} />
-          <Route path="cardpick" element={<CardPick />} />
           <Route path="mypick" element={<MyPick />} />
           <Route path="single" element={<Single />} />
           <Route path="allcard" element={<AllCard />} />

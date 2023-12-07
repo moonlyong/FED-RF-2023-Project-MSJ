@@ -1,5 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
-import { CardData } from "../data/card_data";
+import { CardUrl } from "../data/card_url";
 import { useEffect, useLayoutEffect } from "react";
 import { CardImg1, CardImg2 } from "../module/CardSp";
 import $ from "jquery";
@@ -10,49 +9,38 @@ require("jquery-ui-dist/jquery-ui");
 require("jquery-ui-touch-punch/jquery.ui.touch-punch");
 
 export function CardPick() {
-    const location = useLocation();
-    console.log("location.state:", location.state); // 상태 확인
-    const basketItems = location.state?.items; // DragPick에서 전달된 상태
-    console.log(basketItems)
-    useEffect(() => {
-        getCard();
-    }, [basketItems]);
+	useEffect(() => {
+		getCard();
+	},[]);
 
-    return (
-        <>
-            <div id="middle-area" style={{ height: "100vh" }}>
-                <Link to={"/mypick"}>
-                    <div className="link-next">
-                        <div className="loading">
-                            <div className="loadingtxt">데이터 수집중</div>
-                            <div className="loadingbx">
-                                <div className="loadingbar"></div>
-                            </div>
-                        </div>
-                        <Link to={"/mypick"}></Link>
-                        <a href="">
-                            <img src="./img/button.png" alt="" />
-                            <p>Click!</p>
-                        </a>
-                    </div>
-                </Link>
-                <div className="container1 card-circle">
-                    {CardData.map(
-                        (v, i) =>
-                            Number(v.idx) <= 10 && (
-                                <CardImg1 key={v.idx} index={i} isrc={v.src} />
-                            ),
-                    )}
-                </div>
-                <div className="container2 card-circle">
-                    {CardData.map(
-                        (v, i) =>
-                            Number(v.idx) > 10 && (
-                                <CardImg2 key={v.idx} index={i} isrc={v.src} />
-                            ),
-                    )}
-                </div>
-            </div>
-        </>
-    );
-} //////// MenSub 컴포넌트 ///////
+	return (
+		<>
+			<div id="middle-area" style={{ height: "100vh" }}>
+				<div className="link-next">
+					<div className="loading">
+						<div className="loadingtxt">데이터 수집중</div>
+						<div className="loadingbx">
+							<div className="loadingbar"></div>
+						</div>
+					</div>
+				</div>
+				<div className="container1 card-circle">
+					{CardUrl.map(
+						(v, i) =>
+							Number(v.idx) <= 10 && (
+								<CardImg1 key={v.idx} index={i} isrc={v.src} />
+							)
+					)}
+				</div>
+				<div className="container2 card-circle">
+					{CardUrl.map(
+						(v, i) =>
+							Number(v.idx) > 10 && (
+								<CardImg2 key={v.idx} index={i} isrc={v.src} />
+							)
+					)}
+				</div>
+			</div>
+		</>
+	);
+} 
