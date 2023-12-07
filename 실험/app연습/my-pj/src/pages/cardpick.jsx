@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { CardData } from "../data/card_data";
 import { useEffect, useLayoutEffect } from "react";
 import { CardImg1, CardImg2 } from "../module/CardSp";
@@ -10,9 +10,13 @@ require("jquery-ui-dist/jquery-ui");
 require("jquery-ui-touch-punch/jquery.ui.touch-punch");
 
 export function CardPick() {
+    const location = useLocation();
+    console.log("location.state:", location.state); // 상태 확인
+    const basketItems = location.state?.items; // DragPick에서 전달된 상태
+    console.log(basketItems)
     useEffect(() => {
         getCard();
-    }, []);
+    }, [basketItems]);
 
     return (
         <>

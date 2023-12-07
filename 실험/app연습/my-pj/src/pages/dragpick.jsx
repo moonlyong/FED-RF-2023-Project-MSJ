@@ -19,10 +19,11 @@ export function DragPick() {
         dragIcon(setBasketItems);
     },[])
     const handle = () => {
-
+        const tits = basketItems.map(item => item.itit);
+        console.log('basketItems:', basketItems); // 배열 내용 확인
         // '/cardpick' 경로로 네비게이션하면서 상태를 전달합니다.
-        navigate('/cardpick', { state: { items: basketItems } });
-        console.log('i객체:', basketItems);
+        navigate('/cardpick', { state: { items: tits } });
+        console.log('i객체:', tits);
     }
     return (
         <>
