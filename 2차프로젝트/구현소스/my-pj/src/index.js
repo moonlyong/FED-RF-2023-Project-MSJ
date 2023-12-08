@@ -1,7 +1,7 @@
 // 메인 페이지 JS - index.js
 import React, { useEffect, useState } from 'react';
 import ReactDOM, { createRoot } from 'react-dom/client';
-import {BrowserRouter, Route, Routes, useNavigate} from "react-router-dom"
+import {BrowserRouter, HashRouter, Route, Routes, useNavigate} from "react-router-dom"
 import { Layout } from "./layout/Layout";
 import { DragPick } from './pages/dragpick';
 
@@ -21,7 +21,9 @@ function App(){
   
 
   return(
-    <BrowserRouter>
+    // <HashRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL} >
+    
       <Routes>
         {/* 중요!!! 레이아웃 컴포넌트를 루트로 설정! */}
         <Route path="/" element={<Layout />}>
@@ -40,6 +42,7 @@ function App(){
         </Route>
       </Routes>
     </BrowserRouter>
+    // </HashRouter>
       // <>
       //   <TopArea cat={pgName} />        
       //   <MainArea page={pgName} />

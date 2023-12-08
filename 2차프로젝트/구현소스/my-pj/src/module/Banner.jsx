@@ -9,7 +9,6 @@ import 'swiper/css/navigation';
 
 import '../css/banner.css';
 
-// import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { BannerData } from '../data/banner_data';
 import { Shuffle } from './Shuffle';
@@ -31,15 +30,10 @@ export function Banner() {
       slidesPerView={2}
         spaceBetween={1200}
         loop={true}
-        // centeredSlides={true}
         autoplay={{
           delay: 10000,
           disableOnInteraction: false,
         }}
-        // pagination={{
-        //   clickable: true,
-        // }}
-        // navigation={true}
         modules={[Autoplay, Pagination,Navigation]}
         className="banner-swiper"
       >

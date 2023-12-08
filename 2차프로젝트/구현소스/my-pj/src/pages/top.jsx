@@ -21,7 +21,7 @@ export function Top() {
 					<div className="topnav inner">
 						<h1 className="top-logo">
 							<Link to={"/"}>
-									<img src="../../img/logo.png" alt="" />
+									<img src="./img/logo.png" alt="" />
 							</Link>
 						</h1>
 						<Swiper
