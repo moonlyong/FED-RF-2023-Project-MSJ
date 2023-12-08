@@ -29,3 +29,17 @@ body {
 .swiper-3d .swiper-slide-shadow {
   background: rgb(255, 255, 255);
 }
+@media screen and (max-width: 500px) {
+
+	.rank-swiper {
+		margin-left: 0;
+		margin-right: 0;
+    height: 77vh;
+    margin-top: 1vh;
+
+	}
+	.ranksw {
+		justify-content: flex-start;
+	}
+
+}

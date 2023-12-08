@@ -111,3 +111,22 @@ body * {
     max-width: 1220px;
     margin: 0 auto;
 }
+
+
+#middle-area {
+    width: 100vw;
+    height: 67vh;
+    position: relative;
+    /* background: #ff9e9e; */
+}
+
+
+.bottom-area {
+    width: 100vw;
+    height: 25vh;
+}
+.bdl-gray {
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+

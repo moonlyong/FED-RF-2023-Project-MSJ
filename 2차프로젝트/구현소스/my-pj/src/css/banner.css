@@ -51,3 +51,11 @@
     z-index: 3;
     text-align: left;
   }
+  @media screen and (max-width: 500px) {
+    
+  .banner-swiper {
+    display: none;
+  }
+   
+  }
+  

@@ -53,7 +53,78 @@
     height: 100%;
     object-fit: cover;
   }
+  .search {
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    font-family: "GangwonState";
+}
+.search-icon {
+    width: 70px;
+    height: 70px;
+    background: url(../../public/img/hd_search_icon.png) no-repeat 50%;
+    cursor: pointer;
+    filter: hue-rotate(28deg) brightness(0) contrast(1.85) grayscale(1);
+    transition: 0.2s;
+}
+.search-icon:hover {
+    filter: hue-rotate(28deg) brightness(1.2) contrast(1.85) grayscale(0);
+}
+
   .blank{
     width: 350px;
   }
+
   
+@media screen and (max-width:500px){
+    #top-area {
+        height: 7vh;
+    }
+    .top-logo{
+        width: 40%;
+    }
+    .top-logo img {
+        height: 5vh;
+        width: 100%;
+    object-fit: contain;
+        margin-left: 1vw;
+    }
+    .top-area {
+        height: 80%;
+        overflow: hidden;
+    }
+    .search-icon {
+        width: 10vw;
+        height: 5.5vh;
+    }
+    .search {
+        width: 40vw;
+        height: 4vh;
+        margin-top: 0.5vh;
+    }
+    .nav-menu {
+        font-size: 0.7rem;
+        gap: 0px;
+        height: 3vh;
+        font-family: NG;
+        line-height: 2;
+    }
+    .nav-menu li {
+        border-right: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        box-sizing: border-box;
+        flex-basis: calc(100% / 6);
+        padding: 0;
+        text-align: center;
+
+    }
+    .topSwiper {
+        width: 0;
+    }
+    .blank{width: 0;}
+}

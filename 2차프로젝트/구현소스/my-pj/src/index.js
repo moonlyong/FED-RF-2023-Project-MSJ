@@ -8,7 +8,6 @@ import { DragPick } from './pages/dragpick';
 
 // 페이지 공통 CSS
 import './css/common.css';
-import { getCard } from './func/sttshow';
 import { Loading } from './pages/Loading';
 import { NewCard } from './pages/newcard';
 import { Rank } from './pages/rank';

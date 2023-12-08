@@ -1,4 +1,3 @@
-import "../css/drag.css";
 
 import { useEffect, useState } from "react";
 // import $ from 'jquery';
@@ -6,7 +5,7 @@ import { useEffect, useState } from "react";
 // require('jquery-ui-dist/jquery-ui');
 // require('jquery-ui-touch-punch/jquery.ui.touch-punch');
 import { dragIcon } from "../func/darg";
-
+import "../css/loading.css";
 import { pickdata } from "../data/data";
 import { useNavigate } from "react-router-dom";
 import { Banner } from "../module/Banner";

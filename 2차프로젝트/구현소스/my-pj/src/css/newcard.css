@@ -77,3 +77,13 @@
     animation: color-animation 2.5s infinite linear;
 }
 
+@media screen and (max-width:500px){
+    .newli {
+        margin-top: 10vh;
+        flex-direction: column;
+        margin-bottom: 10vh;
+    }
+    .newli li{
+        flex-basis: 0;
+    }
+}
