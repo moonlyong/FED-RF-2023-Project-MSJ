@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/* css불러오기 */
+@import url(./reset.css);
+@import url(./common.css);
+@import url(./main_1.css);
+@import url(./main_2.css);
+@import url(./main_3.css);
+@import url(./main_4.css);
+@import url(./main_5.css);
+html,
+body {
+    overflow: hidden;
+    scroll-behavior: smooth;
+}

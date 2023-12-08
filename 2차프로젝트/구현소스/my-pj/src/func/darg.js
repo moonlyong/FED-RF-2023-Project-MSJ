@@ -1,5 +1,6 @@
 import $ from "jquery";
-import "jquery-ui-dist/jquery-ui";
+require("jquery-ui-dist/jquery-ui");
+require("jquery-ui-touch-punch/jquery.ui.touch-punch");
 
 export function dragIcon(setBasketItems) {
 	const box = $(".icon");
