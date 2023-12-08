@@ -1,0 +1,79 @@
+.newli {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    gap: 50px;
+    justify-content: center;
+}
+.newli li{
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+    height: 300px;
+    flex-basis: calc((100% - 50px * 9) / 3);
+    font-family: NG;
+}
+.newli img {
+    width: 220px;
+    transform: rotate(90deg);
+    grid-column: 1/12;
+    grid-row: 8/25;
+    cursor: pointer;
+
+    
+}
+.newli h1 {
+    grid-column: 3/25;
+    grid-row: 1/5;
+    font-size: 1.4rem;
+}
+
+.newli h2 {
+    font-size: 1.1rem;
+    grid-column: 11/25;
+    grid-row: 5/12;
+}
+.newli h3 {
+    font-size: 0.7rem;
+    ;
+}
+.newli .p1{
+    grid-column: 11/25;
+    grid-row: 8/12
+}
+.newli .p1 p{
+    line-height: 2.1;
+}
+.newli .p2 {
+    grid-column: 11/25;
+    grid-row: 15/17;
+    
+}
+.newli .p2 span{
+    font-size: 0.9rem;
+    color: #ff008c;
+}
+.newli .p2 p{
+    line-height: 4;
+}
+.newli .p3 {
+    grid-column: 11/25;
+    grid-row: 20/22;
+    display: flex;
+    gap: 0 10px;
+    font-size: 0.8rem;
+}
+.newli .p3 a{
+    font-size: 1rem;
+}
+.newli .p4 {
+    grid-column: 18/25;
+    grid-row: 5/12;
+}
+.newli .p4 span{
+    font-size: 1.1rem;
+    color: rgb(0, 111, 82);
+    filter: hue-rotate(28deg) brightness(1.2) contrast(1.85) grayscale(0);
+    animation: color-animation 2.5s infinite linear;
+}
+

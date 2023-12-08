@@ -1,0 +1,77 @@
+.cardli {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    gap: 50px;
+    justify-content: center;
+}
+.cardli li{
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+    height: 300px;
+    flex-basis: calc((100% - 50px * 9) / 3);
+    font-family: NG;
+}
+.cardli img {
+    width: 220px;
+    transform: rotate(90deg);
+    grid-column: 1/12;
+    grid-row: 8/25;
+    cursor: pointer;
+
+    
+}
+.cardli h1 {
+    grid-column: 3/25;
+    grid-row: 1/25;
+    font-size: 1.4rem;
+}
+.cardli h2 {
+    font-size: 1.1rem;
+    grid-column: 11/25;
+    grid-row: 5/12;
+}
+.cardli h3 {
+    font-size: 0.7rem;
+    ;
+}
+.cardli .p1{
+    grid-column: 11/25;
+    grid-row: 8/12
+}
+.cardli .p1 p{
+    line-height: 2.1;
+}
+.cardli .p2 {
+    grid-column: 11/25;
+    grid-row: 15/17;
+    
+}
+.cardli .p2 span{
+    font-size: 0.9rem;
+    color: #ff008c;
+}
+.cardli .p2 p{
+    line-height: 4;
+}
+.cardli .p3 {
+    grid-column: 11/25;
+    grid-row: 20/22;
+    display: flex;
+    gap: 0 10px;
+}
+.cardli .p3 p{
+    font-size: 0.8rem;
+}
+.cardli .p3 a{
+    font-size: 1rem;
+}
+.cardli .p4 {
+    grid-column: 18/25;
+    grid-row: -19/-21;
+}
+.cardli .p4 span{
+    font-size: 0.8rem;
+}
+
