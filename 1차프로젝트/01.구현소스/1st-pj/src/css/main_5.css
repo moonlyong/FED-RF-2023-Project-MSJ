@@ -65,7 +65,7 @@ address {
 }
 .address::before {
     content: "";
-    background: url(../image/etc/mllogo2.png) no-repeat 8%/400%;
+    background: url(../../public/image/etc/mllogo2.png) no-repeat 8%/400%;
     width: 100px;
     height: 100px;
     position: absolute;

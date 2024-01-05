@@ -6,7 +6,7 @@
 
 /* 공사중마크 */
 body * {
-    /* outline: 1px dotted #ff7171; */
+    outline: 1px dotted #ff7171;
 }
 
 body {
@@ -82,7 +82,7 @@ h1 {
     width: 7vw;
     height: 10vh;
     /* position: fixed; */
-    background: url(../image/logo/JTBC.png) no-repeat center/180%;
+    background: url(../../public/image/logo/JTBC.png) no-repeat center/180%;
 }
 
 .part-box {
@@ -90,7 +90,7 @@ h1 {
     height: 100%;
 }
 .txt-logo{
-    background: url(../image/logo/txt-logo.png)no-repeat center/80%;
+    background: url(../../public/image/logo/txt-logo.png)no-repeat center/80%;
     height: 100%;
 }
 

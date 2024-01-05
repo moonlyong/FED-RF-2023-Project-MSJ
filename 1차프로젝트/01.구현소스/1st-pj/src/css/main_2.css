@@ -3,7 +3,7 @@
 /* css불러오기 */
 /* main-2 구분박스 */
 .main-2{
-    background: url(../image/bgi/main2.jpg) no-repeat top/100%;
+    background: url(../../public/image/bgi/main2.jpg) no-repeat top/100%;
 }
 .middle-box {
     display: flex;
@@ -58,17 +58,17 @@
     height: 125%;
 }
 .monster_logo{
-    background: url(../image/logo/monsters.png)no-repeat center/100%;
+    background: url(../../public/image/logo/monsters.png)no-repeat center/100%;
 }
 .dusan_logo{
-    background: url(../image/logo/tlogo1.png)no-repeat center/70%;
+    background: url(../../public/image/logo/tlogo1.png)no-repeat center/70%;
 }
 .ssg_logo{
-    background: url(../image/logo/tlogo2.png)no-repeat center/70%;
+    background: url(../../public/image/logo/tlogo2.png)no-repeat center/70%;
 }
 .nc_logo{
-    background: url(../image/logo/tlogo3.png)no-repeat center/85%;
+    background: url(../../public/image/logo/tlogo3.png)no-repeat center/85%;
 }
 .kt_logo{
-    background: url(../image/logo/tlogo4.png)no-repeat center/70%;
+    background: url(../../public/image/logo/tlogo4.png)no-repeat center/70%;
 }

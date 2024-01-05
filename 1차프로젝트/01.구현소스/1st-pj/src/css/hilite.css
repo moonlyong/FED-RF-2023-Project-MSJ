@@ -12,7 +12,7 @@
 .top-area {
     display: flex;
     height: 35vh;
-    background: url(../image/bgi/toparea.jpg) no-repeat center/cover;
+    background: url(../../public/image/bgi/toparea.jpg) no-repeat center/cover;
 }
 /* 상단 왼쪽구역 */
 .left_box {
@@ -30,7 +30,7 @@
     left: 6%;
     height: 75%;
     aspect-ratio: 1;
-    background: url(../image/goods/keyring.png) no-repeat center/cover;
+    background: url(../../public/image/goods/keyring.png) no-repeat center/cover;
 }
 
 /* 상단 오른쪽구역 */
@@ -55,12 +55,12 @@
 .shoplink_1 {
     width: 50%;
     height: 15vh;
-    background: url(../image/goods/shop1.jpg) no-repeat center/cover;
+    background: url(../../public/image/goods/shop1.jpg) no-repeat center/cover;
 }
 .shoplink_2 {
     width: 50%;
     height: 15vh;
-    background: url(../image/goods/shop2.jpg) no-repeat center/cover;
+    background: url(../../public/image/goods/shop2.jpg) no-repeat center/cover;
 }
 
 /* 영상구역 */

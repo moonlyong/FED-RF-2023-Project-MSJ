@@ -4,7 +4,7 @@
 
 /* main-3 구분박스 */
 .main-3{
-    background: url(../image/bgi/main3.jpg) no-repeat center/100%;
+    background: url(../../public/image/bgi/main3.jpg) no-repeat center/100%;
     display: flex;
     justify-content: center;
     align-items: center;

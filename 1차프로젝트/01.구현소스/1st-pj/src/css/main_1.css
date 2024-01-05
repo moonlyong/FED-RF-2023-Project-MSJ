@@ -3,7 +3,7 @@
 /* 배경 */
 
 .main-1 {
-    background: url(../image/bgi/main1.jpg) no-repeat center/100%;
+    background: url(../../public/image/bgi/main1.jpg) no-repeat center/100%;
 }
 
 /* main-1 구분박스 */
@@ -23,7 +23,6 @@
 }
 .blogo {
     position: relative;
-    width: min(10vw, 100px);
     height: 100%;
     /* opacity: 1; */
 }
@@ -39,9 +38,10 @@
 
 /* 상단 네비박스 */
 .gnb {
+    display: flex;
     position: absolute;
-    right: 5vw;
-    width: 35vw;
+    gap: 3vw;
+    right: 6vw;
     overflow: hidden;
 }
 .gnb-box {
@@ -52,7 +52,6 @@
 }
 /* 메뉴라인 */
 .menu-icon {
-    right: 2vw;
     position: relative;
     display: flex;
     justify-content: center;
@@ -60,26 +59,12 @@
     gap: 2.7vw;
     transition: right 0.3s ease-out;
 }
-.menu-icon.on {
-    right: -35vw;
-}
-.menu-icon > li > .bar {
-    position: absolute;
-    top: calc(50% - 40px / 2);
-    left: 2vw;
-    font-size: 30px;
-}
+
 /* 메뉴바 */
 .menu-bar {
-    position: fixed;
-    height: 10vh;
-    right: 5vw;
-}
-.fa-bars {
-    font-size: 3rem;
-    position: absolute;
-    top: 34%;
-    left: 30%;
+    font-size: 4rem;
+    margin-top: 30px;
+    cursor: pointer;
 }
 /* 서브메뉴 */
 .sub-menu {
@@ -87,13 +72,9 @@
     justify-content: center;
     font-family: "Black Han Sans", sans-serif;
     position: absolute;
-    top: 0;
-    left: 475%;
-    transform: translateY(50%);
-    width: 23vw;
-    height: 50px;
+    transform: translateY(30%);
     overflow: hidden;
-    opacity: 0;
+    /* opacity: 0; */
     transition: 0.3s ease-out;
 }
 .sub-menu > ol {
