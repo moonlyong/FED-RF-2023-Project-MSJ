@@ -19,7 +19,7 @@ body {
     overflow: hidden;
 }
 body {
-    background: url(../image/bgi/main4.png) no-repeat center/cover;
+    background: url(../../public/image/bgi/main4.png) no-repeat center/cover;
     height: 100vh;
 }
 /* 큐브를 직접 싸고 있는 대상 */
@@ -67,7 +67,7 @@ body {
 
 /* 큐브 */
 .cube {
-    width: 100vw;
+    width: 90vw;
     height: 30vh;
     display: flex;
     position: absolute;

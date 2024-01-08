@@ -9,6 +9,8 @@ import {
 	Routes,
 	useNavigate,
 } from "react-router-dom";
+import { Hilite } from "./page/Hilite";
+import { PlayerInfo } from "./page/PlayerInfo";
 
 function App() {
 	useEffect(() => {
@@ -21,22 +23,13 @@ function App() {
 		//드래그배너 호출
 	}, []); /////// useEffect ///////////
 	return (
-		<BrowserRouter basename={process.env.PUBLIC_URL}>
+		<BrowserRouter>
 			<Routes>
 				{/* 중요!!! 레이아웃 컴포넌트를 루트로 설정! */}
-				<Route path="/" element={<Main />}>
-					{/* 하위 라우트 셋팅 
-          - path대신 index만 쓰면 첫페이지로 로딩함! 
-          -> path는 Layout의 Link to="/" 에 해당하는 셋팅*/}
-
-					{/* <Route index element={<Loading />} />
-          <Route path='dragpick' element={<DragPick />} />
-          <Route path="mypick" element={<MyPick />} />
-          <Route path="single" element={<Single />} />
-          <Route path="allcard" element={<AllCard />} />
-          <Route path="service" element={<Service />} />
-          <Route path="rank" element={<Rank />} />
-          <Route path="newcard" element={<NewCard />} /> */}
+				<Route>
+					<Route path="/" element={<Main />} />
+					<Route path="/hilite" element={<Hilite />} />
+					<Route path="/playerinfo" element={<PlayerInfo />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

@@ -6,7 +6,7 @@
 
 /* 공사중마크 */
 body * {
-    outline: 1px dotted #ff7171;
+    /* outline: 1px dotted #ff7171; */
 }
 
 body {
@@ -73,7 +73,7 @@ section {
     clear: both;
 }
 
-.header .part-box {
+.header {
     height: 10vh;
     /* background: #ff929231; */
 }

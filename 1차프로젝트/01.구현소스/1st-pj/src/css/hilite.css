@@ -20,10 +20,12 @@
     width: 50%;
     height: 100%;
 }
-.fa-arrow-left {
+.go-back {
     position: absolute;
-    transform: translate(50%, 50%);
+    transform: translate(60%, 10%) scale(1,2);
     font-size: 4rem;
+    font-weight: bold;
+    color: #c0c0c070;
 }
 .top-goods {
     position: absolute;
@@ -215,8 +217,4 @@
     display: flex;
     flex-direction: row-reverse;
 }
-.go-top>a{
-    font-weight: bold;
-    transform: scale(4,1.3) rotate(-90deg) translate(30px,-20px);
-    color: #c0c0c070;
-}
+

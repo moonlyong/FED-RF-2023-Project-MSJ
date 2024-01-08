@@ -68,21 +68,13 @@
 }
 /* 서브메뉴 */
 .sub-menu {
+    height: 10vh;
+    gap: 2.7vw;
     display: flex;
     justify-content: center;
     font-family: "Black Han Sans", sans-serif;
-    position: absolute;
     transform: translateY(30%);
     overflow: hidden;
-    /* opacity: 0; */
-    transition: 0.3s ease-out;
-}
-.sub-menu > ol {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    gap: 2vw;
 }
 .sub-menu a {
     font-size: max(10px, 1vw);
@@ -92,21 +84,6 @@
 .sub-menu a:hover {
     transform: scale(1.2);
     text-shadow: 0 0 5px #000;
-}
-.menu-color {
-    position: absolute;
-    width: 32%;
-    height: 100%;
-    background-color: rgba(68, 68, 68, 0.712);
-    opacity: 0;
-    left: 0;
-    border-radius: 60px;
-    transition: .4s ease-in-out;
-}
-.gnb > ul.menu-icon.on > li.menu-bar .sub-menu {
-    left: -475%;
-    /* 투명도 복구 */
-    opacity: 1;
 }
 /* 텍스트 영역 */
 .txt-area {

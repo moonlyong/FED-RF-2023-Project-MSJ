@@ -87,11 +87,11 @@ right: 15%;
 }
 .goods1 img {
     width: 600px;
-    transform: translate(24%, 20%);
+    transform: translate(30%, 20%);
 }
 .goods2 img {
     width: 300px;
-    transform: translate(44%,42vh);
+    transform: translate(60%,42vh);
 }
 .goods3 img {
     width: 300px;
@@ -99,14 +99,14 @@ right: 15%;
 }
 .goods4 img {
     width: 150px;
-    transform: translate(11vw,17vh);
+    transform: translate(12vw,17vh);
 }
 .goods5 img {
-    transform: translate(600px, 20px);
+    transform: translate(680px, 20px);
 }
 .goodtxtlogo{
     bottom: 21%;
-    right: 38px;
+    right: 80px;
 }
 .goods-link {
     /* width: 100%; */

@@ -1,4 +1,4 @@
-// Pilot PJ 메인영역 공통 컴포넌트
+import { Link } from "react-router-dom";
 
 
 // 라우터 역할을 하는 MainArea 컴포넌트 ////////
@@ -8,7 +8,7 @@ export function MainArea3(props){
         <>
            <section class="main-box main-3">
       <div class="display-box">
-        <a href="./hilite.html" target="_blank" class="hilite_link">
+        <a href="/hilite" target="_blank">
           <div class="frame-box"></div>
           <div class="linkbox dn">
             <ul>

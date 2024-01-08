@@ -16,7 +16,7 @@ export function autoScroll() {
   // 전체 페이지번호
   let pno = 0;
   // 페이지 요소
-  const pg = $(".page");
+  const pg = $(".main-box");
   // 전체 페이지개수
   const pgcnt = pg.length;
   // console.log("페이지개수:", pgcnt, pg);
@@ -127,7 +127,7 @@ export function autoScroll() {
       .animate({
           scrollTop: 
           $(window).height() * pno + "px",
-        }, 700,"easeInOutQuint",actPage
+        }, 100,"easeInOutQuint",actPage
         // 애니메이션 후 actPage함수를 호출!
       ); ///// animate //////
 
@@ -222,29 +222,31 @@ function actPage(){
   console.log('액숀~!!!', pno);
 
   // pno가 0 또는 4가 아니면 작동!
-  if(pno != 0 || pno != 4){
-    // 대상: 해당순번 .page 아래 .imgc 와 .txtc a
-    $('.page').eq(pno).find('.imgc,.txtc a')
-    .css({
-      transform: 'rotate(0deg)',
-      opacity: 1
-    }); ///////// css /////////
-  } ///////// if //////////////
+  if (pno == 2) {
+    const hlink_iframe = $(".frame-box");
+    const linkbx = $(".linkbox");
+
+    // 아래로 내려갈때 - 자동플레이
+    hlink_iframe.html('<iframe src="https://www.youtube.com/embed/Z-x4LIovPD4?autoplay=true&hl=" allow="autoplay"></iframe>');
+
+    setTimeout(() => {
+        hlink_iframe.addClass("dn");
+        linkbx.removeClass("dn");
+    }, 62000);
+
+} // if문 종료
+if (pno == 3) {
+  const tlogo = $(".logo-flex");
+  setTimeout(() => {
+    tlogo.addClass("mv");
+  }, 1000);
+
+}
 
   // 첫페이지일때 등장요소 초기화!
-  if(pno==0) initSet();
+  if(pno !=0) initSet();
 
 } ///////// actPage 함수 //////////////////
-
-// 메인 페이지 상단로고 클릭시 맨위로 이동하기!
-$('#logo a').click(e=>{
-  e.preventDefault();
-  pno = 0;
-  movePg();
-}); //////// click ////////
-
-
-
 
 
 

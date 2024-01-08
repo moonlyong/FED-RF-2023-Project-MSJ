@@ -145,10 +145,10 @@ function wheelFn(e) {
 
   window.scrollTo(0, window.innerHeight * pg_num);
 
-  const hlink_iframe = dqs(".frame-box");
-  const linkbx = dqs(".linkbox");
-
+  
   if (pg_num == 2) {
+    const hlink_iframe = dqs(".frame-box");
+    const linkbx = dqs(".linkbox");
     // 아래로 내려갈때 - 자동플레이
     hlink_iframe.innerHTML = `<iframe
         src="https://www.youtube.com/embed/Z-x4LIovPD4?autoplay=true&hl="
