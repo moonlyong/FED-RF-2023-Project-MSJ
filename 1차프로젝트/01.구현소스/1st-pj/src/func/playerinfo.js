@@ -41,27 +41,31 @@ export function wheelFn(e) {
   }
 }
 
+const cbtn = $('.close-bt')
+cbtn.hide();
 export function clickFn() {
   const mlogo = $('.mlogo');
   const cube = $('.cube');
   const ppic = $('.cube span img');
-
+  cbtn.show();
   mlogo.addClass('on');
   cube.addClass('on');
   $(this).addClass('big');
-  // ppic.on('mouseout', outFn);
+  cbtn.on('click', outFn);
 }
 
-// function outFn() {
-//   const mlogo = $('.mlogo');
-//   const cube = $('.cube');
-//   $('.mlogo').removeClass('on');
-//   cube.removeClass('on');
-//   $(this).removeClass('big');
-// }
+function outFn() {
+  const mlogo = $('.mlogo');
+  const cube = $('.cube');
+  $('.mlogo').removeClass('on');
+  cube.removeClass('on');
+  $('.big').removeClass('big');
+  cbtn.hide();
+  
+}
 export const SwiperFunctions = {
   setupSwiper,
   wheelFn,
   clickFn,
-  // outFn
+  outFn
 };

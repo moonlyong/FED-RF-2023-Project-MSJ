@@ -7,15 +7,15 @@ export function FooterArea() {
 			<div class="bottom-info">
 				<ul>
 					<li class="binfo-txt tac">
-						<a href="./index.html">프로그램소개</a>
+						<a href="/">프로그램소개</a>
 					</li>
 					<li class="binfo-txt tac">
-						<a href="./hilite.html" target="_blank">
+						<a href="/hilite" target="_blank">
 							하이라이트
 						</a>
 					</li>
 					<li class="binfo-txt tac">
-						<a href="./playerinfo.html" target="_blank">
+						<a href="/playerinfo" target="_blank">
 							선수단소개
 						</a>
 					</li>
@@ -37,12 +37,12 @@ export function FooterArea() {
 						</a>
 					</li>
 					<li class="grid tac">
-						<a href="./hilite.html" target="_blank">
+						<a href="/hilite" target="_blank">
 							<img src="./image/etc/p2.png" alt="" />
 						</a>
 					</li>
 					<li class="grid tac">
-						<a href="./playerinfo.html" target="_blank">
+						<a href="/playerinfo" target="_blank">
 							<img src="./image/etc/p3.png" alt="" />
 						</a>
 					</li>

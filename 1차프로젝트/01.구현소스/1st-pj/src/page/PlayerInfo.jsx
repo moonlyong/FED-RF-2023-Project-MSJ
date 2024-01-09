@@ -14,6 +14,7 @@ export function PlayerInfo() {
 					<div class="mlogo">
 						<img src="./image/logo/monsters.png" alt="" />
 					</div>
+					<p className="close-bt">×</p>
 					<div class="cube"></div>
 				</section>
 			</div>
