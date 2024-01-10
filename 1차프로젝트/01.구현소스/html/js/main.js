@@ -111,37 +111,20 @@ setTimeout(() => {
 ********************************************/
 
 function wheelFn(e) {
-  //이벤트 전달변수(자동)
-  // 함수호출
-  // console.log("휠이벤스");
 
-  // 광클금지
   if (sts_wheel) return;
   sts_wheel = 1; //
   setTimeout(() => (sts_wheel = 0), 800);
-  // console.log('11')
 
-  // 1. 휠방향에 따른 페이지변수 변경하기
-  // 휠방향은 wheelDelta로 알아냄
+
   let delta = e.wheelDelta;
-  // console.log("윌델타", delta);
 
-  // 음수 는 아랫방향 양수는 윗방향
   if (delta < 0) pg_num++;
   else pg_num--;
-  // 페이지 번호 확인
-  // console.log("페이지번호는?", pg_num);
 
-  // 제한주기(양끝페이지 고정)
   if (pg_num < 0) pg_num = 0;
   if (pg_num > total_page) pg_num = total_page - 1;
 
-  // 2. 페이지 이동하기
-  // scrollTo(x, y)
-  // 세로방향이동은 두번째 값만 주면 된다
-  // 스크롤 애니메이션은 html-behavior:smooth 로 처리
-  // 화면단위로 이동하므로 윈도우 높이값을 기본값으로 처리
-  // window.innerHeight -> window 높이값 구해온다
 
   window.scrollTo(0, window.innerHeight * pg_num);
 
@@ -149,7 +132,6 @@ function wheelFn(e) {
   const linkbx = dqs(".linkbox");
 
   if (pg_num == 2) {
-    // 아래로 내려갈때 - 자동플레이
     hlink_iframe.innerHTML = `<iframe
         src="https://www.youtube.com/embed/Z-x4LIovPD4?autoplay=true&hl="
         allow="autoplay"
@@ -162,24 +144,20 @@ function wheelFn(e) {
   } ///// if ////////////
   else {
     hlink_iframe.innerHTML = ''
-    // 위로 올라올때 - 멈춤
   }
 
   const tlogo = dqs(".logo-flex");
-  //     console.log(tlogo);
-  // console.log(pg_num);
+
   if (pg_num == 3) {
     setTimeout(() => {
       tlogo.classList.add("mv");
     }, 1000);
     addEventListener("click", function () {
-      // A 요소에 클릭 이벤트 리스너를 추가합니다.
       const ball = dqs(".ball img");
       ball.addEventListener("click", handleAClick);
       ball.clickable;
 
       function handleAClick() {
-        // B 요소에 클래스를 추가합니다.
         let tlogo = dqs(".logo-flex");
         tlogo.classList.remove("mv");
         let ballbx = dqs(".ball-box");
@@ -187,7 +165,6 @@ function wheelFn(e) {
         setTimeout(() => {
           let after = dqs(".after");
           after.classList.remove("dn");
-          // C 요소에서 클래스를 제거합니다.
           let before = dqs(".before");
           before.classList.add("dn");
           let ball1 = dqs(".ball-1");
@@ -197,24 +174,17 @@ function wheelFn(e) {
           
         }, 5000);
       }
-      // 클릭 시 실행할 동작을 여기에 작성합니다.
     });
   }
 }
 
-// 오버시 움직이는 배경
-// 이벤트 대상
-// 대상 메뉴컬러
 const subMenu = dqsa(".sub-menu li");
 const mbc = dqs(".menu-color");
-// clog(subMenu)
-// clog(mbc)
 subMenu.forEach((ele) => {
   addevt(ele, "mouseover", overFn);
   addevt(ele, "mouseout", outFn);
 });
 function overFn() {
-  // 오버된 li의 left위치값
   let posL = this.offsetLeft;
   console.log("위치", posL);
   mbc.style.opacity = 1;
@@ -222,10 +192,8 @@ function overFn() {
 }
 function outFn() {
   console.log("아웃", this);
-  // 사라지기
   mbc.style.opacity = 0;
 }
-// main4 tlogo for문
 const before = dqs(".before");
 
 let hcode = "";

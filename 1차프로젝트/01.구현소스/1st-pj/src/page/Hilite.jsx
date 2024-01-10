@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { VodSwiper } from "../modules/VodSwiper";
+import { Link } from "react-router-dom";
 
 export function Hilite() {
 	useEffect(() => {
@@ -11,7 +12,7 @@ export function Hilite() {
 				<div class="top-area">
 					<div class="left_box">
 						<div class="go-back">
-							<a href="/">＜＜</a>
+							<Link to={"/"}>＜＜</Link>
 						</div>
 						<div class="top-goods"></div>
 					</div>

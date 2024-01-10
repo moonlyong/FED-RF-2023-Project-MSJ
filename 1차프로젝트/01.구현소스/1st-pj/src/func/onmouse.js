@@ -1,3 +1,6 @@
+import { MouseOut, MouseOver } from './modules/mouse';
+
+
 import $ from 'jquery';
 window.jQuery = $;
 require('jquery-ui-dist/jquery-ui');
@@ -10,10 +13,13 @@ export function OnMouse(){
     let ball = $('.ball-2')
     let info = $('.player-info')
     info.hide();
-    ball.on('mouseover',function(){
-        info.fadeIn()
-    })
-    ball.on('mouseout',function(){
-        info.fadeOut()
-    })
+    MouseOver(ball,function(){info.fadeIn()})
+    // ball.on('mouseover',function(){
+    //     info.fadeIn()
+    // })
+    MouseOut(ball,function(){info.fadeOut()})
+
+    // ball.on('mouseout',function(){
+    //     info.fadeOut()
+    // })
 }

@@ -8,15 +8,15 @@ export function setupSwiper() {
   const cube = $('.cube');
   let stsWheel = 0;
   const TIME_WHEEL = 120;
-
+  
   let hcode = '';
   for (let i = 0; i < 11; i++) {
-      hcode += `<span><img src="./image/player/rp${i + 1}.jpg" alt=""></span>`;
+    hcode += `<span><img src="./image/player/rp${i + 1}.jpg" alt=""></span>`;
   }
   cube.html(hcode);
-
+  
   $(window).on('wheel', wheelFn);
-
+  
   const ppic = $('.cube span img');
   ppic.on('click', clickFn);
 }
@@ -24,14 +24,14 @@ export function setupSwiper() {
 export function wheelFn(e) {
   const cube = $('.cube');
   let numWheel = 0;
-
+  
   if (stsWheel) return; // 휠 이벤트 조절
   stsWheel = 1; // 휠 이벤트 잠금
   setTimeout(() => stsWheel = 0, TIME_WHEEL); // 지정된 시간 후 휠 이벤트 잠금 해제
-
+  
   let delta = e.originalEvent.wheelDelta;
   let cus = $('.cube span');
-
+  
   if (delta < 0) {
     cube.prepend(cus.last());
     numWheel++;
@@ -41,9 +41,9 @@ export function wheelFn(e) {
   }
 }
 
-const cbtn = $('.close-bt')
-cbtn.hide();
 export function clickFn() {
+  const cbtn = $('.close-bt')
+  cbtn.hide();
   const mlogo = $('.mlogo');
   const cube = $('.cube');
   const ppic = $('.cube span img');
@@ -55,6 +55,7 @@ export function clickFn() {
 }
 
 function outFn() {
+  const cbtn = $('.close-bt')
   const mlogo = $('.mlogo');
   const cube = $('.cube');
   $('.mlogo').removeClass('on');

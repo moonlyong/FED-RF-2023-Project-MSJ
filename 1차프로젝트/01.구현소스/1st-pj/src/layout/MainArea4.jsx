@@ -3,12 +3,24 @@ import { ATLogo } from "../data/atlogo";
 import { BTLogo } from "../data/btlogo";
 import { BallClick } from "../func/ballclick";
 import { OnMouse } from "../func/onmouse";
+import { Link } from "react-router-dom";
+
+import $ from "jquery";
+window.jQuery = $;
+require("jquery-ui-dist/jquery-ui");
 
 export function MainArea4(props) {
+	// let a = $(".logo-flex");
+	// let ball1 = $(".ball-1");
+	// let ball2 = $(".ball-2");
+	// let ballbx = $(".ball-box");
+	// let after = $(".after");
+	// let before = $(".before");
+	// let ballback = $(".ball-back");
 	// props.page 속성값으로 main/men/women/style
-  useEffect(()=>{
-    OnMouse()
-  })
+	useEffect(() => {
+		OnMouse();
+	});
 	return (
 		<>
 			<section class="main-box main-4">
@@ -50,13 +62,11 @@ export function MainArea4(props) {
 						<img src="./image/etc/ball.png" alt="" onClick={BallClick} />
 					</div>
 				</div>
-				<div class="ball-back">
-				</div>
+				<div class="ball-back"></div>
 				<div class="ball-box ball-2 dn">
 					<div class="ball">
-						<a href="/playerinfo" target="_blank">
-							<img src="./image/etc/ball.png" alt="" />
-						</a>
+						<Link to={"/playerinfo"}></Link>
+						<img src="./image/etc/ball.png" alt="" />
 					</div>
 					<div class="ball-back"></div>
 				</div>
