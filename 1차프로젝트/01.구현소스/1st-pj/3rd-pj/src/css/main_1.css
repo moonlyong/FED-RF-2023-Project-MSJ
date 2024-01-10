@@ -1,0 +1,139 @@
+
+/* 배경 */
+
+.main-1 {
+    background: url(../../public/image/bgi/main1.jpg) no-repeat center/100%;
+}
+
+/* main-1 구분박스 */
+
+.txt-area {
+    position: relative;
+    height: 90vh;
+    /* background-color: #60558857; */
+}
+/* 로고박스 */
+.main-logobx {
+    height: 10vh;
+}
+/* JTBC 로고 */
+.JTBC-logo {
+    position: fixed;
+}
+.blogo {
+    position: relative;
+    height: 100%;
+    /* opacity: 1; */
+}
+.blogo img {
+    /* width: 100%; */
+    height: 100%;
+    /* background: url(../이미지/로고이미지/넷플릭스pc.png) no-repeat center/100%; */
+}
+
+.gnb > ul > li:hover .blogo {
+    opacity: 0;
+}
+
+/* 상단 네비박스 */
+.gnb {
+    display: flex;
+    position: absolute;
+    gap: 3vw;
+    right: 6vw;
+    overflow: hidden;
+}
+.gnb-box {
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: row-reverse;
+    /* gap: 2vw; */
+}
+/* 메뉴라인 */
+.menu-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    gap: 2.7vw;
+    transition: right 0.3s ease-out;
+}
+
+/* 메뉴바 */
+.menu-bar {
+    font-size: 4rem;
+    margin-top: 30px;
+    cursor: pointer;
+}
+/* 서브메뉴 */
+.sub-menu {
+    height: 10vh;
+    gap: 2.7vw;
+    display: flex;
+    justify-content: center;
+    font-family: "Black Han Sans", sans-serif;
+    transform: translateY(40%);
+    overflow: hidden;
+}
+.sub-menu a {
+    font-size: max(10px, 1vw);
+    padding: 15px ;
+    transition: 0.1s;
+}
+.sub-menu a:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 5px #000;
+}
+/* 텍스트 영역 */
+.txt-area {
+    overflow: hidden;
+}
+.txt-box_1 {
+    position: absolute;
+    width: 100%;
+    top: 17vh;
+    left: -32vw;
+    transition: left 0.4s ease-out;
+}
+.txt-box_1 .txt {
+    position: absolute;
+    background-color: #ffffff46;
+    text-shadow: 0 0 7px rgba(255, 255, 255, 0.445);
+    border-radius: 20px;
+    padding: 2vw;
+    font-size: 0.9vw;
+    color: rgb(0, 0, 0);
+}
+.txt-box_1 .txt:hover {
+    background-color: #0000007a;
+    color: rgba(252, 252, 252, 0.836);
+    text-shadow: 0 0 7px rgb(0, 0, 0);
+}
+.font-3 {
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+.font-2 {
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+/* 텍스트 등장 */
+.txt-box_1.on {
+    left: 5vw;
+}
+.txt-2 {
+    /* right: 7vw; */
+    right: -32vw;
+    /* top: -2vw; */
+    display: none;
+    /* transform: scale(0); */
+    transition: right 0.4s ease-in;
+}
+.txt-2.on {
+    /* display: inline; */
+    right: 7vw;
+}
+.txt-2.show {
+    display: inline;
+    /* right: 7vw; */
+}

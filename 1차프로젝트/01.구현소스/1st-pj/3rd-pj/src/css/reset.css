@@ -1,0 +1,19 @@
+
+/* 초기화 */
+html,
+body,h1,h2,h3,h4,h5,h6,ul,ol,p,section,span {
+    margin: 0;
+    padding: 0;
+}
+img {border: none;}
+
+ul,ol{
+    list-style: none;
+}
+html{
+    font-size: 10px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}

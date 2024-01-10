@@ -1,0 +1,98 @@
+export const ClipDate = [
+	{
+		src: "./vodplayer.html",
+		tit: "[미공개] 콜드 패 위기에 굴하지 않고 슬로 커브 작렬하는 유희관",
+		img: "./image/preview/clip1.jpg",
+		tag: "메이킹 영상",
+	},
+	{
+		src: "./vodplayer.html",
+		tit: "[스페셜] 大선배 이대호, 그라운드 한가운데로 영건들 불러 모은 이유",
+		img: "./image/preview/clip2.jpg",
+		tag: "명장면클립",
+	},
+	{
+		src: "./vodplayer.html",
+		tit: "[스페셜] 이광길, 라인업 3회차만에 흑화? 현실은 눈물 없이 못 보는 시련기",
+		img: "./image/preview/clip3.jpg",
+		tag: "명장면클립",
+	},
+	{
+		src: "./vodplayer.html",
+		tit: "[하이라이트] 사상 첫! 서스펜디드 게임. 경기 중단 후 마운드에 다시 올라선 장원삼... 그 결과는?",
+		img: "./image/preview/clip4.jpg",
+		tag: "명장면클립",
+	},
+	{
+		src: "./vodplayer.html",
+		tit: "[하이라이트] '최강 몬스터즈' 최대 위기 속에 등장한 유희관, 오직 팀을 위해 이닝을 끝내야만 한다...!",
+		img: "./image/preview/clip5.jpg",
+		tag: "명장면클립",
+	},
+	{
+		src: "./vodplayer.html",
+		tit: "[하이라이트]'무빙' 뺨치는 초능력! 강습 타구 본능적으로 잡아낸 신재영(vs 동국대 1차전)",
+		img: "./image/preview/clip6.jpg",
+		tag: "명장면클립",
+	},
+	{
+		src: "./vodplayer.html",
+		tit: "최강야구 다음이야기 - 최강의 이름을 건 대결",
+		img: "./image/preview/clip7.jpg",
+		tag: "미리보기",
+	},
+	{
+		src: "./vodplayer.html",
+		tit: "몬스터즈 점수 획득 찬스! 9회 말 드디어 터진 이대호X서동욱 연속 안타",
+		img: "./image/preview/clip8.jpg",
+		tag: "명장면클립",
+	},
+	{
+		src: "./vodplayer.html",
+		tit: "[경기 재개] '와.. 이건 못 쳐' 한 점도 양보 못하는 장원삼의 삼진 아웃",
+		img: "./image/preview/clip9.jpg",
+		tag: "명장면클립",
+	},
+	{
+		src: "./vodplayer.html",
+		tit: "엄청난 폭우에 결국 경기 중단... 최강야구 사상 첫 서스펜디드 게임",
+		img: "./image/preview/clip10.jpg",
+		tag: "명장면클립",
+	},
+	{
+		src: "./vodplayer.html",
+		tit: "장원삼 등판과 함께 내리기 시작하는 비. 감성에 젖은(?) 신재영",
+		img: "./image/preview/clip11.jpg",
+		tag: "명장면클립",
+	},
+	{
+		src: "./vodplayer.html",
+		tit: "고영우의 살짝 짧은 송구! 하지만 우리에겐 수비요정 대호가 있잖아...",
+		img: "./image/preview/clip12.jpg",
+		tag: "명장면클립",
+	},
+	{
+		src: "./vodplayer.html",
+		tit: "[송승준 등판] 더 이상의 출루는 용납 못한다잉 포크볼로 깔끔하게 삼진!",
+		img: "./image/preview/clip13.jpg",
+		tag: "명장면클립",
+	},
+	{
+		src: "./vodplayer.html",
+		tit: "고영우의 용규 놀이(=무한 커트) 끈질긴 승부 끝에 출루 성공?",
+		img: "./image/preview/clip14.jpg",
+		tag: "명장면클립",
+	},
+	{
+		src: "./vodplayer.html",
+		tit: "大선배 이대호 유희관 등판에 영건 재소집 파이팅하는 중",
+		img: "./image/preview/clip15.jpg",
+		tag: "명장면클립",
+	},
+	{
+		src: "./vodplayer.html",
+		tit: "상상도 못한 연속 도루. 동국대 퀵 실버 최준서",
+		img: "./image/preview/clip16.jpg",
+		tag: "명장면클립",
+	},
+];

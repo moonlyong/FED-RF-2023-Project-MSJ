@@ -1,0 +1,174 @@
+/* 큐브 애니메이션2 CSS - cube2.css */
+@import url(./common.css);
+@import url(./reset.css);
+
+/* CSS 변수셋팅 */
+:root {
+	--box-width: 150px;
+	--box-height: 200px;
+	--z-size: 30vh;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+body {
+	background: url(../../public/image/bgi/main4.png) no-repeat center/cover;
+	height: 100vh;
+}
+
+.wrap {
+	width: 100vw;
+	height: 100vh;
+}
+
+.content {
+	position: relative;
+	height: 100vh;
+}
+.mlogo {
+	position: absolute;
+	transform: translate(272%, 140%) scale(1.5);
+	transition: 0.5s ease-in;
+}
+.mlogo.on {
+	transform: translate(580%, 10%) scale(1);
+	transition: 0.5s ease-in;
+}
+
+.cube {
+	width: 90vw;
+	height: 30vh;
+	display: flex;
+	position: absolute;
+	transform: translateY(180%);
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s ease-in;
+}
+.cube.on {
+	transform: translateY(220%);
+}
+.s0 {
+	transform: scale(0);
+}
+.big {
+	transform: translateY(-50%) scale(2.2);
+	transition: 0.5s ease-in;
+}
+.cube span {
+	position: absolute;
+	width: 150px;
+	height: 200px;
+	transition: 0.4s ease-out;
+}
+span img {
+	width: var(--box-width);
+	transition: 0.5s ease-in;
+}
+
+.black {
+	background: #000;
+}
+/* 1번 */
+.cube span:nth-child(1) {
+	transform: scale(1);
+	top: -53%;
+	left: 21%;
+	filter: grayscale(90%);
+}
+/* 2번 */
+.cube span:nth-child(2) {
+	z-index: 1;
+	transform: scale(1.1);
+	top: -43%;
+	left: 24%;
+	filter: grayscale(80%);
+}
+/* 3번 */
+.cube span:nth-child(3) {
+	z-index: 2;
+	transform: scale(1.2);
+	top: -33%;
+	left: 28%;
+	filter: grayscale(70%);
+}
+/* 4번 */
+.cube span:nth-child(4) {
+	z-index: 3;
+	top: -23%;
+	left: 33%;
+	transform: scale(1.3);
+	filter: grayscale(60%);
+}
+/* 5번 */
+.cube span:nth-child(5) {
+	z-index: 4;
+	top: -13%;
+	left: 39%;
+	transform: scale(1.4);
+	filter: grayscale(50%);
+}
+/* 6번 */
+.cube span:nth-child(6) {
+	z-index: 5;
+	top: 0;
+	transform: scale(1.5);
+	cursor: pointer;
+}
+/* 7번 */
+.cube span:nth-child(7) {
+	z-index: 4;
+	top: -13%;
+	right: 39%;
+	transform: scale(1.4);
+	filter: grayscale(50%);
+}
+/* 8번 */
+.cube span:nth-child(8) {
+	z-index: 3;
+	top: -23%;
+	right: 33%;
+	transform: scale(1.3);
+	filter: grayscale(60%);
+}
+/* 9번 */
+.cube span:nth-child(9) {
+	z-index: 2;
+	transform: scale(1.2);
+	top: -33%;
+	right: 28%;
+	filter: grayscale(70%);
+}
+.cube span:nth-child(10) {
+	z-index: 1;
+	transform: scale(1.1);
+	top: -43%;
+	right: 24%;
+	filter: grayscale(80%);
+}
+.cube span:nth-child(11) {
+	transform: scale(1);
+	top: -53%;
+	right: 21%;
+	filter: grayscale(90%);
+}
+
+.close-bt {
+    display: none;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	color: #000;
+	text-align: center;
+	font-size: 1.2rem;
+	position: absolute;
+	border-radius: 50%;
+	font-weight: bold;
+	right: 596px;
+	top: 214px;
+	cursor: pointer;
+}

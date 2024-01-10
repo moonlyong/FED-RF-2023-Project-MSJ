@@ -1,0 +1,135 @@
+
+/* css불러오기 */
+@import url(./main_4-1.css);
+
+/* main-4 구분박스 */
+.main-4 {
+    position: relative;
+}
+.main4-logo {
+    position: absolute;
+    width: 35%;
+    height: 20%;
+    z-index: 1;
+    top: 0;
+}
+/* 돌기 이전화면 */
+.before {
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../../public/image/bgi/main4-B.png) no-repeat center/100%;
+    transition: 0.4s ease-out;
+}
+
+/* 각팀 로고박스 */
+.logo-flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-flex li {
+    position: absolute;
+    bottom: 18%;
+    transition: 0.4s ease-in;
+}
+/* 로고 온 */
+.logo-flex.mv .tlogo-1 {
+    transform: translate(37vw, 0);
+}
+.logo-flex.mv .tlogo-2 {
+    transform: translate(-12vw, -51vh) scale(0.8);
+}
+.logo-flex.mv .tlogo-3 {
+    transform: translate(37vw, -51vh);
+}
+.logo-flex.mv .tlogo-4 {
+    transform: translate(-27vw, -29vh) scale(0.8);
+}
+.logo-flex.mv .tlogo-5 {
+    transform: translate(29vw, -25vh) scale(0.8);
+}
+.logo-flex.mv .tlogo-6 {
+    transform: translate(-36vw, -9vh) scale(0.8);
+}
+.logo-flex.mv .tlogo-7 {
+    transform: translate(-36vw, -45vh);
+}
+.logo-flex.mv .tlogo-8 {
+    transform: translate(14vw, -53vh);
+}
+.logo-flex.mv .tlogo-9 {
+    transform: translate(-15vw, 15vh);
+}
+.logo-flex.mv .tlogo-10 {
+    transform: translate(15vw, 7vh);
+}
+
+.ball-box {
+    z-index: 1;
+    left: 37.5%;
+    position: absolute;
+    top: 45%;
+    transform: rotate(0deg) scale(0.8);
+}
+.ball-1{
+  animation: ball-ani 5s linear(0.11 -19.61%, 0.58 3.78%, 0.99 32.37%, 0.81 67.5%, 0.41 86.93%) .4s;
+  animation-play-state: paused;
+}
+.ball-box.on {
+    animation-play-state: running;
+}
+
+
+.ball-back.on {
+    animation-play-state: running;
+}
+@keyframes ball-ani {
+    to {
+        transform: rotate(36000deg) scale(1);
+    }
+}
+@keyframes back-ani {
+    to {
+        transform: scale(2);
+    }
+}
+.ball img {
+    cursor: pointer;
+}
+.bpbox ul,
+.bpbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.bpbox ul li {
+    position: absolute;
+}
+.bplayer-4 {
+    left: 47%;
+    transform: translate(-53%, 27%) scale(1.5);
+}
+.bplayer-2 {
+    right: 55%;
+    bottom: 19%;
+    transform: scale(1.3);
+}
+.bplayer-3 {
+    bottom: -29px;
+    left: 7%;
+    transform: scale(0.9);
+}
+.bplayer-1 {
+    left: 68%;
+    bottom: 16px;
+    transform: scale(1.1);
+}
+.bplayer-5 {
+    left: 49%;
+    bottom: 10%;
+    transform: scale(1.3);
+}

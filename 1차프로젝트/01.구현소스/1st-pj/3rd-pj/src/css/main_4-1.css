@@ -1,0 +1,69 @@
+
+/* css불러오기 */
+
+/* main-4 구분박스 */
+.main-4{
+    position: relative;
+}
+/* 돌기 이전화면 */
+.apbox{
+    width: 100%;
+    height: 88%;
+}
+.after{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../public/image/bgi/main4.png) no-repeat center/100%;;
+    transition: 0.4s ease-in-out;
+}
+
+.apbox ul,.bpbox{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.apbox ul li{
+    position: absolute;
+}
+.player-6{
+    left: 50%;
+    transform: translate(-53%,27%)scale(1.4);
+}
+.player-5{
+    left: 33px;
+    bottom: 17px;
+    transform: scale(1.1);
+}
+.player-4{
+    bottom: 17px;
+    right: -7%;
+    transform: scale(1.1);
+}
+.player-3{
+    left: 16%;
+    bottom: 5%;
+    transform:  scale(0.9);
+}
+.player-2{
+    right: 8%;
+    bottom: 17%;
+    transform: scale(0.9);
+}
+.player-1{
+    right: 11%;
+    bottom: 0;
+    transform: scale(1);
+}
+
+.player-info{
+
+    position: relative;
+    font-size: 2.4rem;
+    background: #000;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+}

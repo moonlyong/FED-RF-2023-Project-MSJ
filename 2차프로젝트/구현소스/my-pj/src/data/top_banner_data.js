@@ -1,4 +1,4 @@
-export const TopData = [
+export const TopBannerData = [
     {
         src:"./img/banner/tb1.jpg",
     },

@@ -1,0 +1,64 @@
+
+/* css불러오기 */
+
+/* main-3 구분박스 */
+.main-3{
+    background: url(../../public/image/bgi/main3.jpg) no-repeat center/100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-box {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    aspect-ratio: 16/9;
+    background: #000000;
+    transform: translateY(20%);
+}
+.frame-box{
+    width: 1240px;
+    height: 632px;
+}
+
+.frame-box>iframe {
+    aspect-ratio: 16/9;
+    width: 100vw;
+    transform: translate(-17.5%,-21%);
+    /* display: none; */
+    
+}
+.linkbox{
+    /* display: none; */
+    width: 80%;
+    margin: 0 auto;
+}
+.linkbox ul{
+    display: flex;
+    gap: 0 20px;
+    border: 1px solid #c0c0c0;
+    padding: 20px;
+}
+.linkbox ul li:last-child{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.linkbox>ul>li>img{
+    width: 500px;
+}
+.preview-txt>h4{
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.preview-txt>h5{
+    margin-bottom: 50px;
+}
+.more-vod{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2rem;
+}
