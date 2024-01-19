@@ -1,0 +1,302 @@
+export const CardData = [
+    {
+        idx:"1",
+        name: "DA@카드의정석",
+        com: "우리카드",
+        txt: ["모든가맹점0.8%할인", "생활업종1.3%할인", "국내공항라운지연 2회무료(전월실적 30만원)",],
+        cost:"국내전용 5,000원 / 해외겸용 10,000원",
+        etc: ["☆전월실적없음☆","BC","Mastercard"],
+        src:"./img/01card.png",
+        make:"https://pc.wooricard.com/dcpc/yh1/crd/crd01/H1CRD201S00.do",
+        info:["쇼핑","마트","항공"]
+    },
+    {
+        idx:"2",
+        name: "신한카드 Mr.Life",
+        com: "신한카드",
+        txt: ["공과금10%할인", "마트,편의점10%할인", "식음료10%할인",],
+        cost:"해외겸용 15,000원",
+        etc: ["전월실적30만원▲","VISA","온라인발급 전용 카드"],
+        src:"./img/02card.png",
+        make:"https://www.shinhancard.com/pconts/html/card/apply/credit/1187937_2207.html",
+        info:["마트","외식","공과금"]
+    },
+    {
+        idx:"3",
+        name: "삼성카드 & MILEAGE PLATINUM",
+        com: "삼성카드",
+        txt: ["1,000원당1마일기본적립", "커피/주유2마일특별적립", "인천공항라운지무료이용",],
+        cost:"국내전용 47,000원  해외겸용 49,000원",
+        etc: ["☆전월실적없음☆","AMEX",],
+        src:"./img/03card.png",
+        make:"https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1452",
+        info:["카페","주유","항공"]
+    },
+    {
+        idx:"4",
+        name: "LOCA 365 카드",
+        com: "롯데카드",
+        txt: ["아파트관리비, 공과금10%할인", "교통, 통신, 배달앱10%할인", "스트리밍1,500원할인",],
+        cost:"국내전용 20,000원  해외겸용 20,000원",
+        etc: ["전월실적50만원▲","Mastercard","AMEX"],
+        src:"./img/04card.png",
+        make:"https://www.lottecard.co.kr/app/LPCDADB_V100.lc?vtCdKndC=P14028-A14028",
+        info:["교통","통신","공과금"]
+    },
+    {
+        idx:"5",
+        name: "다담카드",
+        com: "KB국민카드",
+        txt: ["교통/통신10%할인", "주유소/충전소60원/L할인", "생활/교육/쇼핑 등적립팩선택",],
+        cost:"국내전용 15,000원  해외겸용 20,000원",
+        etc: ["전월실적30만원▲","VISA","Mastercard"],
+        src:"./img/05card.png",
+        make:"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICAC0076",
+        info:["교통","통신","주유"]
+    },
+    {
+        idx:"6",
+        name: "삼성카드 taptap O",
+        com: "삼성카드",
+        txt: ["스타벅스50%할인", "대중교통10%할인", "CGV, 롯데시네마5,000원할인",],
+        cost:"국내전용 10,000원  해외겸용 10,000원",
+        etc: ["전월실적30만원▲","Mastercard","온라인발급 전용 카드"],
+        src:"./img/06card.png",
+        make:"https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1483",
+        info:["카페","교통","문화","통신"]
+    },
+    {
+        idx:"7",
+        name: "마일앤조이카드(대한항공)",
+        com: "IBK기업은행",
+        txt: ["1,500원당3~1마일적립", "KTX, SRT10%할인", "공항라운지연 2회무료",],
+        cost:"해외겸용 30,000원",
+        etc: ["☆전월실적없음☆","UnionPay"],
+        src:"./img/07card.png",
+        make:"https://www.ibk.co.kr/cardbiz/listBizNew.ibk?pageId=CA01010000",
+        info:["항공","교통","숙박"]
+    },
+    {
+        idx:"8",
+        name: "원더카드 FREE",
+        com: "하나카드",
+        txt: ["국내외가맹점0.7%할인", "간편결제1.2%할인", "쿠팡/마트/베이커리2%할인",],
+        cost:"국내전용 12,000원  해외겸용 12,000원",
+        etc: ["☆전월실적없음☆","Mastercard"],
+        src:"./img/08card.png",
+        make:"https://www.hanacard.co.kr/",
+        info:["통신","카페","마트"]
+    },
+    {
+        idx:"9",
+        name: "알뜰교통카드",
+        com: "신한카드",
+        txt: ["대중교통/택시10%할인", "마트/편의점10%할인", "전기차 충전 최대50%할인",],
+        cost:"해외겸용 12,000원",
+        etc: ["전월실적30만원▲","Mastercard","UnionPay"],
+        src:"./img/09card.png",
+        make:"https://www.shinhancard.com/pconts/html/card/apply/credit/1188458_2207.html",
+        info:["교통","마트","주유"]
+    },
+    {
+        idx:"10",
+        name: "삼성 iD ON 카드",
+        com: "삼성카드",
+        txt: ["많이쓰는 영역 자동맞춤30%할인", "교통/이동통신/스트리밍10%할인", "온라인간편결제/해외3%·1%할인",],
+        cost:"국내전용 20,000원  해외겸용 20,000원",
+        etc: ["전월실적30만원▲","Mastercard"],
+        src:"./img/10card.png",
+        make:"https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1731",
+        info:["교통","통신","카페"]
+    },
+    {
+        idx:"11",
+        name: "신한카드 Deep Dream Platinum+",
+        com: "신한카드",
+        txt: ["모두드림 최대 1.1%적립", "더해드림 최대 3.3%적립", "챙겨드림 최대 5.5%적립",],
+        cost:"해외겸용 30,000원",
+        etc: ["☆전월실적없음☆","VISA","UnionPay"],
+        src:"./img/11card.png",
+        make:"https://www.shinhancard.com/pconts/html/card/apply/credit/1188277_2207.html",
+        info:["교통","쇼핑","기타"]
+    },
+    {
+        idx:"12",
+        name: "현대카드ZERO Edition2(할인형)",
+        com: "현대카드",
+        txt: ["모든가맹점0.7%할인", "생활필수영역1.5%할인"],
+        cost:"국내전용 10,000원  해외겸용 10,000원",
+        etc: ["☆전월실적없음☆","브랜드VISA"],
+        src:"./img/12card.png",
+        make:"https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=ZROE2",
+        info:["교통","쇼핑","기타"]
+    },
+    {
+        idx:"13",
+        name: "BC 바로 에어 플러스 스카이패스",
+        com: "BC 바로카드",
+        txt: ["1천원당1마일리지적립", "1백만원당200마일리지적립"],
+        cost:"국내전용 19,000원  해외겸용 19,000원",
+        etc: ["☆전월실적없음☆","BC","Mastercard"],
+        src:"./img/13card.png",
+        make:"https://www.bccard.com/app/card/CreditCardMain.do?gdsno=101924",
+        info:["항공"]
+    },
+    {
+        idx:"14",
+        name: "트래블월렛 우리카드",
+        com: "우리카드",
+        txt: ["트래블 포인트최대 2.0%적립", "해외 이용수수료 면제서비스"],
+        cost:"국내전용 20,000원  해외겸용 20,000원",
+        etc: ["☆전월실적없음☆","VISA"],
+        src:"./img/14card.png",
+        make:"https://pc.wooricard.com/dcpc/yh1/crd/crd01/H1CRD201S00.do",
+        info:["쇼핑","외식","기타"]
+    },
+    {
+        idx:"15",
+        name: "올바른 FLEX 카드",
+        com: "NH농협카드",
+        txt: ["커피50%할인", "스트리밍20%할인", "영화30%할인",],
+        cost:"국내전용 10,000원  해외겸용 12,000원",
+        etc: ["전월실적30만원▲","VISA"],
+        src:"./img/15card.png",
+        make:"https://card.nonghyup.com/IPCC01.menu",
+        info:["카페","통신","문화"]
+    },
+    {
+        idx:"16",
+        name: "카드의정석 EVERY 1",
+        com: "우리카드",
+        txt: ["국내외 가맹점1%청구할인", "전월실적 따라최대 2만원추가할인"],
+        cost:"국내전용 12,000원  해외겸용 12,000원",
+        etc: ["☆전월실적없음☆","Mastercard"],
+        src:"./img/16card.png",
+        make:"https://pc.wooricard.com/dcpc/yh1/crd/crd01/H1CRD201S00.do",
+        info:["기타","쇼핑"]
+    },
+    {
+        idx:"17",
+        name: "Easy all 티타늄카드",
+        com: "KB국민카드",
+        txt: ["20개 영역 중선택형할인", "택시10%할인", "온라인쇼핑5%할인",],
+        cost:"국내전용 30,000원  해외겸용 30,000원",
+        etc: ["전월실적50만원▲","VISA","UnionPay"],
+        src:"./img/17card.png",
+        make:"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICAC0076",
+        info:["쇼핑","교통","카페","마트","문화","통신"]
+    },
+    {
+        idx:"18",
+        name: "LOCA LIKIT 1.2",
+        com: "롯데카드",
+        txt: ["모든가맹점1.2%할인", "온라인1.5%할인"],
+        cost:"국내전용 10,000원  해외겸용 10,000원",
+        etc: ["☆전월실적없음☆","Mastercard","AMEX"],
+        src:"./img/18card.png",
+        make:"https://www.lottecard.co.kr/app/LPCDADB_V100.lc?vtCdKndC=P13937-A13937&npayUseYn=&redirect_Url1=",
+        info:["쇼핑","기타"]
+    },
+    {
+        idx:"19",
+        name: "알뜰교통플러스 카드",
+        com: "KB국민카드",
+        txt: ["대중교통10%할인", "생활서비스5%할인", "KB Pay 이용 시5%추가할인",],
+        cost:"국내전용 8,000원  해외겸용 8,000원",
+        etc: ["전월실적30만원▲","VISA"],
+        src:"./img/19card.png",
+        make:"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICAC0076",
+        info:["교통","통신","의료"]
+    },
+    {
+        idx:"20",
+        name: "신한카드 Deep Oil",
+        com: "신한카드",
+        txt: ["4개정유사10%할인", "차량서비스10%할인", "편의점/커피/택시5%할인",],
+        cost:"해외겸용 10,000원",
+        etc: ["전월실적30만원▲","Mastercard"],
+        src:"./img/20card.png",
+        make:"https://www.shinhancard.com/pconts/html/card/apply/credit/1188274_2207.html",
+        info:["주유","자동차","교통"]
+    },
+    {
+        idx:"21",
+        name: "IBK 무직타이거 카드(신용)",
+        com: "IBK기업은행",
+        txt: ["버스,지하철건당 200원할인", "주유소/충전소60원/L할인", "온라인쇼핑20%할인",],
+        cost:"국내전용 10,000원  해외겸용 12,000원",
+        etc: ["전월실적50만원▲브랜드","BC","Mastercard"],
+        src:"./img/21card.png",
+        make:"https://www.ibk.co.kr/cardbiz/listBizNew.ibk?pageId=CA01010000",
+        info:["교통","주유","마트"]
+    },
+    {
+        idx:"22",
+        name: "Mile1 하나카드",
+        com: "하나카드",
+        txt: ["국내 6대 저비용 항공사45 UniMile적립", "해외·면세점·여행사35 UniMile적립", "인천공항 라운지무료이용",],
+        cost:"국내전용 20,000원  해외겸용 20,000원",
+        etc: ["☆전월실적없음☆","UnionPay"],
+        src:"./img/22card.png",
+        make:"https://www.hanacard.co.kr/",
+        info:["항공"]
+    },
+    {
+        idx:"23",
+        name: "始發(시발)카드",
+        com: "BC 바로카드",
+        txt: ["배달앱 최대1,800원할인", "편의점 최대1,800원할인", "실적/한도없이0.7%할인",],
+        cost:"국내전용 5,000원  해외겸용 8,000원",
+        etc: ["☆전월실적없음☆","BC"],
+        src:"./img/23card.png",
+        make:"https://www.bccard.com/app/card/CreditCardMain.do?gdsno=101514",
+        info:["외식","마트","기타"]
+    },
+    {
+        idx:"24",
+        name: "카드의정석 WOWRI",
+        com: "우리카드",
+        txt: ["모아포인트5%~0.8%적립", "주요간편결제3%추가적립",],
+        cost:"국내전용 10,000원  해외겸용 12,000원",
+        etc: ["전월실적30만원▲","VISA","BC"],
+        src:"./img/24card.png",
+        make:"https://pc.wooricard.com/dcpc/yh1/crd/crd01/H1CRD201S00.do",
+        info:["교통","카페","쇼핑"]
+    },
+    {
+        idx:"25",
+        name: "현대카드 M3 BOOST",
+        com: "현대카드",
+        txt: ["업종별 최대6%적립", "온라인 간편결제5%적립", "해외가맹점5%적립",],
+        cost:"국내전용 90,000원  해외겸용90,000원",
+        etc: ["전월실적50만원▲","VISA"],
+        src:"./img/25card.png",
+        make:"https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=M3PBT",
+        info:["교통","카페","외식","마트","통신","항공"]
+    },
+    {
+        idx:"26",
+        name: "현대카드Z family",
+        com: "현대카드",
+        txt: ["온라인쇼핑10%할인", "배달앱10%할인", "주유소100원/L할인",],
+        cost:"국내전용 10,000원  해외겸용 10,000원",
+        etc: ["전월실적40만원▲","VISA"],
+        src:"./img/26card.png",
+        make:"https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=ZF",
+        info:["쇼핑","마트","주유"]
+    },
+    {
+        idx:"27",
+        name: "카드의정석 EVERY MILE SKYPASS",
+        com: "우리카드",
+        txt: ["SKYPASS최대 2마일리지적립", "해외이용수수료0.3%면제", "국내 공항라운지동반 1인까지 무료이용",],
+        cost:"해외겸용 39,000원",
+        etc: ["☆전월실적없음☆","Mastercard"],
+        src:"./img/27card.png",
+        make:"https://pc.wooricard.com/dcpc/yh1/crd/crd01/H1CRD201S00.do",
+        info:["항공"]
+    },
+   
+    
+]
+

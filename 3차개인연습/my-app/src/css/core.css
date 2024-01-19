@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "neurimboGothicRegular";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/neurimboGothicRegular.woff2")
+        format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "GangwonState";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/GangwonState.woff2")
+        format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "KBO-Dia-Gothic_bold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff")
+        format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "NeoDunggeunmoPro-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2")
+        format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DNFBitBitv2";
+    font-style: normal;
+    font-weight: 400;
+    src: url("//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf")
+        format("opentype");
+}
+@font-face {
+    font-family: "DOSPilgiMedium";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/DOSPilgiMedium.woff2")
+        format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PyeongChangPeace-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@font-face {
+    font-family: NG;
+    src: url(../static/fonts/NanumGothic.woff) format("woff");
+  }
+  /* Ubuntu체 */
+  @font-face {
+    font-family: UB;
+    src: url(../static/fonts/UbuntuCondensed-Regular.woff) format("woff");
+  }
+
+/* 공사중마크 */
+body * {
+    /* outline: 1px dotted #ff7171; */
+}
+
+/* 12 그리드 클래스 :*/
+
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
+
+.dn{
+    display: none;
+}
+.tac {
+    text-align: center;
+}
+.inner{
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+
+#middle-area {
+    width: 100vw;
+    height: 67vh;
+    position: relative;
+    /* background: #ff9e9e; */
+}
+
+
+.bottom-area {
+    width: 100vw;
+    height: 25vh;
+}
+.bdl-gray {
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+

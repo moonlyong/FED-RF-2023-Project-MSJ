@@ -1,0 +1,45 @@
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rank-swiper {
+  width: 1000px;
+  height: 800px;
+  margin-top: 20px;
+}
+
+.ranksw {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #000000;
+}
+.swiper-3d .swiper-slide-shadow {
+  background: rgb(255, 255, 255);
+}
+@media screen and (max-width: 500px) {
+
+	.rank-swiper {
+		margin-left: 0;
+		margin-right: 0;
+    height: 77vh;
+    margin-top: 1vh;
+
+	}
+	.ranksw {
+		justify-content: flex-start;
+	}
+
+}
