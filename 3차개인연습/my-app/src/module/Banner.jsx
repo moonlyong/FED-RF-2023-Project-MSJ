@@ -11,18 +11,16 @@ import '../css/banner.css';
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { BannerData } from '../data/banner_data';
-import { Shuffle } from './Shuffle';
 
 
 export function Banner() {
 
-  const Newimg = Shuffle([...BannerData])
   
   return (
     <>
       <Swiper
-      slidesPerView={2}
-        spaceBetween={1200}
+      slidesPerView={4}
+        spaceBetween={200}
         loop={true}
         autoplay={{
           delay: 10000,
@@ -31,12 +29,11 @@ export function Banner() {
         modules={[Autoplay, Pagination,Navigation]}
         className="banner-swiper"
       >
-        {Newimg.map((v,i)=>(
+        {BannerData.map((v,i)=>(
           <SwiperSlide className='bannersw'>
             <div className="bannerinfo">
-              <div className="bannercolor"></div>
               <img src={v.src} alt="" />
-              <p className='bp1'>{v.txt}</p>
+              <div className="bannercolor"></div>
             </div>
           </SwiperSlide>
         ))}

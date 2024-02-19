@@ -108,14 +108,14 @@ body {
     text-align: center;
 }
 .inner{
-    max-width: 1220px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
 
 #middle-area {
     width: 100vw;
-    height: 67vh;
+    height: 70vh;
     position: relative;
     /* background: #ff9e9e; */
 }

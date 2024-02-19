@@ -16,6 +16,8 @@ display: flex;
     box-sizing: border-box;
   }
   .info h2 {
+    width: 200px;
+
     font-size: 1.2rem;
     line-height: 2;
   }
@@ -29,6 +31,7 @@ display: flex;
   
   /* 테이블 셀 스타일 */
   .info td {
+    line-height: 1.6;
     padding: 10px;
     border: 1px solid #ddd; /* 셀 테두리 스타일을 지정할 수 있습니다. */
   }

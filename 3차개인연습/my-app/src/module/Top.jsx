@@ -39,7 +39,7 @@ export function Top(cln,lg,bn,td) {
 						>
                             {bn.map((v,i)=>(
 
-							<SwiperSlide className='topsw'><a href={v.link}><img src={v.src} alt="" /></a></SwiperSlide>
+							<SwiperSlide className='topsw'><a href={v.link} target='blank'><img src={v.src} alt="" /></a></SwiperSlide>
                             ))}
 							
 						</Swiper>
