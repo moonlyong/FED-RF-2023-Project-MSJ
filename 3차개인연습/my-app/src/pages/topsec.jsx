@@ -21,7 +21,7 @@ export function Topsec() {
 	return (
 		<>
 
-		{Top("mytop","./img/logo.png",TopBannerData,TopData)}
+		{Top("mytop","./myimgs/mllogo2.png",TopBannerData,TopData)}
 		</>
 	);
 }

@@ -3,18 +3,21 @@ import React, { useEffect, useState } from 'react';
 import ReactDOM, { createRoot } from 'react-dom/client';
 import {BrowserRouter, HashRouter, Route, Routes, useNavigate} from "react-router-dom"
 import { Layout } from "./layout/Layout";
-import { DragPick } from './pages/dragpick';
 
 
 // 페이지 공통 CSS
 import './css/common.css';
-import { Loading } from './pages/Loading';
 import { NewCard } from './pages/newcard';
 import { Rank } from './pages/rank';
 import { Service } from './pages/service';
-import { AllCard } from './pages/allcard';
+import { MyStory } from './pages/mystory';
 import { MyPick } from './pages/mypick';
 import { Single } from './pages/single';
+import { Education } from './module/mypage/Edu';
+import { Experience } from './module/mypage/Exp';
+import { Skills } from './module/mypage/Skills';
+import { Projects } from './module/mypage/Pj';
+import { Certifications } from './module/mypage/Certifications';
 
 // 최상위 Root 컴포넌트 ///////
 function App(){
@@ -25,29 +28,23 @@ function App(){
     <BrowserRouter basename={process.env.PUBLIC_URL} >
     
       <Routes>
-        {/* 중요!!! 레이아웃 컴포넌트를 루트로 설정! */}
         <Route path="/" element={<Layout />}>
-          {/* 하위 라우트 셋팅 
-          - path대신 index만 쓰면 첫페이지로 로딩함! 
-          -> path는 Layout의 Link to="/" 에 해당하는 셋팅*/}
-          
-          <Route index element={<Loading />} />
-          <Route path='dragpick' element={<DragPick />} />
-          <Route path="mypick" element={<MyPick />} />
+          <Route index element={<MyPick />} />
           <Route path="single" element={<Single />} />
-          <Route path="allcard" element={<AllCard />} />
-          <Route path="service" element={<Service />} />
-          <Route path="rank" element={<Rank />} />
-          <Route path="newcard" element={<NewCard />} />
+          <Route path="mystory" element={<MyStory />} />
+          <Route path="myspec" element={<Service />} />
+          <Route path="myinfo" element={<Rank />} />
+          <Route path="mypopol" element={<NewCard />} />
+          <Route path="/1" element={<Education />} />
+				<Route path="/2" element={<Experience />} />
+				<Route path="/3" element={<Skills />} />
+				<Route path="/4" element={<Projects />} />
+				<Route path="/5" element={<Certifications />} />
         </Route>
       </Routes>
     </BrowserRouter>
     // </HashRouter>
-      // <>
-      //   <TopArea cat={pgName} />        
-      //   <MainArea page={pgName} />
-      //   <FooterArea />
-      // </>
+
       
   )
 

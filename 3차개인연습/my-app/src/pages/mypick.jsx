@@ -33,7 +33,7 @@ export function MyPick() {
 
 	return (
 		<>
-			<Banner></Banner>
+			{/* <Banner></Banner> */}
 			{/* list 모듈 사용 */}
 			{List(sortedMyItems)}
 		</>

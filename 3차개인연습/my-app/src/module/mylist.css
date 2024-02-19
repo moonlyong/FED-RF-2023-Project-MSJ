@@ -1,0 +1,19 @@
+.mylist{
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  width: 20%;
+  border-right:1px solid #000000;
+
+}
+.mylist a{
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+}
+.mylist h2{
+  font-size: 2rem;
+  padding: 20px 0 20px 30px;
+}
+.mylist li{
+  padding:10px 0 10px 30px;
+  font-size: 1.4rem;
+}

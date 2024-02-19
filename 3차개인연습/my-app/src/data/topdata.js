@@ -1,28 +1,28 @@
 export const TopData = [
     {
-        src:"/rank",
+        src:"/",
         name:"HOME",
     },
     {
-        src:"/rank",
-        name:"TOP 10",
+        src:"/myinfo",
+        name:"나의소개",
     },
     {
-        src:"/dragpick",
-        name:"맞춤카드",
+        src:"/myspec",
+        name:"개발스택",
     },
     {
-        src:"/newcard",
-        name:"이달의 카드",
+        src:"/mypopol",
+        name:"포트폴리오",
     },
     {
-        src:"/allcard",
-        name:"모든카드",
+        src:"/mystory",
+        name:"이력서",
     },
-    {
-        src:"/service",
-        name:"고객센터",
-    },
+    // {
+    //     src:"/service",
+    //     name:"고객센터",
+    // },
 
    
 ]

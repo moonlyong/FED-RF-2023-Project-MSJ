@@ -29,9 +29,9 @@ export function Rank() {
 
 	return (
 		<>
-		<Banner></Banner>
+		{/* <Banner></Banner> */}
 		{/* list모듈 사용 */}
-		{List(shuffleList)}
+		{/* {List(shuffleList)} */}
 			
 		</>
 	);

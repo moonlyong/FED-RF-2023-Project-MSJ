@@ -1,12 +1,14 @@
 export const TopBannerData = [
     {
-        src:"./img/banner/tb1.jpg",
+        src:"./myimgs/firstpj.jpg",
+        link:"#"
     },
     {
-        src:"./img/banner/tb2.jpg",
+        src:"./myimgs/secondpj.png",
+        link:"#"
     },
-    {
-        src:"./img/banner/tb3.jpg",
-    },
+    // {
+    //     src:"./img/banner/tb3.jpg",
+    // },
    
 ]
